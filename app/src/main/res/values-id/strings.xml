@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Machine-translated draft, needs human review before release. -->
+<resources>
+    <string name="app_name">MedTimer</string>
+
+    <!-- 通知渠道 -->
+    <string name="notification_channel_reminder_name">Pengingat obat</string>
+    <string name="notification_channel_reminder_desc">Pengingat untuk dosis terjadwal</string>
+    <string name="notification_channel_summary_name">Ringkasan dosis terlewat</string>
+    <string name="notification_channel_summary_desc">Ringkasan dosis yang belum dikonfirmasi</string>
+
+    <!-- 提醒通知 -->
+    <string name="notification_title_reminder">Pengingat obat</string>
+    <string name="notification_action_taken">Sudah diminum</string>
+    <string name="notification_action_snooze">Tunda 10 menit</string>
+    <string name="notification_action_skip">Lewati</string>
+    <string name="notification_more_items">%1$d lainnya</string>
+
+    <!-- 漏服汇总 -->
+    <string name="notification_missed_summary_title">Dosis belum dikonfirmasi</string>
+    <string name="notification_missed_summary_text">%1$d dosis belum dikonfirmasi</string>
+
+    <!-- 底部导航 -->
+    <string name="tab_today">Hari ini</string>
+    <string name="tab_medicines">Obat</string>
+    <string name="tab_history">Riwayat</string>
+    <string name="tab_settings">Pengaturan</string>
+    <string name="coming_soon">Segera hadir</string>
+
+    <!-- 规则整句回显 -->
+    <string name="rule_daily">Setiap hari · %1$s</string>
+    <string name="rule_every_other_day">Setiap dua hari · %1$s</string>
+    <string name="rule_every_n_days">Setiap %1$d hari · %2$s</string>
+    <string name="rule_weekly">Setiap %1$s · %2$s</string>
+    <string name="rule_monthly">Tanggal %1$d setiap bulan · %2$s</string>
+    <string name="rule_clock_phrase">%1$s pukul %2$s</string>
+    <string name="rule_meal_before">%1$s %2$d menit sebelum %3$s</string>
+    <string name="rule_meal_after">%1$s %2$d menit setelah %3$s</string>
+    <string name="rule_meal_on">%1$s pukul %2$s</string>
+    <string name="meal_breakfast">sarapan</string>
+    <string name="meal_lunch">makan siang</string>
+    <string name="meal_dinner">makan malam</string>
+    <string name="meal_bedtime">waktu tidur</string>
+    <string name="weekday_mon">Sen</string>
+    <string name="weekday_tue">Sel</string>
+    <string name="weekday_wed">Rab</string>
+    <string name="weekday_thu">Kam</string>
+    <string name="weekday_fri">Jum</string>
+    <string name="weekday_sat">Sab</string>
+    <string name="weekday_sun">Min</string>
+    <string name="weekday_separator">", "</string>
+
+    <!-- 剂量复数 -->
+    <plurals name="dose_tablet">
+        <item quantity="one">%1$s tablet</item>
+        <item quantity="other">%1$s tablet</item>
+    </plurals>
+    <plurals name="dose_capsule">
+        <item quantity="one">%1$s kapsul</item>
+        <item quantity="other">%1$s kapsul</item>
+    </plurals>
+    <plurals name="dose_sachet">
+        <item quantity="one">%1$s saset</item>
+        <item quantity="other">%1$s saset</item>
+    </plurals>
+    <plurals name="dose_ml">
+        <item quantity="one">%1$s ml</item>
+        <item quantity="other">%1$s ml</item>
+    </plurals>
+    <plurals name="dose_drop">
+        <item quantity="one">%1$s tetes</item>
+        <item quantity="other">%1$s tetes</item>
+    </plurals>
+    <plurals name="dose_spray">
+        <item quantity="one">%1$s semprot</item>
+        <item quantity="other">%1$s semprot</item>
+    </plurals>
+    <plurals name="dose_unit">
+        <item quantity="one">%1$s unit</item>
+        <item quantity="other">%1$s unit</item>
+    </plurals>
+    <string name="dose_unknown_format">%1$s %2$s</string>
+
+    <!-- 今日服药单 -->
+    <string name="today_progress">%1$d / %2$d diminum</string>
+    <string name="today_taken_all">Semua diminum</string>
+    <string name="today_status_due">Waktunya</string>
+    <string name="today_status_missed">Belum dikonfirmasi</string>
+    <string name="today_status_taken">Diminum</string>
+    <string name="today_status_late">Diminum terlambat</string>
+    <string name="today_status_skipped">Dilewati</string>
+    <string name="today_status_uncertain">Tidak yakin</string>
+    <string name="today_status_pending">Menunggu</string>
+    <string name="today_not_due">Tidak perlu hari ini · Berikutnya %1$s</string>
+    <string name="today_not_due_section">Tidak perlu hari ini</string>
+    <string name="today_stock_days">Stok cukup untuk sekitar %1$d hari</string>
+    <string name="today_stock_empty">Stok menipis, silakan isi ulang</string>
+    <string name="today_alert_exact_alarm">Pengingat mungkin tidak muncul. Periksa izin alarm presisi.</string>
+    <string name="today_alert_notifications">Notifikasi dimatikan. Aktifkan di pengaturan sistem.</string>
+    <string name="today_alert_paused">Pengingat dijeda</string>
+    <string name="today_action_resume">Lanjutkan</string>
+    <string name="today_missed_summary">%1$d belum dikonfirmasi</string>
+    <string name="today_empty_title">Belum ada obat</string>
+    <string name="today_empty_action">Tambah obat</string>
+    <string name="today_sheet_title">%1$s · %2$s</string>
+    <string name="today_action_uncertain">Tidak yakin</string>
+    <string name="today_action_undo">Urungkan</string>
+    <string name="today_loading">Memuat</string>
+    <string name="cd_medicine_photo">Foto %1$s</string>
+    <string name="cd_not_due_toggle">Tampilkan atau sembunyikan obat yang tidak perlu hari ini</string>
+    <string name="common_cancel">Batal</string>
+
+    <!-- 提醒页 -->
+    <string name="reminder_item_format">%1$s · %2$s %3$s</string>
+    <string name="reminder_unknown_medicine">Obat</string>
+    <string name="reminder_screen_title">Pengingat obat</string>
+    <string name="reminder_screen_time">Dijadwalkan pukul %1$s</string>
+    <string name="reminder_screen_all_taken">Semua diminum</string>
+    <string name="reminder_item_line">%1$s · %2$s</string>
+    <string name="reminder_invalid_data">Detail pengingat tidak tersedia. Silakan kembali dan coba lagi.</string>
+    <string name="reminder_close">Tutup</string>
+    <string name="tts_reminder_text">Waktunya minum obat. %1$s</string>
+    <string name="tts_item_format">%1$s %2$s.</string>
+    <string name="tts_item_separator">" "</string>
+
+    <!-- 通用操作 -->
+    <string name="common_delete">Hapus</string>
+    <string name="common_save">Simpan</string>
+    <string name="common_back">Kembali</string>
+    <string name="common_ok">OK</string>
+    <string name="common_clear">Hapus isian</string>
+    <string name="common_not_set">Belum diatur</string>
+
+    <!-- 药品列表 -->
+    <string name="medicine_list_title">Obat</string>
+    <string name="medicine_list_add">Tambah obat</string>
+    <string name="medicine_list_empty_title">Belum ada obat</string>
+    <string name="medicine_list_stock_button">Stok</string>
+    <string name="medicine_list_more_rules">Plus %1$d aturan lagi</string>
+    <string name="medicine_no_rule">Belum ada rencana</string>
+    <string name="medicine_stock_days">Tersisa sekitar %1$d hari</string>
+    <string name="medicine_stock_low">Stok menipis, silakan isi ulang</string>
+    <string name="medicine_delete_title">Hapus obat?</string>
+    <string name="medicine_delete_message">Menghapus %1$s juga menghapus rencana dan catatan dosisnya.</string>
+    <string name="medicine_delete_action">Hapus obat</string>
+
+    <!-- 药品编辑 -->
+    <string name="medicine_edit_title_new">Obat baru</string>
+    <string name="medicine_edit_title">Edit obat</string>
+    <string name="medicine_name_label">Nama obat</string>
+    <string name="medicine_name_required">Silakan masukkan nama obat</string>
+    <!-- 药盒识别与条码：端侧模型，识别全程离线 -->
+    <string name="medicine_scan_name_cd">Pindai kotak obat untuk mengisi nama</string>
+    <string name="medicine_scan_name_failed">Nama obat tidak ditemukan. Silakan masukkan secara manual.</string>
+    <string name="medicine_scan_name_title">Pilih nama obat</string>
+    <string name="medicine_scan_name_confirm">Gunakan nama terpilih</string>
+    <string name="medicine_scan_barcode_label">Barcode</string>
+    <string name="medicine_scan_barcode_action">Pindai barcode</string>
+    <string name="medicine_scan_barcode_title">Konfirmasi barcode</string>
+    <string name="medicine_scan_barcode_confirm">Gunakan barcode ini</string>
+    <string name="medicine_scan_barcode_failed">Barcode tidak ditemukan. Coba foto lain.</string>
+    <string name="medicine_form_label">Bentuk</string>
+    <string name="medicine_form_tablet">Tablet</string>
+    <string name="medicine_form_capsule">Kapsul</string>
+    <string name="medicine_form_liquid">Cairan</string>
+    <string name="medicine_form_drops">Tetes</string>
+    <string name="medicine_form_spray">Semprot</string>
+    <string name="medicine_form_pen">Pena</string>
+    <string name="medicine_spec_value_label">Kekuatan</string>
+    <string name="medicine_spec_unit_label">Satuan kekuatan</string>
+    <string name="medicine_dose_unit_label">Satuan dosis</string>
+    <string name="medicine_spec_required">Silakan masukkan kekuatan dan satuan dosis</string>
+    <string name="medicine_splittable_label">Dapat dibagi</string>
+    <string name="medicine_pack_size_label">Jumlah per kemasan</string>
+    <string name="medicine_pack_unit_label">Satuan kemasan</string>
+    <string name="medicine_expire_label">Tanggal kedaluwarsa</string>
+    <string name="medicine_opened_label">Dibuka pada</string>
+    <string name="medicine_shelf_days_label">Hari pakai setelah dibuka</string>
+    <string name="medicine_auto_deduct_label">Kurangi stok otomatis</string>
+    <string name="medicine_note_label">Catatan</string>
+    <string name="medicine_date_value">%1$s: %2$s</string>
+    <string name="medicine_photo_title">Foto kotak obat</string>
+    <string name="medicine_photo_pick">Pilih foto</string>
+    <string name="medicine_photo_retake">Ambil ulang foto</string>
+    <string name="medicine_photo_delete">Hapus foto</string>
+    <string name="medicine_photo_empty">Belum ada foto</string>
+    <string name="medicine_photo_error">Tidak dapat menyimpan foto. Silakan coba lagi.</string>
+    <string name="medicine_rules_title">Rencana</string>
+    <string name="medicine_rules_empty">Belum ada rencana</string>
+    <string name="medicine_rules_need_save">Simpan obat dulu untuk menambah rencana</string>
+    <string name="medicine_rule_add">Tambah rencana</string>
+    <string name="medicine_rule_edit">Edit</string>
+
+    <!-- 剂量单位选项 -->
+    <string name="dose_unit_tablet">Tablet</string>
+    <string name="dose_unit_capsule">Kapsul</string>
+    <string name="dose_unit_ml">ml</string>
+    <string name="dose_unit_drop">Tetes</string>
+    <string name="dose_unit_spray">Semprot</string>
+    <string name="dose_unit_unit">Unit</string>
+    <string name="dose_unit_other">Unit</string>
+
+    <!-- 计划编辑 -->
+    <string name="schedule_edit_title_new">Rencana baru</string>
+    <string name="schedule_edit_title">Edit rencana</string>
+    <string name="schedule_medicine_label">Obat: %1$s</string>
+    <string name="schedule_anchor_label">Waktu dosis</string>
+    <string name="schedule_anchor_clock">Waktu tetap</string>
+    <string name="schedule_anchor_meal">Bersamaan makan</string>
+    <string name="schedule_time_value">Waktu: %1$s</string>
+    <string name="schedule_pick_time">Pilih waktu</string>
+    <string name="schedule_offset_label">Selisih menit (negatif = sebelum makan)</string>
+    <string name="schedule_recurrence_label">Ulangi</string>
+    <string name="schedule_recurrence_daily">Setiap hari</string>
+    <string name="schedule_recurrence_every_n">Setiap N hari</string>
+    <string name="schedule_recurrence_weekly">Mingguan</string>
+    <string name="schedule_recurrence_monthly">Bulanan</string>
+    <string name="schedule_interval_label">Interval dalam hari</string>
+    <string name="schedule_weekdays_label">Hari dalam seminggu</string>
+    <string name="schedule_monthly_day_label">Tanggal dalam bulan</string>
+    <string name="schedule_start_date_label">Tanggal mulai</string>
+    <string name="schedule_end_date_label">Tanggal selesai</string>
+    <string name="schedule_long_term">Jangka panjang</string>
+    <string name="schedule_dose_label">Dosis</string>
+    <string name="schedule_dose_label_with_unit">Dosis setiap kali (%1$s)</string>
+    <string name="schedule_dose_integer_error">Obat ini tidak dapat dibagi. Masukkan bilangan bulat %1$s.</string>
+    <string name="schedule_dose_invalid">Masukkan dosis yang valid</string>
+    <string name="schedule_window_label">Jendela pengingat</string>
+    <string name="schedule_early_label">Lebih awal (menit)</string>
+    <string name="schedule_late_label">Terlambat (menit)</string>
+    <string name="schedule_prn_label">Sesuai kebutuhan (PRN)</string>
+    <string name="schedule_prn_hint">Dosis dicatat saat diperlukan. Batas harian hanya panduan.</string>
+    <string name="schedule_prn_max_label">Batas harian (hanya panduan)</string>
+    <string name="schedule_preview">Pratinjau aturan: %1$s</string>
+    <string name="schedule_error_offset">Masukkan selisih dalam menit</string>
+    <string name="schedule_error_interval">Interval minimal 2 hari</string>
+    <string name="schedule_error_weekdays">Pilih setidaknya satu hari</string>
+    <string name="schedule_error_monthly_day">Masukkan tanggal antara 1 dan 31</string>
+    <string name="schedule_error_window">Masukkan menit jendela pengingat yang valid</string>
+    <string name="schedule_error_end_date">Tanggal selesai harus sama dengan atau setelah tanggal mulai</string>
+    <string name="schedule_error_prn_limit">Masukkan batas harian yang valid</string>
+    <string name="schedule_delete_action">Hapus rencana</string>
+    <string name="schedule_delete_title">Hapus rencana?</string>
+    <string name="schedule_delete_message">Catatan dosis untuk rencana ini juga akan dihapus.</string>
+    <string name="rule_prn">Sesuai kebutuhan · %1$s</string>
+
+    <!-- 递减方案 -->
+    <string name="schedule_taper_label">Rencana penurunan dosis</string>
+    <string name="schedule_taper_hint">Dosis berubah sejak tanggal mulai setiap tahap. Setiap tanggal hanya bisa dipakai sekali.</string>
+    <string name="schedule_taper_add_step">Tambah tahap</string>
+    <string name="schedule_taper_step_title">Tahap %1$d</string>
+    <string name="schedule_taper_dose_label">Dosis tahap (%1$s)</string>
+    <string name="schedule_taper_remove">Hapus tahap</string>
+    <string name="schedule_error_taper_empty">Tambahkan setidaknya satu tahap</string>
+    <string name="schedule_error_taper_date">Setiap tahap harus memiliki tanggal mulai yang berbeda</string>
+    <string name="schedule_error_taper_dose">Masukkan dosis yang valid untuk setiap tahap</string>
+    <string name="schedule_error_taper_integer">Dosis tahap harus bilangan bulat %1$s</string>
+    <string name="medicine_taper_summary">Penurunan: saat ini %1$s · %2$d tahap</string>
+
+    <!-- 按需用药 -->
+    <string name="today_prn_section">Sesuai kebutuhan</string>
+    <string name="today_prn_take_now">Minum sekarang</string>
+    <string name="today_prn_taken_limit">Diminum %1$d kali hari ini (batas %2$d)</string>
+
+    <!-- 用药人档案 -->
+    <string name="profile_title">Profil pengobatan</string>
+    <string name="profile_default_name">Profil bawaan</string>
+    <string name="profile_current">Aktif</string>
+    <string name="profile_rename">Ganti nama</string>
+    <string name="profile_add">Tambah profil</string>
+    <string name="profile_add_title">Tambah profil</string>
+    <string name="profile_rename_title">Ganti nama profil</string>
+    <string name="profile_name_label">Nama profil</string>
+    <string name="profile_name_error">Masukkan nama hingga 30 karakter</string>
+    <string name="profile_delete_title">Hapus profil?</string>
+    <string name="profile_delete_message">Semua obat, rencana, catatan, dan stok \"%1$s\" akan dihapus.</string>
+    <string name="settings_profiles">Profil pengobatan</string>
+
+    <!-- 历史/统计 -->
+    <string name="history_title">Riwayat</string>
+    <string name="history_range_7">7 hari terakhir</string>
+    <string name="history_range_30">30 hari terakhir</string>
+    <string name="history_range_90">90 hari terakhir</string>
+    <string name="history_summary_title">Ringkasan</string>
+    <string name="history_summary_on_time">Tepat waktu</string>
+    <string name="history_summary_late">Terlambat</string>
+    <string name="history_summary_unconfirmed">Belum dikonfirmasi</string>
+    <string name="history_summary_uncertain">Tidak yakin</string>
+    <string name="history_summary_skipped">Dilewati</string>
+    <string name="history_summary_total">Dosis terjadwal</string>
+    <string name="history_status_on_time">Tepat waktu</string>
+    <string name="history_late_minutes">Terlambat %1$d menit</string>
+    <string name="history_empty">Tidak ada catatan dosis pada periode ini</string>
+    <string name="history_backfill_title">Tambah catatan</string>
+    <string name="history_backfill_message">%1$s · %2$s</string>
+    <string name="history_backfill_taken">Diminum</string>
+    <string name="history_backfill_hint">Ketuk untuk menambah catatan</string>
+
+    <!-- 库存 -->
+    <string name="stock_title">Stok</string>
+    <string name="stock_remaining">Sisa: %1$s</string>
+    <string name="stock_days_long_term">Jangka panjang</string>
+    <string name="stock_expire">Kedaluwarsa %1$s</string>
+    <string name="stock_shelf_days">Dapat dipakai %1$d hari setelah dibuka</string>
+    <string name="stock_banner_empty">Stok habis. Silakan isi ulang.</string>
+    <string name="stock_banner_low">Stok menipis. Silakan isi ulang.</string>
+    <string name="stock_banner_expiring">Dengan rencana saat ini, perkiraan tanggal habis lebih lambat dari tanggal kedaluwarsa</string>
+    <string name="stock_banner_expired">Melewati tanggal kedaluwarsa</string>
+    <string name="stock_action_purchase">Stok masuk</string>
+    <string name="stock_action_adjust">Jumlah stok</string>
+    <string name="stock_purchase_title">Stok masuk</string>
+    <string name="stock_adjust_title">Jumlah stok</string>
+    <string name="stock_qty_label">Jumlah (%1$s)</string>
+    <string name="stock_qty_invalid">Masukkan jumlah yang valid</string>
+    <string name="stock_no_change">Stok tidak berubah</string>
+    <string name="stock_changes_title">Perubahan terbaru</string>
+    <string name="stock_changes_empty">Belum ada perubahan stok</string>
+    <string name="stock_reason_purchase">Stok masuk</string>
+    <string name="stock_reason_taken">Dosis diminum</string>
+    <string name="stock_reason_adjust">Penyesuaian jumlah stok</string>
+    <string name="stock_reason_lost">Hilang</string>
+    <string name="stock_reason_expired">Kedaluwarsa</string>
+    <string name="stock_reason_undo">Urungkan</string>
+    <string name="stock_delta_plus">+%1$s</string>
+    <string name="stock_delta_minus">-%1$s</string>
+    <string name="stock_not_found">Obat tidak ditemukan</string>
+
+    <!-- 导出报告 -->
+    <string name="export_file_prefix">MedicationLog</string>
+    <string name="export_title">Ekspor laporan</string>
+    <string name="export_entry_button">Ekspor laporan</string>
+    <string name="export_range_label">Rentang waktu</string>
+    <string name="export_range_7">7 hari terakhir</string>
+    <string name="export_range_30">30 hari terakhir</string>
+    <string name="export_range_90">90 hari terakhir</string>
+    <string name="export_generate">Buat pratinjau</string>
+    <string name="export_generating">Membuat…</string>
+    <string name="export_share">Bagikan</string>
+    <string name="export_empty_message">Tidak ada catatan dosis pada periode ini</string>
+    <string name="export_error_generate">Tidak dapat membuat PDF. Silakan coba lagi.</string>
+    <string name="export_preview_title">Pratinjau</string>
+    <string name="export_preview_range">Rentang</string>
+    <string name="export_preview_pages">Halaman</string>
+    <string name="export_preview_records">Catatan</string>
+    <string name="export_preview_size">Ukuran file</string>
+    <string name="export_share_dialog_title">Bagikan file ini?</string>
+    <string name="export_share_dialog_message">File ini berisi informasi kesehatan. Pastikan Anda tahu dengan siapa Anda membagikannya.</string>
+    <string name="export_share_confirm">Bagikan</string>
+    <string name="export_share_chooser">Bagikan laporan</string>
+    <string name="export_status_on_time">Diminum</string>
+    <string name="export_status_late">Diminum terlambat</string>
+    <string name="export_status_unconfirmed">Belum dikonfirmasi</string>
+    <string name="export_status_uncertain">Tidak yakin</string>
+    <string name="export_status_skipped">Dilewati</string>
+    <string name="export_remaining">Sisa %1$s</string>
+    <string name="export_rule_separator">"; "</string>
+    <string name="export_anomaly_morning">Pagi: %1$d belum dikonfirmasi</string>
+    <string name="export_anomaly_afternoon">Siang: %1$d belum dikonfirmasi</string>
+    <string name="export_anomaly_evening">Malam: %1$d belum dikonfirmasi</string>
+    <string name="export_anomaly_backfilled">%1$d catatan ditambahkan setelah kejadian</string>
+    <string name="export_pdf_title">Laporan pengobatan</string>
+    <string name="export_pdf_range">Rentang: %1$s ~ %2$s</string>
+    <string name="export_pdf_generated">Dibuat pada %1$s</string>
+    <string name="export_pdf_section_medicines">Obat saat ini</string>
+    <string name="export_pdf_section_summary">Ringkasan dosis</string>
+    <string name="export_pdf_section_days">Gambaran harian</string>
+    <string name="export_pdf_section_anomalies">Catatan anomali</string>
+    <string name="export_pdf_medicines_none">Tidak ada obat aktif</string>
+    <string name="export_pdf_anomalies_none">Tidak ada catatan anomali pada periode ini</string>
+    <string name="export_pdf_count_on_time">Tepat waktu: %1$d</string>
+    <string name="export_pdf_count_late">Terlambat: %1$d</string>
+    <string name="export_pdf_count_unconfirmed">Belum dikonfirmasi: %1$d</string>
+    <string name="export_pdf_count_uncertain">Tidak yakin: %1$d</string>
+    <string name="export_pdf_count_skipped">Dilewati: %1$d</string>
+    <string name="export_pdf_count_total">Dosis terjadwal: %1$d</string>
+    <string name="export_pdf_row">%1$s · %2$s · %3$s · %4$s</string>
+    <string name="export_pdf_footer">Dicatat oleh pasien, tidak diverifikasi secara medis. Aplikasi ini tidak memberikan saran medis.</string>
+
+    <!-- 设置页 -->
+    <string name="settings_title">Pengaturan</string>
+    <string name="settings_section_meal_times">Waktu makan</string>
+    <string name="settings_meal_breakfast">Sarapan</string>
+    <string name="settings_meal_lunch">Makan siang</string>
+    <string name="settings_meal_dinner">Makan malam</string>
+    <string name="settings_meal_bedtime">Waktu tidur</string>
+    <string name="settings_section_defaults">Default pengingat</string>
+    <string name="settings_default_early">Pengingat awal default (menit)</string>
+    <string name="settings_default_late">Pengingat terlambat default (menit)</string>
+    <string name="settings_merge_window">Jendela penggabungan (menit)</string>
+    <string name="settings_minutes_value">%1$d menit</string>
+    <string name="settings_minutes_hint">Masukkan jumlah menit antara 0 dan 720.</string>
+    <string name="settings_quiet_start">Awal jam tenang</string>
+    <string name="settings_quiet_end">Akhir jam tenang</string>
+    <string name="settings_section_permissions">Pemeriksaan izin</string>
+    <string name="settings_perm_exact_alarm">Alarm presisi</string>
+    <string name="settings_perm_notifications">Notifikasi</string>
+    <string name="settings_perm_full_screen">Pengingat layar penuh</string>
+    <string name="settings_perm_battery">Optimasi baterai</string>
+    <string name="settings_status_ok">Normal</string>
+    <string name="settings_status_denied">Tidak diizinkan</string>
+    <string name="settings_status_off">Dimatikan</string>
+    <string name="settings_status_recommended">Disarankan ditinjau</string>
+    <string name="settings_action_open">Buka</string>
+    <string name="settings_action_allow">Izinkan</string>
+    <string name="settings_full_screen_hint">Jika tidak diizinkan, pengingat tetap datang dengan suara.</string>
+    <string name="settings_battery_hint">Beberapa produsen dapat menghentikan alarm latar belakang. Izinkan aplikasi ini berjalan di latar belakang pada pengaturan sistem.</string>
+    <string name="settings_section_tools">Pengujian</string>
+    <string name="settings_test_reminder">Pengingat uji dalam 1 menit</string>
+    <string name="settings_test_reminder_toast">Pengingat uji akan muncul dalam 1 menit.</string>
+    <string name="settings_section_pause">Jeda semua pengingat</string>
+    <string name="settings_pause_status">Pengingat dijeda hingga %1$s</string>
+    <string name="settings_pause_status_indefinite">Pengingat dijeda</string>
+    <string name="settings_pause_1h">Jeda 1 jam</string>
+    <string name="settings_pause_today">Jeda hingga akhir hari ini</string>
+    <string name="settings_pause_resume">Lanjutkan pengingat</string>
+    <string name="settings_section_language">Bahasa</string>
+    <string name="settings_language_system">Ikuti sistem</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_zh">简体中文</string>
+    <string name="settings_language_es">Español</string>
+    <string name="settings_language_pt">Português (Brasil)</string>
+    <string name="settings_language_ja">日本語</string>
+    <string name="settings_language_it">Italiano</string>
+    <string name="settings_language_de">Deutsch</string>
+    <string name="settings_language_zh_tw">繁體中文</string>
+    <string name="settings_language_id">Bahasa Indonesia</string>
+    <string name="settings_language_ko">한국어</string>
+    <string name="settings_language_ar">العربية</string>
+    <string name="settings_language_hi">हिन्दी</string>
+    <string name="settings_language_th">ไทย</string>
+    <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="settings_section_data">Data</string>
+    <string name="settings_export_report">Ekspor laporan</string>
+    <string name="settings_section_about">Tentang dan kepatuhan</string>
+    <string name="settings_version">Versi %1$s</string>
+    <string name="settings_medical_disclaimer">Aplikasi ini hanya memberikan pengingat dan catatan dan bukan merupakan saran medis.</string>
+    <string name="settings_privacy_local_processing">Foto kotak obat dan pengenalan tetap di perangkat ini dan tidak pernah diunggah.</string>
+    <string name="settings_privacy_policy">Kebijakan privasi</string>
+    <string name="settings_invalid_minutes">Masukkan jumlah menit antara 0 dan 720.</string>
+
+    <!-- 首次启动引导 -->
+    <string name="onboarding_title">Selamat datang di MedTimer</string>
+    <string name="onboarding_purpose_title">Fungsi aplikasi ini</string>
+    <string name="onboarding_purpose_body">Mengirim pengingat pada waktu terjadwal dan mencatat setiap dosis.</string>
+    <string name="onboarding_limits_body">Tanpa saran medis, tanpa akses jaringan, dan tanpa pengumpulan data.</string>
+    <string name="onboarding_permissions_title">Izin</string>
+    <string name="onboarding_permissions_body">Izin ini membantu pengingat datang tepat waktu. Anda dapat melewatinya dan tetap memakai aplikasi.</string>
+    <string name="onboarding_perm_exact_alarm">Alarm presisi: berbunyi pada waktu yang direncanakan.</string>
+    <string name="onboarding_perm_notifications">Notifikasi: menampilkan pengingat di layar.</string>
+    <string name="onboarding_perm_full_screen">Pengingat layar penuh: menampilkan pengingat di layar kunci.</string>
+    <string name="onboarding_perm_note">Jika Anda menolak, aplikasi tetap berfungsi, tetapi pengingat mungkin tidak datang tepat waktu.</string>
+    <string name="onboarding_disclaimer_title">Penafian medis</string>
+    <string name="onboarding_disclaimer_body">Aplikasi ini hanya memberikan pengingat dan catatan. Aplikasi tidak memberikan saran medis, diagnosis, pengobatan, atau rekomendasi dosis. Ikuti petunjuk dokter Anda.</string>
+    <string name="onboarding_grant_notifications">Izinkan notifikasi</string>
+    <string name="onboarding_open_exact_alarm">Buka pengaturan alarm presisi</string>
+    <string name="onboarding_start">Mulai gunakan aplikasi</string>
+
+    <!-- 桌面小组件 -->
+    <string name="widget_label">Widget MedTimer</string>
+    <string name="widget_remaining">%1$d dosis tersisa hari ini</string>
+    <string name="widget_next_time">Dosis berikutnya %1$s</string>
+    <string name="widget_done_today">Semua selesai untuk hari ini</string>
+    <string name="widget_no_schedule">Tidak ada dosis terjadwal hari ini</string>
+    <string name="widget_paused">Pengingat dijeda</string>
+</resources>

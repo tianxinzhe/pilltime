@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MedTimer</string>
+
+    <!-- 通知渠道 -->
+    <string name="notification_channel_reminder_name">服药提醒</string>
+    <string name="notification_channel_reminder_desc">按计划时间提醒服药</string>
+    <string name="notification_channel_summary_name">未确认服药汇总</string>
+    <string name="notification_channel_summary_desc">汇总未确认的服药记录</string>
+
+    <!-- 提醒通知 -->
+    <string name="notification_title_reminder">服药提醒</string>
+    <string name="notification_action_taken">已服用</string>
+    <string name="notification_action_snooze">稍后 10 分钟</string>
+    <string name="notification_action_skip">跳过</string>
+    <string name="notification_more_items">还有 %1$d 项</string>
+
+    <!-- 漏服汇总 -->
+    <string name="notification_missed_summary_title">未确认的服药</string>
+    <string name="notification_missed_summary_text">有 %1$d 次服药未确认</string>
+
+    <!-- 底部导航 -->
+    <string name="tab_today">今日</string>
+    <string name="tab_medicines">药品</string>
+    <string name="tab_history">历史</string>
+    <string name="tab_settings">设置</string>
+    <string name="coming_soon">开发中</string>
+
+    <!-- 规则整句回显 -->
+    <string name="rule_daily">每天 · %1$s</string>
+    <string name="rule_every_other_day">隔天 · %1$s</string>
+    <string name="rule_every_n_days">每 %1$d 天 · %2$s</string>
+    <string name="rule_weekly">每周%1$s · %2$s</string>
+    <string name="rule_monthly">每月 %1$d 号 · %2$s</string>
+    <string name="rule_clock_phrase">%1$s %2$s</string>
+    <string name="rule_meal_before">%3$s前 %2$d 分钟 · %1$s</string>
+    <string name="rule_meal_after">%3$s后 %2$d 分钟 · %1$s</string>
+    <string name="rule_meal_on">%2$s · %1$s</string>
+    <string name="meal_breakfast">早饭</string>
+    <string name="meal_lunch">午饭</string>
+    <string name="meal_dinner">晚饭</string>
+    <string name="meal_bedtime">睡前</string>
+    <string name="weekday_mon">一</string>
+    <string name="weekday_tue">二</string>
+    <string name="weekday_wed">三</string>
+    <string name="weekday_thu">四</string>
+    <string name="weekday_fri">五</string>
+    <string name="weekday_sat">六</string>
+    <string name="weekday_sun">日</string>
+    <string name="weekday_separator">、</string>
+
+    <!-- 剂量复数 -->
+    <plurals name="dose_tablet">
+        <item quantity="other">%1$s 片</item>
+    </plurals>
+    <plurals name="dose_capsule">
+        <item quantity="other">%1$s 粒</item>
+    </plurals>
+    <plurals name="dose_sachet">
+        <item quantity="other">%1$s 袋</item>
+    </plurals>
+    <plurals name="dose_ml">
+        <item quantity="other">%1$s ml</item>
+    </plurals>
+    <plurals name="dose_drop">
+        <item quantity="other">%1$s 滴</item>
+    </plurals>
+    <plurals name="dose_spray">
+        <item quantity="other">%1$s 喷</item>
+    </plurals>
+    <plurals name="dose_unit">
+        <item quantity="other">%1$s U</item>
+    </plurals>
+    <string name="dose_unknown_format">%1$s %2$s</string>
+
+    <!-- 今日服药单 -->
+    <string name="today_progress">已服 %1$d / %2$d</string>
+    <string name="today_taken_all">已全部服用</string>
+    <string name="today_status_due">待服用</string>
+    <string name="today_status_missed">未确认</string>
+    <string name="today_status_taken">已服用</string>
+    <string name="today_status_late">延迟服用</string>
+    <string name="today_status_skipped">已跳过</string>
+    <string name="today_status_uncertain">记不清</string>
+    <string name="today_status_pending">待确认</string>
+    <string name="today_not_due">今天不用服用 · 下次 %1$s</string>
+    <string name="today_not_due_section">今天不用服用</string>
+    <string name="today_stock_days">约剩 %1$d 天</string>
+    <string name="today_stock_empty">库存不足，请及时补药</string>
+    <string name="today_alert_exact_alarm">提醒可能无法送达，请检查精确闹钟权限</string>
+    <string name="today_alert_notifications">通知已关闭，请在系统设置中开启通知</string>
+    <string name="today_alert_paused">提醒已暂停</string>
+    <string name="today_action_resume">恢复</string>
+    <string name="today_missed_summary">有 %1$d 次未确认</string>
+    <string name="today_empty_title">还没有添加药品</string>
+    <string name="today_empty_action">添加药品</string>
+    <string name="today_sheet_title">%1$s · %2$s</string>
+    <string name="today_action_uncertain">记不清</string>
+    <string name="today_action_undo">撤销</string>
+    <string name="today_loading">加载中</string>
+    <string name="cd_medicine_photo">%1$s 的药盒照片</string>
+    <string name="cd_not_due_toggle">展开或收起今天不用服用的药品</string>
+    <string name="common_cancel">取消</string>
+
+    <!-- 提醒页 -->
+    <string name="reminder_item_format">%1$s · %2$s%3$s</string>
+    <string name="reminder_unknown_medicine">药物</string>
+    <string name="reminder_screen_title">服药提醒</string>
+    <string name="reminder_screen_time">计划时间 %1$s</string>
+    <string name="reminder_screen_all_taken">已全部服用</string>
+    <string name="reminder_item_line">%1$s · %2$s</string>
+    <string name="reminder_invalid_data">提醒信息缺失，请返回后重试</string>
+    <string name="reminder_close">关闭</string>
+    <string name="tts_reminder_text">该吃药了。%1$s</string>
+    <string name="tts_item_format">%1$s %2$s。</string>
+    <string name="tts_item_separator">" "</string>
+
+    <!-- 通用操作 -->
+    <string name="common_delete">删除</string>
+    <string name="common_save">保存</string>
+    <string name="common_back">返回</string>
+    <string name="common_ok">确定</string>
+    <string name="common_clear">清除</string>
+    <string name="common_not_set">未设置</string>
+
+    <!-- 药品列表 -->
+    <string name="medicine_list_title">药品</string>
+    <string name="medicine_list_add">添加药品</string>
+    <string name="medicine_list_empty_title">还没有添加药品</string>
+    <string name="medicine_list_stock_button">库存</string>
+    <string name="medicine_list_more_rules">另有 %1$d 条规则</string>
+    <string name="medicine_no_rule">还没有用药计划</string>
+    <string name="medicine_stock_days">约剩 %1$d 天</string>
+    <string name="medicine_stock_low">库存不足，请及时补药</string>
+    <string name="medicine_delete_title">删除药品？</string>
+    <string name="medicine_delete_message">删除「%1$s」后，该药品的计划与服药记录也会一并删除。</string>
+    <string name="medicine_delete_action">删除药品</string>
+
+    <!-- 药品编辑 -->
+    <string name="medicine_edit_title_new">新增药品</string>
+    <string name="medicine_edit_title">编辑药品</string>
+    <string name="medicine_name_label">药名</string>
+    <string name="medicine_name_required">请填写药名</string>
+    <!-- 药盒识别与条码：端侧模型，识别全程离线 -->
+    <string name="medicine_scan_name_cd">扫描药盒以填充药名</string>
+    <string name="medicine_scan_name_failed">未识别到药名，请手动输入</string>
+    <string name="medicine_scan_name_title">选择药名</string>
+    <string name="medicine_scan_name_confirm">使用选中药名</string>
+    <string name="medicine_scan_barcode_label">条码</string>
+    <string name="medicine_scan_barcode_action">扫描条码</string>
+    <string name="medicine_scan_barcode_title">确认条码</string>
+    <string name="medicine_scan_barcode_confirm">使用该条码</string>
+    <string name="medicine_scan_barcode_failed">未识别到条码，请换一张照片重试</string>
+    <string name="medicine_form_label">剂型</string>
+    <string name="medicine_form_tablet">片</string>
+    <string name="medicine_form_capsule">胶囊</string>
+    <string name="medicine_form_liquid">液体</string>
+    <string name="medicine_form_drops">滴剂</string>
+    <string name="medicine_form_spray">喷剂</string>
+    <string name="medicine_form_pen">笔</string>
+    <string name="medicine_spec_value_label">规格含量</string>
+    <string name="medicine_spec_unit_label">规格单位</string>
+    <string name="medicine_dose_unit_label">剂量单位</string>
+    <string name="medicine_spec_required">请填写规格含量与剂量单位</string>
+    <string name="medicine_splittable_label">可以掰开</string>
+    <string name="medicine_pack_size_label">每盒数量</string>
+    <string name="medicine_pack_unit_label">包装单位</string>
+    <string name="medicine_expire_label">有效期</string>
+    <string name="medicine_opened_label">开封日</string>
+    <string name="medicine_shelf_days_label">开封后可用天数</string>
+    <string name="medicine_auto_deduct_label">自动扣减库存</string>
+    <string name="medicine_note_label">备注</string>
+    <string name="medicine_date_value">%1$s：%2$s</string>
+    <string name="medicine_photo_title">药盒照片</string>
+    <string name="medicine_photo_pick">选择照片</string>
+    <string name="medicine_photo_retake">重新拍照</string>
+    <string name="medicine_photo_delete">删除照片</string>
+    <string name="medicine_photo_empty">还没有照片</string>
+    <string name="medicine_photo_error">照片保存失败，请重试</string>
+    <string name="medicine_rules_title">用药计划</string>
+    <string name="medicine_rules_empty">还没有用药计划</string>
+    <string name="medicine_rules_need_save">先保存药品，再添加计划</string>
+    <string name="medicine_rule_add">添加计划</string>
+    <string name="medicine_rule_edit">编辑</string>
+
+    <!-- 剂量单位选项 -->
+    <string name="dose_unit_tablet">片</string>
+    <string name="dose_unit_capsule">粒</string>
+    <string name="dose_unit_ml">ml</string>
+    <string name="dose_unit_drop">滴</string>
+    <string name="dose_unit_spray">喷</string>
+    <string name="dose_unit_unit">U</string>
+    <string name="dose_unit_other">单位</string>
+
+    <!-- 计划编辑 -->
+    <string name="schedule_edit_title_new">新增计划</string>
+    <string name="schedule_edit_title">编辑计划</string>
+    <string name="schedule_medicine_label">药品：%1$s</string>
+    <string name="schedule_anchor_label">服药时间</string>
+    <string name="schedule_anchor_clock">固定时刻</string>
+    <string name="schedule_anchor_meal">跟随餐次</string>
+    <string name="schedule_time_value">时间：%1$s</string>
+    <string name="schedule_pick_time">选择时间</string>
+    <string name="schedule_offset_label">偏移分钟（饭前为负）</string>
+    <string name="schedule_recurrence_label">重复</string>
+    <string name="schedule_recurrence_daily">每天</string>
+    <string name="schedule_recurrence_every_n">每 N 天</string>
+    <string name="schedule_recurrence_weekly">每周</string>
+    <string name="schedule_recurrence_monthly">每月</string>
+    <string name="schedule_interval_label">间隔天数</string>
+    <string name="schedule_weekdays_label">星期</string>
+    <string name="schedule_monthly_day_label">每月日期</string>
+    <string name="schedule_start_date_label">开始日期</string>
+    <string name="schedule_end_date_label">结束日期</string>
+    <string name="schedule_long_term">长期</string>
+    <string name="schedule_dose_label">剂量</string>
+    <string name="schedule_dose_label_with_unit">每次剂量（%1$s）</string>
+    <string name="schedule_dose_integer_error">该药品不可掰开，剂量必须是整数个%1$s。</string>
+    <string name="schedule_dose_invalid">请填写有效剂量</string>
+    <string name="schedule_window_label">提醒有效时段</string>
+    <string name="schedule_early_label">提前量（分钟）</string>
+    <string name="schedule_late_label">延迟量（分钟）</string>
+    <string name="schedule_prn_label">按需用药</string>
+    <string name="schedule_prn_hint">按需记录剂量，每日上限仅作提示，不会阻止记录。</string>
+    <string name="schedule_prn_max_label">每日上限（仅提示）</string>
+    <string name="schedule_preview">规则预览：%1$s</string>
+    <string name="schedule_error_offset">请填写偏移分钟数</string>
+    <string name="schedule_error_interval">间隔天数至少为 2 天</string>
+    <string name="schedule_error_weekdays">请至少选择一周中的一天</string>
+    <string name="schedule_error_monthly_day">请填写 1 到 31 之间的日期</string>
+    <string name="schedule_error_window">请填写有效的提醒时段分钟数</string>
+    <string name="schedule_error_end_date">结束日期不能早于开始日期</string>
+    <string name="schedule_error_prn_limit">请填写有效的每日上限</string>
+    <string name="schedule_delete_action">删除计划</string>
+    <string name="schedule_delete_title">删除计划？</string>
+    <string name="schedule_delete_message">删除后该计划的服药记录也会一并删除。</string>
+    <string name="rule_prn">按需 · %1$s</string>
+
+    <!-- 递减方案 -->
+    <string name="schedule_taper_label">递减方案</string>
+    <string name="schedule_taper_hint">每个阶段从起始日期起改用该阶段剂量，日期不可重复。</string>
+    <string name="schedule_taper_add_step">新增阶段</string>
+    <string name="schedule_taper_step_title">阶段 %1$d</string>
+    <string name="schedule_taper_dose_label">阶段剂量（%1$s）</string>
+    <string name="schedule_taper_remove">删除阶段</string>
+    <string name="schedule_error_taper_empty">至少需要 1 个阶段</string>
+    <string name="schedule_error_taper_date">每个阶段的起始日期必须唯一</string>
+    <string name="schedule_error_taper_dose">请为每个阶段填写有效剂量</string>
+    <string name="schedule_error_taper_integer">阶段剂量必须是整 %1$s</string>
+    <string name="medicine_taper_summary">递减：当前 %1$s · %2$d 个阶段</string>
+
+    <!-- 按需用药 -->
+    <string name="today_prn_section">按需用药</string>
+    <string name="today_prn_take_now">现在服用</string>
+    <string name="today_prn_taken_limit">今日已服 %1$d 次（上限 %2$d 次）</string>
+
+    <!-- 用药人档案 -->
+    <string name="profile_title">用药人档案</string>
+    <string name="profile_default_name">默认档案</string>
+    <string name="profile_current">当前</string>
+    <string name="profile_rename">重命名</string>
+    <string name="profile_add">新增档案</string>
+    <string name="profile_add_title">新增档案</string>
+    <string name="profile_rename_title">重命名档案</string>
+    <string name="profile_name_label">档案名称</string>
+    <string name="profile_name_error">请输入名称，最多 30 字</string>
+    <string name="profile_delete_title">删除档案？</string>
+    <string name="profile_delete_message">将删除“%1$s”下的全部药品、计划、记录与库存流水。</string>
+    <string name="settings_profiles">用药人档案</string>
+
+    <!-- 历史/统计 -->
+    <string name="history_title">历史</string>
+    <string name="history_range_7">近 7 天</string>
+    <string name="history_range_30">近 30 天</string>
+    <string name="history_range_90">近 90 天</string>
+    <string name="history_summary_title">统计汇总</string>
+    <string name="history_summary_on_time">按时</string>
+    <string name="history_summary_late">延迟</string>
+    <string name="history_summary_unconfirmed">未确认</string>
+    <string name="history_summary_uncertain">记不清</string>
+    <string name="history_summary_skipped">跳过</string>
+    <string name="history_summary_total">应服总次数</string>
+    <string name="history_status_on_time">按时</string>
+    <string name="history_late_minutes">晚 %1$d 分钟</string>
+    <string name="history_empty">所选时间段没有服药记录</string>
+    <string name="history_backfill_title">补记</string>
+    <string name="history_backfill_message">%1$s · %2$s</string>
+    <string name="history_backfill_taken">吃过了</string>
+    <string name="history_backfill_hint">点击补记</string>
+
+    <!-- 库存 -->
+    <string name="stock_title">库存</string>
+    <string name="stock_remaining">剩余 %1$s</string>
+    <string name="stock_days_long_term">长期</string>
+    <string name="stock_expire">有效期 %1$s</string>
+    <string name="stock_shelf_days">开封后可用 %1$d 天</string>
+    <string name="stock_banner_empty">库存不足，请及时补药</string>
+    <string name="stock_banner_low">库存偏低，请及时补药</string>
+    <string name="stock_banner_expiring">按当前计划，预计吃完日期晚于有效期</string>
+    <string name="stock_banner_expired">已超过有效期</string>
+    <string name="stock_action_purchase">入库</string>
+    <string name="stock_action_adjust">盘点</string>
+    <string name="stock_purchase_title">入库</string>
+    <string name="stock_adjust_title">盘点</string>
+    <string name="stock_qty_label">数量（%1$s）</string>
+    <string name="stock_qty_invalid">请填写有效数量</string>
+    <string name="stock_no_change">库存无变化</string>
+    <string name="stock_changes_title">库存流水</string>
+    <string name="stock_changes_empty">还没有库存流水</string>
+    <string name="stock_reason_purchase">入库</string>
+    <string name="stock_reason_taken">服药扣减</string>
+    <string name="stock_reason_adjust">盘点调整</string>
+    <string name="stock_reason_lost">报损</string>
+    <string name="stock_reason_expired">过期</string>
+    <string name="stock_reason_undo">撤销回补</string>
+    <string name="stock_delta_plus">+%1$s</string>
+    <string name="stock_delta_minus">-%1$s</string>
+    <string name="stock_not_found">药品不存在</string>
+
+    <!-- 导出报告 -->
+    <string name="export_file_prefix">用药记录</string>
+    <string name="export_title">导出报告</string>
+    <string name="export_entry_button">导出报告</string>
+    <string name="export_range_label">时间范围</string>
+    <string name="export_range_7">近 7 天</string>
+    <string name="export_range_30">近 30 天</string>
+    <string name="export_range_90">近 90 天</string>
+    <string name="export_generate">生成预览</string>
+    <string name="export_generating">生成中…</string>
+    <string name="export_share">分享</string>
+    <string name="export_empty_message">所选时间段没有服药记录</string>
+    <string name="export_error_generate">生成 PDF 失败，请重试</string>
+    <string name="export_preview_title">预览</string>
+    <string name="export_preview_range">范围</string>
+    <string name="export_preview_pages">页数</string>
+    <string name="export_preview_records">记录条数</string>
+    <string name="export_preview_size">文件大小</string>
+    <string name="export_share_dialog_title">分享该文件？</string>
+    <string name="export_share_dialog_message">文件包含健康信息，请确认分享对象。</string>
+    <string name="export_share_confirm">分享</string>
+    <string name="export_share_chooser">分享报告</string>
+    <string name="export_status_on_time">已服用</string>
+    <string name="export_status_late">延迟服用</string>
+    <string name="export_status_unconfirmed">未确认</string>
+    <string name="export_status_uncertain">记不清</string>
+    <string name="export_status_skipped">已跳过</string>
+    <string name="export_remaining">剩余 %1$s</string>
+    <string name="export_rule_separator">"；"</string>
+    <string name="export_anomaly_morning">上午有 %1$d 次未确认</string>
+    <string name="export_anomaly_afternoon">下午有 %1$d 次未确认</string>
+    <string name="export_anomaly_evening">晚间有 %1$d 次未确认</string>
+    <string name="export_anomaly_backfilled">有 %1$d 次为事后补记</string>
+    <string name="export_pdf_title">用药记录</string>
+    <string name="export_pdf_range">范围：%1$s ~ %2$s</string>
+    <string name="export_pdf_generated">生成日期：%1$s</string>
+    <string name="export_pdf_section_medicines">当前用药</string>
+    <string name="export_pdf_section_summary">服药概况</string>
+    <string name="export_pdf_section_days">按日概览</string>
+    <string name="export_pdf_section_anomalies">异常提示</string>
+    <string name="export_pdf_medicines_none">无当前用药</string>
+    <string name="export_pdf_anomalies_none">本时段没有需要提示的记录</string>
+    <string name="export_pdf_count_on_time">按时：%1$d</string>
+    <string name="export_pdf_count_late">延迟：%1$d</string>
+    <string name="export_pdf_count_unconfirmed">未确认：%1$d</string>
+    <string name="export_pdf_count_uncertain">记不清：%1$d</string>
+    <string name="export_pdf_count_skipped">跳过：%1$d</string>
+    <string name="export_pdf_count_total">应服总次数：%1$d</string>
+    <string name="export_pdf_row">%1$s · %2$s · %3$s · %4$s</string>
+    <string name="export_pdf_footer">由患者自行记录，未经医疗核实；本应用不提供医疗建议</string>
+
+    <!-- 设置页 -->
+    <string name="settings_title">设置</string>
+    <string name="settings_section_meal_times">用餐时间</string>
+    <string name="settings_meal_breakfast">早饭</string>
+    <string name="settings_meal_lunch">午饭</string>
+    <string name="settings_meal_dinner">晚饭</string>
+    <string name="settings_meal_bedtime">睡前</string>
+    <string name="settings_section_defaults">提醒默认值</string>
+    <string name="settings_default_early">默认提前量（分钟）</string>
+    <string name="settings_default_late">默认延迟量（分钟）</string>
+    <string name="settings_merge_window">合并窗口（分钟）</string>
+    <string name="settings_minutes_value">%1$d 分钟</string>
+    <string name="settings_minutes_hint">请输入 0 到 720 之间的分钟数。</string>
+    <string name="settings_quiet_start">静默时段开始</string>
+    <string name="settings_quiet_end">静默时段结束</string>
+    <string name="settings_section_permissions">提醒权限自检</string>
+    <string name="settings_perm_exact_alarm">精确闹钟</string>
+    <string name="settings_perm_notifications">通知</string>
+    <string name="settings_perm_full_screen">全屏提醒</string>
+    <string name="settings_perm_battery">电池优化</string>
+    <string name="settings_status_ok">正常</string>
+    <string name="settings_status_denied">未授权</string>
+    <string name="settings_status_off">已关闭</string>
+    <string name="settings_status_recommended">建议调整</string>
+    <string name="settings_action_open">打开</string>
+    <string name="settings_action_allow">允许</string>
+    <string name="settings_full_screen_hint">未授权时仍会有声音通知。</string>
+    <string name="settings_battery_hint">部分厂商可能清理后台，请在系统设置中允许本应用后台运行。</string>
+    <string name="settings_section_tools">测试</string>
+    <string name="settings_test_reminder">1 分钟后测试提醒</string>
+    <string name="settings_test_reminder_toast">将在 1 分钟后提醒</string>
+    <string name="settings_section_pause">暂停全部提醒</string>
+    <string name="settings_pause_status">提醒已暂停至 %1$s</string>
+    <string name="settings_pause_status_indefinite">提醒已暂停</string>
+    <string name="settings_pause_1h">暂停 1 小时</string>
+    <string name="settings_pause_today">暂停到今天结束</string>
+    <string name="settings_pause_resume">恢复提醒</string>
+    <string name="settings_section_language">语言</string>
+    <string name="settings_language_system">跟随系统</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_zh">简体中文</string>
+    <string name="settings_language_es">Español</string>
+    <string name="settings_language_pt">Português (Brasil)</string>
+    <string name="settings_language_ja">日本語</string>
+    <string name="settings_language_it">Italiano</string>
+    <string name="settings_language_de">Deutsch</string>
+    <string name="settings_language_zh_tw">繁體中文</string>
+    <string name="settings_language_id">Bahasa Indonesia</string>
+    <string name="settings_language_ko">한국어</string>
+    <string name="settings_language_ar">العربية</string>
+    <string name="settings_language_hi">हिन्दी</string>
+    <string name="settings_language_th">ไทย</string>
+    <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="settings_section_data">数据</string>
+    <string name="settings_export_report">导出报告</string>
+    <string name="settings_section_about">关于与合规</string>
+    <string name="settings_version">版本 %1$s</string>
+    <string name="settings_medical_disclaimer">本应用仅提供提醒与记录，不构成医疗建议。</string>
+    <string name="settings_privacy_local_processing">药盒照片与识别过程仅在本机进行，不会上传。</string>
+    <string name="settings_privacy_policy">隐私政策</string>
+    <string name="settings_invalid_minutes">请输入 0 到 720 之间的分钟数。</string>
+
+    <!-- 首次启动引导 -->
+    <string name="onboarding_title">欢迎使用 MedTimer</string>
+    <string name="onboarding_purpose_title">应用做什么</string>
+    <string name="onboarding_purpose_body">在计划时间提醒服药，并记录每次服药情况。</string>
+    <string name="onboarding_limits_body">不提供医疗建议，不联网，不收集任何数据。</string>
+    <string name="onboarding_permissions_title">权限说明</string>
+    <string name="onboarding_permissions_body">以下权限有助于提醒准时送达。可以跳过，仍能正常使用。</string>
+    <string name="onboarding_perm_exact_alarm">精确闹钟：在计划时间准时响铃。</string>
+    <string name="onboarding_perm_notifications">通知：在屏幕上显示提醒。</string>
+    <string name="onboarding_perm_full_screen">全屏提醒：在锁屏上显示提醒。</string>
+    <string name="onboarding_perm_note">拒绝后仍可使用，但提醒可能不准时。</string>
+    <string name="onboarding_disclaimer_title">医疗声明</string>
+    <string name="onboarding_disclaimer_body">本应用仅提供提醒与记录，不构成医疗建议，也不做诊断、治疗或剂量推荐。请遵医嘱。</string>
+    <string name="onboarding_grant_notifications">申请通知权限</string>
+    <string name="onboarding_open_exact_alarm">打开精确闹钟设置</string>
+    <string name="onboarding_start">开始使用</string>
+
+    <!-- 桌面小组件 -->
+    <string name="widget_label">服药小组件</string>
+    <string name="widget_remaining">今日剩余 %1$d 次</string>
+    <string name="widget_next_time">下一次 %1$s</string>
+    <string name="widget_done_today">今天已完成</string>
+    <string name="widget_no_schedule">今天没有安排</string>
+    <string name="widget_paused">提醒已暂停</string>
+</resources>

@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MedTimer</string>
+
+    <!-- 通知渠道 -->
+    <string name="notification_channel_reminder_name">दवा की याद</string>
+    <string name="notification_channel_reminder_desc">निर्धारित खुराक के लिए याद</string>
+    <string name="notification_channel_summary_name">छूटी खुराक का सारांश</string>
+    <string name="notification_channel_summary_desc">पुष्टि न हुई खुराक का सारांश</string>
+
+    <!-- 提醒通知 -->
+    <string name="notification_title_reminder">दवा लेने की याद</string>
+    <string name="notification_action_taken">ले ली</string>
+    <string name="notification_action_snooze">10 मिनट बाद याद दिलाएँ</string>
+    <string name="notification_action_skip">छोड़ें</string>
+    <string name="notification_more_items">%1$d और</string>
+
+    <!-- 漏服汇总 -->
+    <string name="notification_missed_summary_title">पुष्टि न हुई खुराक</string>
+    <string name="notification_missed_summary_text">%1$d खुराक की पुष्टि नहीं हुई</string>
+
+    <!-- 底部导航 -->
+    <string name="tab_today">आज</string>
+    <string name="tab_medicines">दवाइयाँ</string>
+    <string name="tab_history">इतिहास</string>
+    <string name="tab_settings">सेटिंग्स</string>
+    <string name="coming_soon">जल्द आ रहा है</string>
+
+    <!-- 规则整句回显 -->
+    <string name="rule_daily">हर दिन · %1$s</string>
+    <string name="rule_every_other_day">हर दूसरे दिन · %1$s</string>
+    <string name="rule_every_n_days">हर %1$d दिन में · %2$s</string>
+    <string name="rule_weekly">हर %1$s · %2$s</string>
+    <string name="rule_monthly">हर महीने की %1$d तारीख · %2$s</string>
+    <string name="rule_clock_phrase">%1$s, %2$s बजे</string>
+    <string name="rule_meal_before">%1$s, %3$s से %2$d मिनट पहले</string>
+    <string name="rule_meal_after">%1$s, %3$s के %2$d मिनट बाद</string>
+    <string name="rule_meal_on">%1$s, %2$s पर</string>
+    <string name="meal_breakfast">नाश्ता</string>
+    <string name="meal_lunch">दोपहर का खाना</string>
+    <string name="meal_dinner">रात का खाना</string>
+    <string name="meal_bedtime">सोने का समय</string>
+    <string name="weekday_mon">सोम</string>
+    <string name="weekday_tue">मंगल</string>
+    <string name="weekday_wed">बुध</string>
+    <string name="weekday_thu">गुरु</string>
+    <string name="weekday_fri">शुक्र</string>
+    <string name="weekday_sat">शनि</string>
+    <string name="weekday_sun">रवि</string>
+    <string name="weekday_separator">", "</string>
+
+    <!-- 剂量复数 -->
+    <plurals name="dose_tablet">
+        <item quantity="one">%1$s गोली</item>
+        <item quantity="other">%1$s गोलियाँ</item>
+    </plurals>
+    <plurals name="dose_capsule">
+        <item quantity="one">%1$s कैप्सूल</item>
+        <item quantity="other">%1$s कैप्सूल</item>
+    </plurals>
+    <plurals name="dose_sachet">
+        <item quantity="one">%1$s सैशे</item>
+        <item quantity="other">%1$s सैशे</item>
+    </plurals>
+    <plurals name="dose_ml">
+        <item quantity="one">%1$s मिली</item>
+        <item quantity="other">%1$s मिली</item>
+    </plurals>
+    <plurals name="dose_drop">
+        <item quantity="one">%1$s बूँद</item>
+        <item quantity="other">%1$s बूँदें</item>
+    </plurals>
+    <plurals name="dose_spray">
+        <item quantity="one">%1$s स्प्रे</item>
+        <item quantity="other">%1$s स्प्रे</item>
+    </plurals>
+    <plurals name="dose_unit">
+        <item quantity="one">%1$s यूनिट</item>
+        <item quantity="other">%1$s यूनिट</item>
+    </plurals>
+    <string name="dose_unknown_format">%1$s %2$s</string>
+
+    <!-- 今日服药单 -->
+    <string name="today_progress">%1$d / %2$d ली गईं</string>
+    <string name="today_taken_all">सभी ली गईं</string>
+    <string name="today_status_due">देय</string>
+    <string name="today_status_missed">पुष्टि नहीं हुई</string>
+    <string name="today_status_taken">ली गई</string>
+    <string name="today_status_late">देर से ली गई</string>
+    <string name="today_status_skipped">छोड़ी गई</string>
+    <string name="today_status_uncertain">अनिश्चित</string>
+    <string name="today_status_pending">लंबित</string>
+    <string name="today_not_due">आज आवश्यक नहीं · अगली %1$s</string>
+    <string name="today_not_due_section">आज आवश्यक नहीं</string>
+    <string name="today_stock_days">लगभग %1$d दिनों के लिए स्टॉक है</string>
+    <string name="today_stock_empty">स्टॉक कम है, कृपया भरें</string>
+    <string name="today_alert_exact_alarm">यादें न आ सकें। कृपया सटीक अलार्म अनुमति जाँचें।</string>
+    <string name="today_alert_notifications">सूचनाएँ बंद हैं। कृपया सिस्टम सेटिंग्स में चालू करें।</string>
+    <string name="today_alert_paused">यादें रोकी गई हैं</string>
+    <string name="today_action_resume">फिर शुरू करें</string>
+    <string name="today_missed_summary">%1$d अपुष्ट</string>
+    <string name="today_empty_title">अभी कोई दवा नहीं</string>
+    <string name="today_empty_action">दवा जोड़ें</string>
+    <string name="today_sheet_title">%1$s · %2$s</string>
+    <string name="today_action_uncertain">अनिश्चित</string>
+    <string name="today_action_undo">पूर्ववत करें</string>
+    <string name="today_loading">लोड हो रहा है</string>
+    <string name="cd_medicine_photo">%1$s की फ़ोटो</string>
+    <string name="cd_not_due_toggle">आज आवश्यक न होने वाली दवाइयाँ दिखाएँ या छिपाएँ</string>
+    <string name="common_cancel">रद्द करें</string>
+
+    <!-- 提醒页 -->
+    <string name="reminder_item_format">%1$s · %2$s %3$s</string>
+    <string name="reminder_unknown_medicine">दवा</string>
+    <string name="reminder_screen_title">दवा लेने की याद</string>
+    <string name="reminder_screen_time">%1$s पर निर्धारित</string>
+    <string name="reminder_screen_all_taken">सभी ली गईं</string>
+    <string name="reminder_item_line">%1$s · %2$s</string>
+    <string name="reminder_invalid_data">याद का विवरण उपलब्ध नहीं है। कृपया वापस जाकर फिर प्रयास करें।</string>
+    <string name="reminder_close">बंद करें</string>
+    <string name="tts_reminder_text">दवा लेने का समय हो गया है। %1$s</string>
+    <string name="tts_item_format">%1$s %2$s.</string>
+    <string name="tts_item_separator">" "</string>
+
+    <!-- 通用操作 -->
+    <string name="common_delete">हटाएँ</string>
+    <string name="common_save">सहेजें</string>
+    <string name="common_back">वापस</string>
+    <string name="common_ok">ठीक</string>
+    <string name="common_clear">साफ़ करें</string>
+    <string name="common_not_set">सेट नहीं</string>
+
+    <!-- 药品列表 -->
+    <string name="medicine_list_title">दवाइयाँ</string>
+    <string name="medicine_list_add">दवा जोड़ें</string>
+    <string name="medicine_list_empty_title">अभी कोई दवा नहीं</string>
+    <string name="medicine_list_stock_button">स्टॉक</string>
+    <string name="medicine_list_more_rules">और %1$d नियम</string>
+    <string name="medicine_no_rule">अभी कोई योजना नहीं</string>
+    <string name="medicine_stock_days">लगभग %1$d दिन शेष</string>
+    <string name="medicine_stock_low">स्टॉक कम है, कृपया भरें</string>
+    <string name="medicine_delete_title">दवा हटाएँ?</string>
+    <string name="medicine_delete_message">%1$s हटाने से उसकी योजनाएँ और खुराक रिकॉर्ड भी हट जाएंगे।</string>
+    <string name="medicine_delete_action">दवा हटाएँ</string>
+
+    <!-- 药品编辑 -->
+    <string name="medicine_edit_title_new">नई दवा</string>
+    <string name="medicine_edit_title">दवा संपादित करें</string>
+    <string name="medicine_name_label">दवा का नाम</string>
+    <string name="medicine_name_required">कृपया दवा का नाम दर्ज करें</string>
+    <!-- 药盒识别与条码：端侧模型，识别全程离线 -->
+    <string name="medicine_scan_name_cd">नाम भरने के लिए दवा का डिब्बा स्कैन करें</string>
+    <string name="medicine_scan_name_failed">दवा का नाम नहीं मिला। कृपया मैन्युअल रूप से दर्ज करें।</string>
+    <string name="medicine_scan_name_title">दवा का नाम चुनें</string>
+    <string name="medicine_scan_name_confirm">चुना गया नाम उपयोग करें</string>
+    <string name="medicine_scan_barcode_label">बारकोड</string>
+    <string name="medicine_scan_barcode_action">बारकोड स्कैन करें</string>
+    <string name="medicine_scan_barcode_title">बारकोड की पुष्टि करें</string>
+    <string name="medicine_scan_barcode_confirm">यह बारकोड उपयोग करें</string>
+    <string name="medicine_scan_barcode_failed">कोई बारकोड नहीं मिला। कृपया दूसरी फ़ोटो आज़माएँ।</string>
+    <string name="medicine_form_label">रूप</string>
+    <string name="medicine_form_tablet">गोली</string>
+    <string name="medicine_form_capsule">कैप्सूल</string>
+    <string name="medicine_form_liquid">तरल</string>
+    <string name="medicine_form_drops">बूँदें</string>
+    <string name="medicine_form_spray">स्प्रे</string>
+    <string name="medicine_form_pen">पेन</string>
+    <string name="medicine_spec_value_label">शक्ति</string>
+    <string name="medicine_spec_unit_label">शक्ति इकाई</string>
+    <string name="medicine_dose_unit_label">खुराक इकाई</string>
+    <string name="medicine_spec_required">कृपया शक्ति और खुराक इकाई दर्ज करें</string>
+    <string name="medicine_splittable_label">विभाजित की जा सकती है</string>
+    <string name="medicine_pack_size_label">प्रति पैक मात्रा</string>
+    <string name="medicine_pack_unit_label">पैक इकाई</string>
+    <string name="medicine_expire_label">समाप्ति तिथि</string>
+    <string name="medicine_opened_label">खोलने की तिथि</string>
+    <string name="medicine_shelf_days_label">खोलने के बाद उपयोग के दिन</string>
+    <string name="medicine_auto_deduct_label">स्टॉक स्वतः घटाएँ</string>
+    <string name="medicine_note_label">नोट्स</string>
+    <string name="medicine_date_value">%1$s: %2$s</string>
+    <string name="medicine_photo_title">दवा के डिब्बे की फ़ोटो</string>
+    <string name="medicine_photo_pick">फ़ोटो चुनें</string>
+    <string name="medicine_photo_retake">फ़ोटो फिर लें</string>
+    <string name="medicine_photo_delete">फ़ोटो हटाएँ</string>
+    <string name="medicine_photo_empty">अभी कोई फ़ोटो नहीं</string>
+    <string name="medicine_photo_error">फ़ोटो सहेजी नहीं जा सकी। कृपया फिर प्रयास करें।</string>
+    <string name="medicine_rules_title">योजनाएँ</string>
+    <string name="medicine_rules_empty">अभी कोई योजना नहीं</string>
+    <string name="medicine_rules_need_save">योजना जोड़ने के लिए पहले दवा सहेजें</string>
+    <string name="medicine_rule_add">योजना जोड़ें</string>
+    <string name="medicine_rule_edit">संपादित करें</string>
+
+    <!-- 剂量单位选项 -->
+    <string name="dose_unit_tablet">गोली</string>
+    <string name="dose_unit_capsule">कैप्सूल</string>
+    <string name="dose_unit_ml">मिली</string>
+    <string name="dose_unit_drop">बूँद</string>
+    <string name="dose_unit_spray">स्प्रे</string>
+    <string name="dose_unit_unit">यूनिट</string>
+    <string name="dose_unit_other">यूनिट</string>
+
+    <!-- 计划编辑 -->
+    <string name="schedule_edit_title_new">नई योजना</string>
+    <string name="schedule_edit_title">योजना संपादित करें</string>
+    <string name="schedule_medicine_label">दवा: %1$s</string>
+    <string name="schedule_anchor_label">खुराक का समय</string>
+    <string name="schedule_anchor_clock">निश्चित समय</string>
+    <string name="schedule_anchor_meal">भोजन के साथ</string>
+    <string name="schedule_time_value">समय: %1$s</string>
+    <string name="schedule_pick_time">समय चुनें</string>
+    <string name="schedule_offset_label">ऑफ़सेट मिनट (ऋणात्मक = भोजन से पहले)</string>
+    <string name="schedule_recurrence_label">दोहराएँ</string>
+    <string name="schedule_recurrence_daily">हर दिन</string>
+    <string name="schedule_recurrence_every_n">हर N दिन में</string>
+    <string name="schedule_recurrence_weekly">साप्ताहिक</string>
+    <string name="schedule_recurrence_monthly">मासिक</string>
+    <string name="schedule_interval_label">दिनों में अंतराल</string>
+    <string name="schedule_weekdays_label">सप्ताह के दिन</string>
+    <string name="schedule_monthly_day_label">महीने का दिन</string>
+    <string name="schedule_start_date_label">प्रारंभ तिथि</string>
+    <string name="schedule_end_date_label">समाप्ति तिथि</string>
+    <string name="schedule_long_term">दीर्घकालिक</string>
+    <string name="schedule_dose_label">खुराक</string>
+    <string name="schedule_dose_label_with_unit">हर बार की खुराक (%1$s)</string>
+    <string name="schedule_dose_integer_error">इस दवा को विभाजित नहीं किया जा सकता। %1$s की पूर्ण संख्या दर्ज करें।</string>
+    <string name="schedule_dose_invalid">मान्य खुराक दर्ज करें</string>
+    <string name="schedule_window_label">याद दिलाने की अवधि</string>
+    <string name="schedule_early_label">पहले (मिनट)</string>
+    <string name="schedule_late_label">बाद (मिनट)</string>
+    <string name="schedule_prn_label">आवश्यकतानुसार (PRN)</string>
+    <string name="schedule_prn_hint">खुराक आवश्यकता पर दर्ज होती है। दैनिक सीमा केवल संकेत है।</string>
+    <string name="schedule_prn_max_label">दैनिक सीमा (केवल संकेत)</string>
+    <string name="schedule_preview">नियम पूर्वावलोकन: %1$s</string>
+    <string name="schedule_error_offset">मिनट में ऑफ़सेट दर्ज करें</string>
+    <string name="schedule_error_interval">अंतराल कम से कम 2 दिन होना चाहिए</string>
+    <string name="schedule_error_weekdays">कम से कम एक दिन चुनें</string>
+    <string name="schedule_error_monthly_day">1 से 31 के बीच दिन दर्ज करें</string>
+    <string name="schedule_error_window">मान्य याद अवधि मिनट दर्ज करें</string>
+    <string name="schedule_error_end_date">समाप्ति तिथि प्रारंभ तिथि के समान या बाद की होनी चाहिए</string>
+    <string name="schedule_error_prn_limit">मान्य दैनिक सीमा दर्ज करें</string>
+    <string name="schedule_delete_action">योजना हटाएँ</string>
+    <string name="schedule_delete_title">योजना हटाएँ?</string>
+    <string name="schedule_delete_message">इस योजना के खुराक रिकॉर्ड भी हट जाएंगे।</string>
+    <string name="rule_prn">आवश्यकतानुसार · %1$s</string>
+
+    <!-- 递减方案 -->
+    <string name="schedule_taper_label">घटती खुराक योजना</string>
+    <string name="schedule_taper_hint">प्रत्येक चरण की शुरुआती तिथि से खुराक बदलती है। प्रत्येक तिथि एक बार ही उपयोग हो सकती है।</string>
+    <string name="schedule_taper_add_step">चरण जोड़ें</string>
+    <string name="schedule_taper_step_title">चरण %1$d</string>
+    <string name="schedule_taper_dose_label">चरण खुराक (%1$s)</string>
+    <string name="schedule_taper_remove">चरण हटाएँ</string>
+    <string name="schedule_error_taper_empty">कम से कम एक चरण जोड़ें</string>
+    <string name="schedule_error_taper_date">प्रत्येक चरण की शुरुआती तिथि अलग होनी चाहिए</string>
+    <string name="schedule_error_taper_dose">प्रत्येक चरण के लिए मान्य खुराक दर्ज करें</string>
+    <string name="schedule_error_taper_integer">चरण खुराक %1$s की पूर्ण संख्या होनी चाहिए</string>
+    <string name="medicine_taper_summary">कमी: अभी %1$s · %2$d चरण</string>
+
+    <!-- 按需用药 -->
+    <string name="today_prn_section">आवश्यकतानुसार</string>
+    <string name="today_prn_take_now">अभी लें</string>
+    <string name="today_prn_taken_limit">आज %1$d बार ली गई (सीमा %2$d)</string>
+
+    <!-- 用药人档案 -->
+    <string name="profile_title">दवा प्रोफ़ाइल</string>
+    <string name="profile_default_name">डिफ़ॉल्ट प्रोफ़ाइल</string>
+    <string name="profile_current">वर्तमान</string>
+    <string name="profile_rename">नाम बदलें</string>
+    <string name="profile_add">प्रोफ़ाइल जोड़ें</string>
+    <string name="profile_add_title">प्रोफ़ाइल जोड़ें</string>
+    <string name="profile_rename_title">प्रोफ़ाइल का नाम बदलें</string>
+    <string name="profile_name_label">प्रोफ़ाइल नाम</string>
+    <string name="profile_name_error">30 अक्षरों तक का नाम दर्ज करें</string>
+    <string name="profile_delete_title">प्रोफ़ाइल हटाएँ?</string>
+    <string name="profile_delete_message">\"%1$s\" की सभी दवाइयाँ, योजनाएँ, रिकॉर्ड और स्टॉक हट जाएंगे।</string>
+    <string name="settings_profiles">दवा प्रोफ़ाइल</string>
+
+    <!-- 历史/统计 -->
+    <string name="history_title">इतिहास</string>
+    <string name="history_range_7">पिछले 7 दिन</string>
+    <string name="history_range_30">पिछले 30 दिन</string>
+    <string name="history_range_90">पिछले 90 दिन</string>
+    <string name="history_summary_title">सारांश</string>
+    <string name="history_summary_on_time">समय पर</string>
+    <string name="history_summary_late">देर से</string>
+    <string name="history_summary_unconfirmed">अपुष्ट</string>
+    <string name="history_summary_uncertain">अनिश्चित</string>
+    <string name="history_summary_skipped">छोड़ी गई</string>
+    <string name="history_summary_total">निर्धारित खुराक</string>
+    <string name="history_status_on_time">समय पर</string>
+    <string name="history_late_minutes">%1$d मिनट देर से</string>
+    <string name="history_empty">चुनी गई अवधि में कोई खुराक रिकॉर्ड नहीं</string>
+    <string name="history_backfill_title">रिकॉर्ड जोड़ें</string>
+    <string name="history_backfill_message">%1$s · %2$s</string>
+    <string name="history_backfill_taken">ली गई</string>
+    <string name="history_backfill_hint">रिकॉर्ड जोड़ने के लिए टैप करें</string>
+
+    <!-- 库存 -->
+    <string name="stock_title">स्टॉक</string>
+    <string name="stock_remaining">शेष: %1$s</string>
+    <string name="stock_days_long_term">दीर्घकालिक</string>
+    <string name="stock_expire">%1$s को समाप्त</string>
+    <string name="stock_shelf_days">खोलने के बाद %1$d दिन उपयोग योग्य</string>
+    <string name="stock_banner_empty">स्टॉक खत्म। कृपया भरें।</string>
+    <string name="stock_banner_low">स्टॉक कम। कृपया भरें।</string>
+    <string name="stock_banner_expiring">मौजूदा योजना पर, अनुमानित खत्म होने की तिथि समाप्ति तिथि के बाद है</string>
+    <string name="stock_banner_expired">समाप्ति तिथि बीत गई</string>
+    <string name="stock_action_purchase">स्टॉक इन</string>
+    <string name="stock_action_adjust">स्टॉक गणना</string>
+    <string name="stock_purchase_title">स्टॉक इन</string>
+    <string name="stock_adjust_title">स्टॉक गणना</string>
+    <string name="stock_qty_label">मात्रा (%1$s)</string>
+    <string name="stock_qty_invalid">मान्य मात्रा दर्ज करें</string>
+    <string name="stock_no_change">स्टॉक अपरिवर्तित</string>
+    <string name="stock_changes_title">हाल के बदलाव</string>
+    <string name="stock_changes_empty">अभी कोई स्टॉक बदलाव नहीं</string>
+    <string name="stock_reason_purchase">स्टॉक इन</string>
+    <string name="stock_reason_taken">खुराक ली गई</string>
+    <string name="stock_reason_adjust">स्टॉक गणना समायोजन</string>
+    <string name="stock_reason_lost">नुकसान</string>
+    <string name="stock_reason_expired">समाप्त</string>
+    <string name="stock_reason_undo">पूर्ववत करें</string>
+    <string name="stock_delta_plus">+%1$s</string>
+    <string name="stock_delta_minus">-%1$s</string>
+    <string name="stock_not_found">दवा नहीं मिली</string>
+
+    <!-- 导出报告 -->
+    <string name="export_file_prefix">MedicationLog</string>
+    <string name="export_title">रिपोर्ट निर्यात करें</string>
+    <string name="export_entry_button">रिपोर्ट निर्यात करें</string>
+    <string name="export_range_label">समय अवधि</string>
+    <string name="export_range_7">पिछले 7 दिन</string>
+    <string name="export_range_30">पिछले 30 दिन</string>
+    <string name="export_range_90">पिछले 90 दिन</string>
+    <string name="export_generate">पूर्वावलोकन बनाएँ</string>
+    <string name="export_generating">बन रहा है…</string>
+    <string name="export_share">साझा करें</string>
+    <string name="export_empty_message">चुनी गई अवधि में कोई खुराक रिकॉर्ड नहीं</string>
+    <string name="export_error_generate">PDF नहीं बन सकी। कृपया फिर प्रयास करें।</string>
+    <string name="export_preview_title">पूर्वावलोकन</string>
+    <string name="export_preview_range">अवधि</string>
+    <string name="export_preview_pages">पृष्ठ</string>
+    <string name="export_preview_records">रिकॉर्ड</string>
+    <string name="export_preview_size">फ़ाइल आकार</string>
+    <string name="export_share_dialog_title">यह फ़ाइल साझा करें?</string>
+    <string name="export_share_dialog_message">इस फ़ाइल में स्वास्थ्य जानकारी है। कृपया पुष्टि करें कि आप इसे किसके साथ साझा कर रहे हैं।</string>
+    <string name="export_share_confirm">साझा करें</string>
+    <string name="export_share_chooser">रिपोर्ट साझा करें</string>
+    <string name="export_status_on_time">ली गई</string>
+    <string name="export_status_late">देर से ली गई</string>
+    <string name="export_status_unconfirmed">पुष्टि नहीं हुई</string>
+    <string name="export_status_uncertain">अनिश्चित</string>
+    <string name="export_status_skipped">छोड़ी गई</string>
+    <string name="export_remaining">शेष %1$s</string>
+    <string name="export_rule_separator">"; "</string>
+    <string name="export_anomaly_morning">सुबह: %1$d पुष्टि नहीं हुई</string>
+    <string name="export_anomaly_afternoon">दोपहर: %1$d पुष्टि नहीं हुई</string>
+    <string name="export_anomaly_evening">शाम: %1$d पुष्टि नहीं हुई</string>
+    <string name="export_anomaly_backfilled">%1$d रिकॉर्ड बाद में जोड़े गए</string>
+    <string name="export_pdf_title">दवा रिपोर्ट</string>
+    <string name="export_pdf_range">अवधि: %1$s ~ %2$s</string>
+    <string name="export_pdf_generated">%1$s को बनाया गया</string>
+    <string name="export_pdf_section_medicines">वर्तमान दवाइयाँ</string>
+    <string name="export_pdf_section_summary">खुराक सारांश</string>
+    <string name="export_pdf_section_days">दैनिक अवलोकन</string>
+    <string name="export_pdf_section_anomalies">असामान्यता नोट्स</string>
+    <string name="export_pdf_medicines_none">कोई सक्रिय दवा नहीं</string>
+    <string name="export_pdf_anomalies_none">इस अवधि में कोई असामान्यता नोट नहीं</string>
+    <string name="export_pdf_count_on_time">समय पर: %1$d</string>
+    <string name="export_pdf_count_late">देर से: %1$d</string>
+    <string name="export_pdf_count_unconfirmed">पुष्टि नहीं: %1$d</string>
+    <string name="export_pdf_count_uncertain">अनिश्चित: %1$d</string>
+    <string name="export_pdf_count_skipped">छोड़ी गई: %1$d</string>
+    <string name="export_pdf_count_total">निर्धारित खुराक: %1$d</string>
+    <string name="export_pdf_row">%1$s · %2$s · %3$s · %4$s</string>
+    <string name="export_pdf_footer">मरीज़ द्वारा दर्ज, चिकित्सकीय रूप से सत्यापित नहीं। यह ऐप चिकित्सा सलाह नहीं देता।</string>
+
+    <!-- 设置页 -->
+    <string name="settings_title">सेटिंग्स</string>
+    <string name="settings_section_meal_times">भोजन के समय</string>
+    <string name="settings_meal_breakfast">नाश्ता</string>
+    <string name="settings_meal_lunch">दोपहर का खाना</string>
+    <string name="settings_meal_dinner">रात का खाना</string>
+    <string name="settings_meal_bedtime">सोने का समय</string>
+    <string name="settings_section_defaults">डिफ़ॉल्ट याद सेटिंग्स</string>
+    <string name="settings_default_early">डिफ़ॉल्ट पहले की याद (मिनट)</string>
+    <string name="settings_default_late">डिफ़ॉल्ट बाद की याद (मिनट)</string>
+    <string name="settings_merge_window">मर्ज विंडो (मिनट)</string>
+    <string name="settings_minutes_value">%1$d मिनट</string>
+    <string name="settings_minutes_hint">0 से 720 के बीच मिनट दर्ज करें।</string>
+    <string name="settings_quiet_start">शांत समय प्रारंभ</string>
+    <string name="settings_quiet_end">शांत समय समाप्त</string>
+    <string name="settings_section_permissions">अनुमति जाँच</string>
+    <string name="settings_perm_exact_alarm">सटीक अलार्म</string>
+    <string name="settings_perm_notifications">सूचनाएँ</string>
+    <string name="settings_perm_full_screen">फ़ुल-स्क्रीन यादें</string>
+    <string name="settings_perm_battery">बैटरी अनुकूलन</string>
+    <string name="settings_status_ok">ठीक</string>
+    <string name="settings_status_denied">अनुमति नहीं</string>
+    <string name="settings_status_off">बंद</string>
+    <string name="settings_status_recommended">समीक्षा सुझाई गई</string>
+    <string name="settings_action_open">खोलें</string>
+    <string name="settings_action_allow">अनुमति दें</string>
+    <string name="settings_full_screen_hint">अनुमति न देने पर भी यादें ध्वनि के साथ आएँगी।</string>
+    <string name="settings_battery_hint">कुछ निर्माता बैकग्राउंड अलार्म रोक सकते हैं। सिस्टम सेटिंग्स में इस ऐप को बैकग्राउंड में चलने दें।</string>
+    <string name="settings_section_tools">परीक्षण</string>
+    <string name="settings_test_reminder">1 मिनट में परीक्षण याद</string>
+    <string name="settings_test_reminder_toast">1 मिनट में परीक्षण याद दिखेगी।</string>
+    <string name="settings_section_pause">सभी यादें रोकें</string>
+    <string name="settings_pause_status">यादें %1$s तक रोकी गईं</string>
+    <string name="settings_pause_status_indefinite">यादें रोकी गई हैं</string>
+    <string name="settings_pause_1h">1 घंटे के लिए रोकें</string>
+    <string name="settings_pause_today">आज के अंत तक रोकें</string>
+    <string name="settings_pause_resume">यादें फिर शुरू करें</string>
+    <string name="settings_section_language">भाषा</string>
+    <string name="settings_language_system">सिस्टम के अनुसार</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_zh">简体中文</string>
+    <string name="settings_language_es">Español</string>
+    <string name="settings_language_pt">Português (Brasil)</string>
+    <string name="settings_language_ja">日本語</string>
+    <string name="settings_language_it">Italiano</string>
+    <string name="settings_language_de">Deutsch</string>
+    <string name="settings_language_zh_tw">繁體中文</string>
+    <string name="settings_language_id">Bahasa Indonesia</string>
+    <string name="settings_language_ko">한국어</string>
+    <string name="settings_language_ar">العربية</string>
+    <string name="settings_language_hi">हिन्दी</string>
+    <string name="settings_language_th">ไทย</string>
+    <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="settings_section_data">डेटा</string>
+    <string name="settings_export_report">रिपोर्ट निर्यात करें</string>
+    <string name="settings_section_about">ऐप के बारे में और अनुपालन</string>
+    <string name="settings_version">संस्करण %1$s</string>
+    <string name="settings_medical_disclaimer">यह ऐप केवल याद और रिकॉर्ड प्रदान करता है और चिकित्सा सलाह नहीं है।</string>
+    <string name="settings_privacy_local_processing">दवा के डिब्बों की फ़ोटो और पहचान इसी डिवाइस पर रहती हैं और कभी अपलोड नहीं होतीं।</string>
+    <string name="settings_privacy_policy">गोपनीयता नीति</string>
+    <string name="settings_invalid_minutes">0 से 720 के बीच मिनट दर्ज करें।</string>
+
+    <!-- 首次启动引导 -->
+    <string name="onboarding_title">MedTimer में आपका स्वागत है</string>
+    <string name="onboarding_purpose_title">यह ऐप क्या करता है</string>
+    <string name="onboarding_purpose_body">आपके निर्धारित समय पर याद दिलाता है और हर खुराक का रिकॉर्ड रखता है।</string>
+    <string name="onboarding_limits_body">कोई चिकित्सा सलाह नहीं, कोई नेटवर्क एक्सेस नहीं, और कोई डेटा संग्रह नहीं।</string>
+    <string name="onboarding_permissions_title">अनुमतियाँ</string>
+    <string name="onboarding_permissions_body">ये अनुमतियाँ याद समय पर पहुँचाने में मदद करती हैं। आप इन्हें छोड़कर भी ऐप उपयोग कर सकते हैं।</string>
+    <string name="onboarding_perm_exact_alarm">सटीक अलार्म: नियोजित समय पर बजना।</string>
+    <string name="onboarding_perm_notifications">सूचनाएँ: स्क्रीन पर याद दिखाना।</string>
+    <string name="onboarding_perm_full_screen">फ़ुल-स्क्रीन याद: लॉक स्क्रीन पर याद दिखाना।</string>
+    <string name="onboarding_perm_note">यदि आप मना करते हैं, ऐप फिर भी काम करेगा, लेकिन याद समय पर न आ सकें।</string>
+    <string name="onboarding_disclaimer_title">चिकित्सा अस्वीकरण</string>
+    <string name="onboarding_disclaimer_body">यह ऐप केवल याद और रिकॉर्ड प्रदान करता है। यह चिकित्सा सलाह, निदान, उपचार या खुराक संबंधी सुझाव नहीं देता। अपने डॉक्टर के निर्देशों का पालन करें।</string>
+    <string name="onboarding_grant_notifications">सूचनाएँ अनुमत करें</string>
+    <string name="onboarding_open_exact_alarm">सटीक अलार्म सेटिंग्स खोलें</string>
+    <string name="onboarding_start">ऐप उपयोग करना शुरू करें</string>
+
+    <!-- 桌面小组件 -->
+    <string name="widget_label">MedTimer विजेट</string>
+    <string name="widget_remaining">आज %1$d खुराक शेष</string>
+    <string name="widget_next_time">अगली खुराक %1$s</string>
+    <string name="widget_done_today">आज का सब पूरा</string>
+    <string name="widget_no_schedule">आज कोई खुराक निर्धारित नहीं</string>
+    <string name="widget_paused">यादें रोकी गई हैं</string>
+</resources>

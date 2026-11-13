@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Machine-translated draft, needs human review before release. -->
+<resources>
+    <string name="app_name">MedTimer</string>
+
+    <!-- 通知渠道 -->
+    <string name="notification_channel_reminder_name">Promemoria farmaci</string>
+    <string name="notification_channel_reminder_desc">Promemoria per le dosi programmate</string>
+    <string name="notification_channel_summary_name">Riepilogo dosi dimenticate</string>
+    <string name="notification_channel_summary_desc">Riepilogo delle dosi non confermate</string>
+
+    <!-- 提醒通知 -->
+    <string name="notification_title_reminder">Promemoria farmaco</string>
+    <string name="notification_action_taken">Preso</string>
+    <string name="notification_action_snooze">Posticipa 10 min</string>
+    <string name="notification_action_skip">Salta</string>
+    <string name="notification_more_items">altri %1$d</string>
+
+    <!-- 漏服汇总 -->
+    <string name="notification_missed_summary_title">Dosi non confermate</string>
+    <string name="notification_missed_summary_text">%1$d dosi non confermate</string>
+
+    <!-- 底部导航 -->
+    <string name="tab_today">Oggi</string>
+    <string name="tab_medicines">Farmaci</string>
+    <string name="tab_history">Cronologia</string>
+    <string name="tab_settings">Impostazioni</string>
+    <string name="coming_soon">Prossimamente</string>
+
+    <!-- 规则整句回显 -->
+    <string name="rule_daily">Ogni giorno · %1$s</string>
+    <string name="rule_every_other_day">A giorni alterni · %1$s</string>
+    <string name="rule_every_n_days">Ogni %1$d giorni · %2$s</string>
+    <string name="rule_weekly">Ogni %1$s · %2$s</string>
+    <string name="rule_monthly">Giorno %1$d di ogni mese · %2$s</string>
+    <string name="rule_clock_phrase">%1$s alle %2$s</string>
+    <string name="rule_meal_before">%1$s %2$d minuti prima di %3$s</string>
+    <string name="rule_meal_after">%1$s %2$d minuti dopo %3$s</string>
+    <string name="rule_meal_on">%1$s all\'ora di %2$s</string>
+    <string name="meal_breakfast">colazione</string>
+    <string name="meal_lunch">pranzo</string>
+    <string name="meal_dinner">cena</string>
+    <string name="meal_bedtime">coricarsi</string>
+    <string name="weekday_mon">Lun</string>
+    <string name="weekday_tue">Mar</string>
+    <string name="weekday_wed">Mer</string>
+    <string name="weekday_thu">Gio</string>
+    <string name="weekday_fri">Ven</string>
+    <string name="weekday_sat">Sab</string>
+    <string name="weekday_sun">Dom</string>
+    <string name="weekday_separator">", "</string>
+
+    <!-- 剂量复数 -->
+    <plurals name="dose_tablet">
+        <item quantity="one">%1$s compressa</item>
+        <item quantity="other">%1$s compresse</item>
+    </plurals>
+    <plurals name="dose_capsule">
+        <item quantity="one">%1$s capsula</item>
+        <item quantity="other">%1$s capsule</item>
+    </plurals>
+    <plurals name="dose_sachet">
+        <item quantity="one">%1$s bustina</item>
+        <item quantity="other">%1$s bustine</item>
+    </plurals>
+    <plurals name="dose_ml">
+        <item quantity="one">%1$s ml</item>
+        <item quantity="other">%1$s ml</item>
+    </plurals>
+    <plurals name="dose_drop">
+        <item quantity="one">%1$s goccia</item>
+        <item quantity="other">%1$s gocce</item>
+    </plurals>
+    <plurals name="dose_spray">
+        <item quantity="one">%1$s spruzzo</item>
+        <item quantity="other">%1$s spruzzi</item>
+    </plurals>
+    <plurals name="dose_unit">
+        <item quantity="one">%1$s unità</item>
+        <item quantity="other">%1$s unità</item>
+    </plurals>
+    <string name="dose_unknown_format">%1$s %2$s</string>
+
+    <!-- 今日服药单 -->
+    <string name="today_progress">%1$d / %2$d presi</string>
+    <string name="today_taken_all">Tutti presi</string>
+    <string name="today_status_due">Da prendere</string>
+    <string name="today_status_missed">Non confermato</string>
+    <string name="today_status_taken">Preso</string>
+    <string name="today_status_late">Preso in ritardo</string>
+    <string name="today_status_skipped">Saltato</string>
+    <string name="today_status_uncertain">Non ricordo</string>
+    <string name="today_status_pending">In attesa</string>
+    <string name="today_not_due">Non necessario oggi · Prossimo %1$s</string>
+    <string name="today_not_due_section">Non necessario oggi</string>
+    <string name="today_stock_days">Scorte per circa %1$d giorni</string>
+    <string name="today_stock_empty">Scorte in esaurimento, rifornisci</string>
+    <string name="today_alert_exact_alarm">I promemoria potrebbero non arrivare. Controlla l\'autorizzazione per le sveglie esatte.</string>
+    <string name="today_alert_notifications">Le notifiche sono disattivate. Attivale nelle impostazioni di sistema.</string>
+    <string name="today_alert_paused">I promemoria sono in pausa</string>
+    <string name="today_action_resume">Riprendi</string>
+    <string name="today_missed_summary">%1$d non confermati</string>
+    <string name="today_empty_title">Nessun farmaco ancora</string>
+    <string name="today_empty_action">Aggiungi farmaco</string>
+    <string name="today_sheet_title">%1$s · %2$s</string>
+    <string name="today_action_uncertain">Non ricordo</string>
+    <string name="today_action_undo">Annulla</string>
+    <string name="today_loading">Caricamento</string>
+    <string name="cd_medicine_photo">Foto di %1$s</string>
+    <string name="cd_not_due_toggle">Mostra o nascondi i farmaci non necessari oggi</string>
+    <string name="common_cancel">Annulla</string>
+
+    <!-- 提醒页 -->
+    <string name="reminder_item_format">%1$s · %2$s %3$s</string>
+    <string name="reminder_unknown_medicine">Farmaco</string>
+    <string name="reminder_screen_title">Promemoria farmaco</string>
+    <string name="reminder_screen_time">Programmato alle %1$s</string>
+    <string name="reminder_screen_all_taken">Tutti presi</string>
+    <string name="reminder_item_line">%1$s · %2$s</string>
+    <string name="reminder_invalid_data">Dettagli del promemoria non disponibili. Torna indietro e riprova.</string>
+    <string name="reminder_close">Chiudi</string>
+    <string name="tts_reminder_text">È ora di prendere le medicine. %1$s</string>
+    <string name="tts_item_format">%1$s %2$s.</string>
+    <string name="tts_item_separator">" "</string>
+
+    <!-- 通用操作 -->
+    <string name="common_delete">Elimina</string>
+    <string name="common_save">Salva</string>
+    <string name="common_back">Indietro</string>
+    <string name="common_ok">OK</string>
+    <string name="common_clear">Cancella</string>
+    <string name="common_not_set">Non impostato</string>
+
+    <!-- 药品列表 -->
+    <string name="medicine_list_title">Farmaci</string>
+    <string name="medicine_list_add">Aggiungi farmaco</string>
+    <string name="medicine_list_empty_title">Nessun farmaco ancora</string>
+    <string name="medicine_list_stock_button">Scorte</string>
+    <string name="medicine_list_more_rules">Altre %1$d regole</string>
+    <string name="medicine_no_rule">Nessun piano ancora</string>
+    <string name="medicine_stock_days">Circa %1$d giorni rimanenti</string>
+    <string name="medicine_stock_low">Scorte in esaurimento, rifornisci</string>
+    <string name="medicine_delete_title">Eliminare il farmaco?</string>
+    <string name="medicine_delete_message">Eliminando %1$s si eliminano anche i piani e le registrazioni delle dosi.</string>
+    <string name="medicine_delete_action">Elimina farmaco</string>
+
+    <!-- 药品编辑 -->
+    <string name="medicine_edit_title_new">Nuovo farmaco</string>
+    <string name="medicine_edit_title">Modifica farmaco</string>
+    <string name="medicine_name_label">Nome del farmaco</string>
+    <string name="medicine_name_required">Inserisci il nome del farmaco</string>
+    <!-- 药盒识别与条码：端侧模型，识别全程离线 -->
+    <string name="medicine_scan_name_cd">Scansiona la confezione per compilare il nome</string>
+    <string name="medicine_scan_name_failed">Nessun nome trovato. Inseriscilo manualmente.</string>
+    <string name="medicine_scan_name_title">Scegli un nome</string>
+    <string name="medicine_scan_name_confirm">Usa il nome selezionato</string>
+    <string name="medicine_scan_barcode_label">Codice a barre</string>
+    <string name="medicine_scan_barcode_action">Scansiona codice a barre</string>
+    <string name="medicine_scan_barcode_title">Conferma codice a barre</string>
+    <string name="medicine_scan_barcode_confirm">Usa questo codice</string>
+    <string name="medicine_scan_barcode_failed">Nessun codice trovato. Prova un\'altra foto.</string>
+    <string name="medicine_form_label">Forma</string>
+    <string name="medicine_form_tablet">Compressa</string>
+    <string name="medicine_form_capsule">Capsula</string>
+    <string name="medicine_form_liquid">Liquido</string>
+    <string name="medicine_form_drops">Gocce</string>
+    <string name="medicine_form_spray">Spray</string>
+    <string name="medicine_form_pen">Penna</string>
+    <string name="medicine_spec_value_label">Dosaggio</string>
+    <string name="medicine_spec_unit_label">Unità di dosaggio</string>
+    <string name="medicine_dose_unit_label">Unità di dose</string>
+    <string name="medicine_spec_required">Inserisci dosaggio e unità di dose</string>
+    <string name="medicine_splittable_label">Divisibile</string>
+    <string name="medicine_pack_size_label">Quantità per confezione</string>
+    <string name="medicine_pack_unit_label">Unità di confezione</string>
+    <string name="medicine_expire_label">Data di scadenza</string>
+    <string name="medicine_opened_label">Aperto il</string>
+    <string name="medicine_shelf_days_label">Giorni utilizzabili dopo l\'apertura</string>
+    <string name="medicine_auto_deduct_label">Scala automaticamente le scorte</string>
+    <string name="medicine_note_label">Note</string>
+    <string name="medicine_date_value">%1$s: %2$s</string>
+    <string name="medicine_photo_title">Foto della confezione</string>
+    <string name="medicine_photo_pick">Scegli foto</string>
+    <string name="medicine_photo_retake">Scatta di nuovo</string>
+    <string name="medicine_photo_delete">Elimina foto</string>
+    <string name="medicine_photo_empty">Nessuna foto</string>
+    <string name="medicine_photo_error">Impossibile salvare la foto. Riprova.</string>
+    <string name="medicine_rules_title">Piani</string>
+    <string name="medicine_rules_empty">Nessun piano ancora</string>
+    <string name="medicine_rules_need_save">Salva prima il farmaco per aggiungere un piano</string>
+    <string name="medicine_rule_add">Aggiungi piano</string>
+    <string name="medicine_rule_edit">Modifica</string>
+
+    <!-- 剂量单位选项 -->
+    <string name="dose_unit_tablet">Compressa</string>
+    <string name="dose_unit_capsule">Capsula</string>
+    <string name="dose_unit_ml">ml</string>
+    <string name="dose_unit_drop">Goccia</string>
+    <string name="dose_unit_spray">Spruzzo</string>
+    <string name="dose_unit_unit">Unità</string>
+    <string name="dose_unit_other">Unità</string>
+
+    <!-- 计划编辑 -->
+    <string name="schedule_edit_title_new">Nuovo piano</string>
+    <string name="schedule_edit_title">Modifica piano</string>
+    <string name="schedule_medicine_label">Farmaco: %1$s</string>
+    <string name="schedule_anchor_label">Ora della dose</string>
+    <string name="schedule_anchor_clock">Ora fissa</string>
+    <string name="schedule_anchor_meal">Con i pasti</string>
+    <string name="schedule_time_value">Ora: %1$s</string>
+    <string name="schedule_pick_time">Scegli un\'ora</string>
+    <string name="schedule_offset_label">Minuti di scostamento (negativo = prima del pasto)</string>
+    <string name="schedule_recurrence_label">Ripetizione</string>
+    <string name="schedule_recurrence_daily">Ogni giorno</string>
+    <string name="schedule_recurrence_every_n">Ogni N giorni</string>
+    <string name="schedule_recurrence_weekly">Ogni settimana</string>
+    <string name="schedule_recurrence_monthly">Ogni mese</string>
+    <string name="schedule_interval_label">Intervallo in giorni</string>
+    <string name="schedule_weekdays_label">Giorni della settimana</string>
+    <string name="schedule_monthly_day_label">Giorno del mese</string>
+    <string name="schedule_start_date_label">Data di inizio</string>
+    <string name="schedule_end_date_label">Data di fine</string>
+    <string name="schedule_long_term">A lungo termine</string>
+    <string name="schedule_dose_label">Dose</string>
+    <string name="schedule_dose_label_with_unit">Dose ogni volta (%1$s)</string>
+    <string name="schedule_dose_integer_error">Questo farmaco non è divisibile. Inserisci un numero intero di %1$s.</string>
+    <string name="schedule_dose_invalid">Inserisci una dose valida</string>
+    <string name="schedule_window_label">Finestra del promemoria</string>
+    <string name="schedule_early_label">In anticipo (minuti)</string>
+    <string name="schedule_late_label">In ritardo (minuti)</string>
+    <string name="schedule_prn_label">Al bisogno (PRN)</string>
+    <string name="schedule_prn_hint">Le dosi vengono registrate quando necessario. Il limite giornaliero è solo un\'indicazione.</string>
+    <string name="schedule_prn_max_label">Limite giornaliero (solo indicativo)</string>
+    <string name="schedule_preview">Anteprima regola: %1$s</string>
+    <string name="schedule_error_offset">Inserisci lo scostamento in minuti</string>
+    <string name="schedule_error_interval">L\'intervallo deve essere di almeno 2 giorni</string>
+    <string name="schedule_error_weekdays">Seleziona almeno un giorno</string>
+    <string name="schedule_error_monthly_day">Inserisci un giorno tra 1 e 31</string>
+    <string name="schedule_error_window">Inserisci minuti validi per la finestra</string>
+    <string name="schedule_error_end_date">La data di fine deve essere uguale o successiva a quella di inizio</string>
+    <string name="schedule_error_prn_limit">Inserisci un limite giornaliero valido</string>
+    <string name="schedule_delete_action">Elimina piano</string>
+    <string name="schedule_delete_title">Eliminare il piano?</string>
+    <string name="schedule_delete_message">Verranno eliminate anche le registrazioni delle dosi del piano.</string>
+    <string name="rule_prn">Al bisogno · %1$s</string>
+
+    <!-- 递减方案 -->
+    <string name="schedule_taper_label">Piano di riduzione</string>
+    <string name="schedule_taper_hint">La dose cambia dalla data di inizio di ogni fase. Ogni data può essere usata una sola volta.</string>
+    <string name="schedule_taper_add_step">Aggiungi fase</string>
+    <string name="schedule_taper_step_title">Fase %1$d</string>
+    <string name="schedule_taper_dose_label">Dose della fase (%1$s)</string>
+    <string name="schedule_taper_remove">Rimuovi fase</string>
+    <string name="schedule_error_taper_empty">Aggiungi almeno una fase</string>
+    <string name="schedule_error_taper_date">Ogni fase deve avere una data di inizio diversa</string>
+    <string name="schedule_error_taper_dose">Inserisci una dose valida per ogni fase</string>
+    <string name="schedule_error_taper_integer">Le dosi delle fasi devono essere %1$s interi</string>
+    <string name="medicine_taper_summary">Riduzione: attualmente %1$s · %2$d fasi</string>
+
+    <!-- 按需用药 -->
+    <string name="today_prn_section">Al bisogno</string>
+    <string name="today_prn_take_now">Prendi ora</string>
+    <string name="today_prn_taken_limit">Preso %1$d volte oggi (limite %2$d)</string>
+
+    <!-- 用药人档案 -->
+    <string name="profile_title">Profili di cura</string>
+    <string name="profile_default_name">Profilo predefinito</string>
+    <string name="profile_current">Attuale</string>
+    <string name="profile_rename">Rinomina</string>
+    <string name="profile_add">Aggiungi profilo</string>
+    <string name="profile_add_title">Aggiungi profilo</string>
+    <string name="profile_rename_title">Rinomina profilo</string>
+    <string name="profile_name_label">Nome del profilo</string>
+    <string name="profile_name_error">Inserisci un nome di massimo 30 caratteri</string>
+    <string name="profile_delete_title">Eliminare il profilo?</string>
+    <string name="profile_delete_message">Tutti i farmaci, i piani, le registrazioni e le scorte di \"%1$s\" verranno eliminati.</string>
+    <string name="settings_profiles">Profili di cura</string>
+
+    <!-- 历史/统计 -->
+    <string name="history_title">Cronologia</string>
+    <string name="history_range_7">Ultimi 7 giorni</string>
+    <string name="history_range_30">Ultimi 30 giorni</string>
+    <string name="history_range_90">Ultimi 90 giorni</string>
+    <string name="history_summary_title">Riepilogo</string>
+    <string name="history_summary_on_time">In orario</string>
+    <string name="history_summary_late">In ritardo</string>
+    <string name="history_summary_unconfirmed">Non confermato</string>
+    <string name="history_summary_uncertain">Non ricordo</string>
+    <string name="history_summary_skipped">Saltato</string>
+    <string name="history_summary_total">Dosi programmate</string>
+    <string name="history_status_on_time">In orario</string>
+    <string name="history_late_minutes">%1$d min in ritardo</string>
+    <string name="history_empty">Nessuna registrazione nel periodo selezionato</string>
+    <string name="history_backfill_title">Aggiungi registrazione</string>
+    <string name="history_backfill_message">%1$s · %2$s</string>
+    <string name="history_backfill_taken">Preso</string>
+    <string name="history_backfill_hint">Tocca per aggiungere una registrazione</string>
+
+    <!-- 库存 -->
+    <string name="stock_title">Scorte</string>
+    <string name="stock_remaining">Rimanenti: %1$s</string>
+    <string name="stock_days_long_term">A lungo termine</string>
+    <string name="stock_expire">Scade il %1$s</string>
+    <string name="stock_shelf_days">Utilizzabile %1$d giorni dopo l\'apertura</string>
+    <string name="stock_banner_empty">Scorte esaurite. Rifornisci.</string>
+    <string name="stock_banner_low">Scorte in esaurimento. Rifornisci.</string>
+    <string name="stock_banner_expiring">Con il piano attuale, la data di esaurimento prevista è successiva alla scadenza</string>
+    <string name="stock_banner_expired">Oltre la data di scadenza</string>
+    <string name="stock_action_purchase">Carico</string>
+    <string name="stock_action_adjust">Conteggio</string>
+    <string name="stock_purchase_title">Carico</string>
+    <string name="stock_adjust_title">Conteggio scorte</string>
+    <string name="stock_qty_label">Quantità (%1$s)</string>
+    <string name="stock_qty_invalid">Inserisci una quantità valida</string>
+    <string name="stock_no_change">Scorte invariate</string>
+    <string name="stock_changes_title">Modifiche recenti</string>
+    <string name="stock_changes_empty">Nessuna modifica alle scorte</string>
+    <string name="stock_reason_purchase">Carico</string>
+    <string name="stock_reason_taken">Dose presa</string>
+    <string name="stock_reason_adjust">Rettifica conteggio</string>
+    <string name="stock_reason_lost">Perdita</string>
+    <string name="stock_reason_expired">Scaduto</string>
+    <string name="stock_reason_undo">Annulla</string>
+    <string name="stock_delta_plus">+%1$s</string>
+    <string name="stock_delta_minus">-%1$s</string>
+    <string name="stock_not_found">Farmaco non trovato</string>
+
+    <!-- 导出报告 -->
+    <string name="export_file_prefix">RegistroFarmaci</string>
+    <string name="export_title">Esporta report</string>
+    <string name="export_entry_button">Esporta report</string>
+    <string name="export_range_label">Intervallo di tempo</string>
+    <string name="export_range_7">Ultimi 7 giorni</string>
+    <string name="export_range_30">Ultimi 30 giorni</string>
+    <string name="export_range_90">Ultimi 90 giorni</string>
+    <string name="export_generate">Genera anteprima</string>
+    <string name="export_generating">Generazione…</string>
+    <string name="export_share">Condividi</string>
+    <string name="export_empty_message">Nessuna registrazione nel periodo selezionato</string>
+    <string name="export_error_generate">Impossibile generare il PDF. Riprova.</string>
+    <string name="export_preview_title">Anteprima</string>
+    <string name="export_preview_range">Intervallo</string>
+    <string name="export_preview_pages">Pagine</string>
+    <string name="export_preview_records">Registrazioni</string>
+    <string name="export_preview_size">Dimensione file</string>
+    <string name="export_share_dialog_title">Condividere questo file?</string>
+    <string name="export_share_dialog_message">Il file contiene informazioni sanitarie. Conferma con chi lo stai condividendo.</string>
+    <string name="export_share_confirm">Condividi</string>
+    <string name="export_share_chooser">Condividi report</string>
+    <string name="export_status_on_time">Preso</string>
+    <string name="export_status_late">Preso in ritardo</string>
+    <string name="export_status_unconfirmed">Non confermato</string>
+    <string name="export_status_uncertain">Non ricordo</string>
+    <string name="export_status_skipped">Saltato</string>
+    <string name="export_remaining">Rimanenti %1$s</string>
+    <string name="export_rule_separator">"; "</string>
+    <string name="export_anomaly_morning">Mattina: %1$d non confermati</string>
+    <string name="export_anomaly_afternoon">Pomeriggio: %1$d non confermati</string>
+    <string name="export_anomaly_evening">Sera: %1$d non confermati</string>
+    <string name="export_anomaly_backfilled">%1$d registrazioni aggiunte a posteriori</string>
+    <string name="export_pdf_title">Report dei farmaci</string>
+    <string name="export_pdf_range">Intervallo: %1$s ~ %2$s</string>
+    <string name="export_pdf_generated">Generato il %1$s</string>
+    <string name="export_pdf_section_medicines">Farmaci attuali</string>
+    <string name="export_pdf_section_summary">Riepilogo dosi</string>
+    <string name="export_pdf_section_days">Panoramica giornaliera</string>
+    <string name="export_pdf_section_anomalies">Note sulle anomalie</string>
+    <string name="export_pdf_medicines_none">Nessun farmaco attivo</string>
+    <string name="export_pdf_anomalies_none">Nessuna anomalia in questo periodo</string>
+    <string name="export_pdf_count_on_time">In orario: %1$d</string>
+    <string name="export_pdf_count_late">In ritardo: %1$d</string>
+    <string name="export_pdf_count_unconfirmed">Non confermato: %1$d</string>
+    <string name="export_pdf_count_uncertain">Non ricordo: %1$d</string>
+    <string name="export_pdf_count_skipped">Saltato: %1$d</string>
+    <string name="export_pdf_count_total">Dosi programmate: %1$d</string>
+    <string name="export_pdf_row">%1$s · %2$s · %3$s · %4$s</string>
+    <string name="export_pdf_footer">Registrato dal paziente, non verificato dal punto di vista medico. Questa app non fornisce consigli medici.</string>
+
+    <!-- 设置页 -->
+    <string name="settings_title">Impostazioni</string>
+    <string name="settings_section_meal_times">Orari dei pasti</string>
+    <string name="settings_meal_breakfast">Colazione</string>
+    <string name="settings_meal_lunch">Pranzo</string>
+    <string name="settings_meal_dinner">Cena</string>
+    <string name="settings_meal_bedtime">Ora di coricarsi</string>
+    <string name="settings_section_defaults">Valori predefiniti dei promemoria</string>
+    <string name="settings_default_early">Promemoria anticipato predefinito (minuti)</string>
+    <string name="settings_default_late">Promemoria in ritardo predefinito (minuti)</string>
+    <string name="settings_merge_window">Finestra di unione (minuti)</string>
+    <string name="settings_minutes_value">%1$d min</string>
+    <string name="settings_minutes_hint">Inserisci un numero di minuti tra 0 e 720.</string>
+    <string name="settings_quiet_start">Inizio ore silenziose</string>
+    <string name="settings_quiet_end">Fine ore silenziose</string>
+    <string name="settings_section_permissions">Controllo autorizzazioni</string>
+    <string name="settings_perm_exact_alarm">Sveglie esatte</string>
+    <string name="settings_perm_notifications">Notifiche</string>
+    <string name="settings_perm_full_screen">Promemoria a schermo intero</string>
+    <string name="settings_perm_battery">Ottimizzazione batteria</string>
+    <string name="settings_status_ok">OK</string>
+    <string name="settings_status_denied">Non concessa</string>
+    <string name="settings_status_off">Disattivato</string>
+    <string name="settings_status_recommended">Verifica consigliata</string>
+    <string name="settings_action_open">Apri</string>
+    <string name="settings_action_allow">Consenti</string>
+    <string name="settings_full_screen_hint">Se non concessa, i promemoria arrivano comunque con audio.</string>
+    <string name="settings_battery_hint">Alcuni produttori potrebbero fermare le sveglie in background. Consenti l\'esecuzione in background nelle impostazioni di sistema.</string>
+    <string name="settings_section_tools">Test</string>
+    <string name="settings_test_reminder">Promemoria di test tra 1 minuto</string>
+    <string name="settings_test_reminder_toast">Un promemoria di test apparirà tra 1 minuto.</string>
+    <string name="settings_section_pause">Sospendi tutti i promemoria</string>
+    <string name="settings_pause_status">Promemoria sospesi fino alle %1$s</string>
+    <string name="settings_pause_status_indefinite">I promemoria sono sospesi</string>
+    <string name="settings_pause_1h">Sospendi per 1 ora</string>
+    <string name="settings_pause_today">Sospendi fino a fine giornata</string>
+    <string name="settings_pause_resume">Riprendi promemoria</string>
+    <string name="settings_section_language">Lingua</string>
+    <string name="settings_language_system">Segui il sistema</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_zh">简体中文</string>
+    <string name="settings_language_es">Español</string>
+    <string name="settings_language_pt">Português (Brasil)</string>
+    <string name="settings_language_ja">日本語</string>
+    <string name="settings_language_it">Italiano</string>
+    <string name="settings_language_de">Deutsch</string>
+    <string name="settings_language_zh_tw">繁體中文</string>
+    <string name="settings_language_id">Bahasa Indonesia</string>
+    <string name="settings_language_ko">한국어</string>
+    <string name="settings_language_ar">العربية</string>
+    <string name="settings_language_hi">हिन्दी</string>
+    <string name="settings_language_th">ไทย</string>
+    <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="settings_section_data">Dati</string>
+    <string name="settings_export_report">Esporta report</string>
+    <string name="settings_section_about">Informazioni e conformità</string>
+    <string name="settings_version">Versione %1$s</string>
+    <string name="settings_medical_disclaimer">Questa app fornisce solo promemoria e registrazioni e non costituisce consiglio medico.</string>
+    <string name="settings_privacy_local_processing">Le foto delle confezioni e il riconoscimento restano su questo dispositivo e non vengono mai caricati.</string>
+    <string name="settings_privacy_policy">Informativa sulla privacy</string>
+    <string name="settings_invalid_minutes">Inserisci un numero di minuti tra 0 e 720.</string>
+
+    <!-- 首次启动引导 -->
+    <string name="onboarding_title">Benvenuto in MedTimer</string>
+    <string name="onboarding_purpose_title">Cosa fa questa app</string>
+    <string name="onboarding_purpose_body">Invia promemoria agli orari programmati e registra ogni dose.</string>
+    <string name="onboarding_limits_body">Nessun consiglio medico, nessun accesso alla rete e nessuna raccolta dati.</string>
+    <string name="onboarding_permissions_title">Autorizzazioni</string>
+    <string name="onboarding_permissions_body">Queste autorizzazioni aiutano i promemoria ad arrivare in orario. Puoi saltarle e usare comunque l\'app.</string>
+    <string name="onboarding_perm_exact_alarm">Sveglie esatte: suonano all\'orario previsto.</string>
+    <string name="onboarding_perm_notifications">Notifiche: mostrano il promemoria sullo schermo.</string>
+    <string name="onboarding_perm_full_screen">Promemoria a schermo intero: mostrano il promemoria sulla schermata di blocco.</string>
+    <string name="onboarding_perm_note">Se rifiuti, l\'app funziona comunque, ma i promemoria potrebbero non arrivare in orario.</string>
+    <string name="onboarding_disclaimer_title">Avvertenza medica</string>
+    <string name="onboarding_disclaimer_body">Questa app fornisce solo promemoria e registrazioni. Non fornisce consigli medici, diagnosi, trattamenti o raccomandazioni sulla dose. Segui le indicazioni del medico.</string>
+    <string name="onboarding_grant_notifications">Consenti notifiche</string>
+    <string name="onboarding_open_exact_alarm">Apri impostazioni sveglie esatte</string>
+    <string name="onboarding_start">Inizia a usare l\'app</string>
+
+    <!-- 桌面小组件 -->
+    <string name="widget_label">Widget MedTimer</string>
+    <string name="widget_remaining">%1$d dosi rimaste oggi</string>
+    <string name="widget_next_time">Prossima dose %1$s</string>
+    <string name="widget_done_today">Tutto fatto per oggi</string>
+    <string name="widget_no_schedule">Nessuna dose programmata oggi</string>
+    <string name="widget_paused">Promemoria in pausa</string>
+</resources>

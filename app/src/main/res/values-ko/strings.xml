@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Machine-translated draft, needs human review before release. -->
+<resources>
+    <string name="app_name">MedTimer</string>
+
+    <!-- 通知渠道 -->
+    <string name="notification_channel_reminder_name">복약 알림</string>
+    <string name="notification_channel_reminder_desc">예정된 복용 알림</string>
+    <string name="notification_channel_summary_name">미복용 요약</string>
+    <string name="notification_channel_summary_desc">확인되지 않은 복용 요약</string>
+
+    <!-- 提醒通知 -->
+    <string name="notification_title_reminder">복약 알림</string>
+    <string name="notification_action_taken">복용함</string>
+    <string name="notification_action_snooze">10분 후 다시 알림</string>
+    <string name="notification_action_skip">건너뛰기</string>
+    <string name="notification_more_items">%1$d개 더</string>
+
+    <!-- 漏服汇总 -->
+    <string name="notification_missed_summary_title">확인되지 않은 복용</string>
+    <string name="notification_missed_summary_text">%1$d회 복용이 확인되지 않았습니다</string>
+
+    <!-- 底部导航 -->
+    <string name="tab_today">오늘</string>
+    <string name="tab_medicines">약</string>
+    <string name="tab_history">기록</string>
+    <string name="tab_settings">설정</string>
+    <string name="coming_soon">곧 제공 예정</string>
+
+    <!-- 规则整句回显 -->
+    <string name="rule_daily">매일 · %1$s</string>
+    <string name="rule_every_other_day">격일 · %1$s</string>
+    <string name="rule_every_n_days">%1$d일마다 · %2$s</string>
+    <string name="rule_weekly">매주 %1$s · %2$s</string>
+    <string name="rule_monthly">매월 %1$d일 · %2$s</string>
+    <string name="rule_clock_phrase">%2$s에 %1$s</string>
+    <string name="rule_meal_before">%3$s %2$d분 전에 %1$s</string>
+    <string name="rule_meal_after">%3$s %2$d분 후에 %1$s</string>
+    <string name="rule_meal_on">%2$s에 %1$s</string>
+    <string name="meal_breakfast">아침 식사</string>
+    <string name="meal_lunch">점심 식사</string>
+    <string name="meal_dinner">저녁 식사</string>
+    <string name="meal_bedtime">취침 시간</string>
+    <string name="weekday_mon">월</string>
+    <string name="weekday_tue">화</string>
+    <string name="weekday_wed">수</string>
+    <string name="weekday_thu">목</string>
+    <string name="weekday_fri">금</string>
+    <string name="weekday_sat">토</string>
+    <string name="weekday_sun">일</string>
+    <string name="weekday_separator">", "</string>
+
+    <!-- 剂量复数 -->
+    <plurals name="dose_tablet">
+        <item quantity="one">%1$s정</item>
+        <item quantity="other">%1$s정</item>
+    </plurals>
+    <plurals name="dose_capsule">
+        <item quantity="one">%1$s캡슐</item>
+        <item quantity="other">%1$s캡슐</item>
+    </plurals>
+    <plurals name="dose_sachet">
+        <item quantity="one">%1$s포</item>
+        <item quantity="other">%1$s포</item>
+    </plurals>
+    <plurals name="dose_ml">
+        <item quantity="one">%1$sml</item>
+        <item quantity="other">%1$sml</item>
+    </plurals>
+    <plurals name="dose_drop">
+        <item quantity="one">%1$s방울</item>
+        <item quantity="other">%1$s방울</item>
+    </plurals>
+    <plurals name="dose_spray">
+        <item quantity="one">%1$s회 분사</item>
+        <item quantity="other">%1$s회 분사</item>
+    </plurals>
+    <plurals name="dose_unit">
+        <item quantity="one">%1$s단위</item>
+        <item quantity="other">%1$s단위</item>
+    </plurals>
+    <string name="dose_unknown_format">%1$s %2$s</string>
+
+    <!-- 今日服药单 -->
+    <string name="today_progress">%1$d / %2$d 복용 완료</string>
+    <string name="today_taken_all">모두 복용함</string>
+    <string name="today_status_due">복용할 시간</string>
+    <string name="today_status_missed">확인되지 않음</string>
+    <string name="today_status_taken">복용함</string>
+    <string name="today_status_late">늦게 복용함</string>
+    <string name="today_status_skipped">건너뜀</string>
+    <string name="today_status_uncertain">불확실</string>
+    <string name="today_status_pending">대기 중</string>
+    <string name="today_not_due">오늘은 필요하지 않음 · 다음 %1$s</string>
+    <string name="today_not_due_section">오늘 필요하지 않음</string>
+    <string name="today_stock_days">약 %1$d일분 남음</string>
+    <string name="today_stock_empty">재고가 부족합니다. 보충해 주세요.</string>
+    <string name="today_alert_exact_alarm">알림이 도착하지 않을 수 있습니다. 정확한 알람 권한을 확인해 주세요.</string>
+    <string name="today_alert_notifications">알림이 꺼져 있습니다. 시스템 설정에서 알림을 켜 주세요.</string>
+    <string name="today_alert_paused">알림이 일시중지되었습니다</string>
+    <string name="today_action_resume">재개</string>
+    <string name="today_missed_summary">%1$d건 확인되지 않음</string>
+    <string name="today_empty_title">아직 등록된 약이 없습니다</string>
+    <string name="today_empty_action">약 추가</string>
+    <string name="today_sheet_title">%1$s · %2$s</string>
+    <string name="today_action_uncertain">불확실</string>
+    <string name="today_action_undo">실행 취소</string>
+    <string name="today_loading">불러오는 중</string>
+    <string name="cd_medicine_photo">%1$s 사진</string>
+    <string name="cd_not_due_toggle">오늘 필요하지 않은 약 표시 또는 숨기기</string>
+    <string name="common_cancel">취소</string>
+
+    <!-- 提醒页 -->
+    <string name="reminder_item_format">%1$s · %2$s %3$s</string>
+    <string name="reminder_unknown_medicine">약</string>
+    <string name="reminder_screen_title">복약 알림</string>
+    <string name="reminder_screen_time">예정 시간 %1$s</string>
+    <string name="reminder_screen_all_taken">모두 복용함</string>
+    <string name="reminder_item_line">%1$s · %2$s</string>
+    <string name="reminder_invalid_data">알림 정보를 불러올 수 없습니다. 뒤로 가서 다시 시도해 주세요.</string>
+    <string name="reminder_close">닫기</string>
+    <string name="tts_reminder_text">약 복용 시간입니다. %1$s</string>
+    <string name="tts_item_format">%1$s %2$s.</string>
+    <string name="tts_item_separator">" "</string>
+
+    <!-- 通用操作 -->
+    <string name="common_delete">삭제</string>
+    <string name="common_save">저장</string>
+    <string name="common_back">뒤로</string>
+    <string name="common_ok">확인</string>
+    <string name="common_clear">지우기</string>
+    <string name="common_not_set">설정 안 됨</string>
+
+    <!-- 药品列表 -->
+    <string name="medicine_list_title">약</string>
+    <string name="medicine_list_add">약 추가</string>
+    <string name="medicine_list_empty_title">아직 등록된 약이 없습니다</string>
+    <string name="medicine_list_stock_button">재고</string>
+    <string name="medicine_list_more_rules">규칙 %1$d개 더</string>
+    <string name="medicine_no_rule">계획 없음</string>
+    <string name="medicine_stock_days">약 %1$d일분 남음</string>
+    <string name="medicine_stock_low">재고가 부족합니다. 보충해 주세요.</string>
+    <string name="medicine_delete_title">약을 삭제할까요?</string>
+    <string name="medicine_delete_message">%1$s을(를) 삭제하면 계획과 복용 기록도 함께 삭제됩니다.</string>
+    <string name="medicine_delete_action">약 삭제</string>
+
+    <!-- 药品编辑 -->
+    <string name="medicine_edit_title_new">새 약</string>
+    <string name="medicine_edit_title">약 편집</string>
+    <string name="medicine_name_label">약 이름</string>
+    <string name="medicine_name_required">약 이름을 입력해 주세요</string>
+    <!-- 药盒识别与条码：端侧模型，识别全程离线 -->
+    <string name="medicine_scan_name_cd">약 상자를 스캔하여 이름 채우기</string>
+    <string name="medicine_scan_name_failed">약 이름을 찾지 못했습니다. 직접 입력해 주세요.</string>
+    <string name="medicine_scan_name_title">약 이름 선택</string>
+    <string name="medicine_scan_name_confirm">선택한 이름 사용</string>
+    <string name="medicine_scan_barcode_label">바코드</string>
+    <string name="medicine_scan_barcode_action">바코드 스캔</string>
+    <string name="medicine_scan_barcode_title">바코드 확인</string>
+    <string name="medicine_scan_barcode_confirm">이 바코드 사용</string>
+    <string name="medicine_scan_barcode_failed">바코드를 찾지 못했습니다. 다른 사진으로 시도해 주세요.</string>
+    <string name="medicine_form_label">제형</string>
+    <string name="medicine_form_tablet">정제</string>
+    <string name="medicine_form_capsule">캡슐</string>
+    <string name="medicine_form_liquid">액상</string>
+    <string name="medicine_form_drops">점안액</string>
+    <string name="medicine_form_spray">스프레이</string>
+    <string name="medicine_form_pen">펜</string>
+    <string name="medicine_spec_value_label">함량</string>
+    <string name="medicine_spec_unit_label">함량 단위</string>
+    <string name="medicine_dose_unit_label">복용 단위</string>
+    <string name="medicine_spec_required">함량과 복용 단위를 입력해 주세요</string>
+    <string name="medicine_splittable_label">분할 가능</string>
+    <string name="medicine_pack_size_label">포장당 수량</string>
+    <string name="medicine_pack_unit_label">포장 단위</string>
+    <string name="medicine_expire_label">유효기간</string>
+    <string name="medicine_opened_label">개봉일</string>
+    <string name="medicine_shelf_days_label">개봉 후 사용 가능 일수</string>
+    <string name="medicine_auto_deduct_label">재고 자동 차감</string>
+    <string name="medicine_note_label">메모</string>
+    <string name="medicine_date_value">%1$s: %2$s</string>
+    <string name="medicine_photo_title">약 상자 사진</string>
+    <string name="medicine_photo_pick">사진 선택</string>
+    <string name="medicine_photo_retake">사진 다시 찍기</string>
+    <string name="medicine_photo_delete">사진 삭제</string>
+    <string name="medicine_photo_empty">사진 없음</string>
+    <string name="medicine_photo_error">사진을 저장하지 못했습니다. 다시 시도해 주세요.</string>
+    <string name="medicine_rules_title">복용 계획</string>
+    <string name="medicine_rules_empty">계획 없음</string>
+    <string name="medicine_rules_need_save">계획을 추가하려면 먼저 약을 저장해 주세요</string>
+    <string name="medicine_rule_add">계획 추가</string>
+    <string name="medicine_rule_edit">편집</string>
+
+    <!-- 剂量单位选项 -->
+    <string name="dose_unit_tablet">정제</string>
+    <string name="dose_unit_capsule">캡슐</string>
+    <string name="dose_unit_ml">ml</string>
+    <string name="dose_unit_drop">방울</string>
+    <string name="dose_unit_spray">스프레이</string>
+    <string name="dose_unit_unit">단위</string>
+    <string name="dose_unit_other">단위</string>
+
+    <!-- 计划编辑 -->
+    <string name="schedule_edit_title_new">새 계획</string>
+    <string name="schedule_edit_title">계획 편집</string>
+    <string name="schedule_medicine_label">약: %1$s</string>
+    <string name="schedule_anchor_label">복용 시점</string>
+    <string name="schedule_anchor_clock">고정 시간</string>
+    <string name="schedule_anchor_meal">식사와 함께</string>
+    <string name="schedule_time_value">시간: %1$s</string>
+    <string name="schedule_pick_time">시간 선택</string>
+    <string name="schedule_offset_label">오프셋(분, 음수 = 식사 전)</string>
+    <string name="schedule_recurrence_label">반복</string>
+    <string name="schedule_recurrence_daily">매일</string>
+    <string name="schedule_recurrence_every_n">N일마다</string>
+    <string name="schedule_recurrence_weekly">매주</string>
+    <string name="schedule_recurrence_monthly">매월</string>
+    <string name="schedule_interval_label">간격(일)</string>
+    <string name="schedule_weekdays_label">요일</string>
+    <string name="schedule_monthly_day_label">일자</string>
+    <string name="schedule_start_date_label">시작일</string>
+    <string name="schedule_end_date_label">종료일</string>
+    <string name="schedule_long_term">장기</string>
+    <string name="schedule_dose_label">복용량</string>
+    <string name="schedule_dose_label_with_unit">1회 복용량(%1$s)</string>
+    <string name="schedule_dose_integer_error">이 약은 분할할 수 없습니다. %1$s 단위의 정수로 입력해 주세요.</string>
+    <string name="schedule_dose_invalid">올바른 복용량을 입력해 주세요</string>
+    <string name="schedule_window_label">알림 시간대</string>
+    <string name="schedule_early_label">미리(분)</string>
+    <string name="schedule_late_label">늦게(분)</string>
+    <string name="schedule_prn_label">필요 시 복용(PRN)</string>
+    <string name="schedule_prn_hint">필요할 때 복용이 기록됩니다. 일일 한도는 참고용입니다.</string>
+    <string name="schedule_prn_max_label">일일 한도(참고용)</string>
+    <string name="schedule_preview">규칙 미리보기: %1$s</string>
+    <string name="schedule_error_offset">오프셋을 분 단위로 입력해 주세요</string>
+    <string name="schedule_error_interval">간격은 최소 2일이어야 합니다</string>
+    <string name="schedule_error_weekdays">요일을 하나 이상 선택해 주세요</string>
+    <string name="schedule_error_monthly_day">1에서 31 사이의 날짜를 입력해 주세요</string>
+    <string name="schedule_error_window">올바른 알림 시간대(분)를 입력해 주세요</string>
+    <string name="schedule_error_end_date">종료일은 시작일과 같거나 이후여야 합니다</string>
+    <string name="schedule_error_prn_limit">올바른 일일 한도를 입력해 주세요</string>
+    <string name="schedule_delete_action">계획 삭제</string>
+    <string name="schedule_delete_title">계획을 삭제할까요?</string>
+    <string name="schedule_delete_message">계획의 복용 기록도 함께 삭제됩니다.</string>
+    <string name="rule_prn">필요 시 · %1$s</string>
+
+    <!-- 递减方案 -->
+    <string name="schedule_taper_label">감량 계획</string>
+    <string name="schedule_taper_hint">복용량은 각 단계 시작일에 변경됩니다. 각 날짜는 한 번만 사용할 수 있습니다.</string>
+    <string name="schedule_taper_add_step">단계 추가</string>
+    <string name="schedule_taper_step_title">%1$d단계</string>
+    <string name="schedule_taper_dose_label">단계 복용량(%1$s)</string>
+    <string name="schedule_taper_remove">단계 삭제</string>
+    <string name="schedule_error_taper_empty">단계를 하나 이상 추가해 주세요</string>
+    <string name="schedule_error_taper_date">각 단계의 시작일은 달라야 합니다</string>
+    <string name="schedule_error_taper_dose">모든 단계의 복용량을 올바르게 입력해 주세요</string>
+    <string name="schedule_error_taper_integer">단계 복용량은 %1$s 단위의 정수여야 합니다</string>
+    <string name="medicine_taper_summary">감량: 현재 %1$s · %2$d단계</string>
+
+    <!-- 按需用药 -->
+    <string name="today_prn_section">필요 시</string>
+    <string name="today_prn_take_now">지금 복용</string>
+    <string name="today_prn_taken_limit">오늘 %1$d회 복용(한도 %2$d)</string>
+
+    <!-- 用药人档案 -->
+    <string name="profile_title">복용 프로필</string>
+    <string name="profile_default_name">기본 프로필</string>
+    <string name="profile_current">현재</string>
+    <string name="profile_rename">이름 변경</string>
+    <string name="profile_add">프로필 추가</string>
+    <string name="profile_add_title">프로필 추가</string>
+    <string name="profile_rename_title">프로필 이름 변경</string>
+    <string name="profile_name_label">프로필 이름</string>
+    <string name="profile_name_error">30자 이내의 이름을 입력해 주세요</string>
+    <string name="profile_delete_title">프로필을 삭제할까요?</string>
+    <string name="profile_delete_message">\"%1$s\"의 모든 약, 계획, 기록, 재고가 삭제됩니다.</string>
+    <string name="settings_profiles">복용 프로필</string>
+
+    <!-- 历史/统计 -->
+    <string name="history_title">기록</string>
+    <string name="history_range_7">지난 7일</string>
+    <string name="history_range_30">지난 30일</string>
+    <string name="history_range_90">지난 90일</string>
+    <string name="history_summary_title">요약</string>
+    <string name="history_summary_on_time">제시간</string>
+    <string name="history_summary_late">늦음</string>
+    <string name="history_summary_unconfirmed">확인되지 않음</string>
+    <string name="history_summary_uncertain">불확실</string>
+    <string name="history_summary_skipped">건너뜀</string>
+    <string name="history_summary_total">예정된 복용</string>
+    <string name="history_status_on_time">제시간</string>
+    <string name="history_late_minutes">%1$d분 지연</string>
+    <string name="history_empty">선택한 기간에 복용 기록이 없습니다</string>
+    <string name="history_backfill_title">기록 추가</string>
+    <string name="history_backfill_message">%1$s · %2$s</string>
+    <string name="history_backfill_taken">복용함</string>
+    <string name="history_backfill_hint">탭하여 기록 추가</string>
+
+    <!-- 库存 -->
+    <string name="stock_title">재고</string>
+    <string name="stock_remaining">남음: %1$s</string>
+    <string name="stock_days_long_term">장기</string>
+    <string name="stock_expire">%1$s 만료</string>
+    <string name="stock_shelf_days">개봉 후 %1$d일 사용 가능</string>
+    <string name="stock_banner_empty">재고가 없습니다. 보충해 주세요.</string>
+    <string name="stock_banner_low">재고가 부족합니다. 보충해 주세요.</string>
+    <string name="stock_banner_expiring">현재 계획대로면 예상 소진일이 유효기간 이후입니다</string>
+    <string name="stock_banner_expired">유효기간이 지났습니다</string>
+    <string name="stock_action_purchase">입고</string>
+    <string name="stock_action_adjust">재고 수량</string>
+    <string name="stock_purchase_title">입고</string>
+    <string name="stock_adjust_title">재고 수량</string>
+    <string name="stock_qty_label">수량(%1$s)</string>
+    <string name="stock_qty_invalid">올바른 수량을 입력해 주세요</string>
+    <string name="stock_no_change">재고 변동 없음</string>
+    <string name="stock_changes_title">최근 변경</string>
+    <string name="stock_changes_empty">재고 변경 내역이 없습니다</string>
+    <string name="stock_reason_purchase">입고</string>
+    <string name="stock_reason_taken">복용</string>
+    <string name="stock_reason_adjust">재고 수량 조정</string>
+    <string name="stock_reason_lost">분실</string>
+    <string name="stock_reason_expired">만료</string>
+    <string name="stock_reason_undo">실행 취소</string>
+    <string name="stock_delta_plus">+%1$s</string>
+    <string name="stock_delta_minus">-%1$s</string>
+    <string name="stock_not_found">약을 찾을 수 없습니다</string>
+
+    <!-- 导出报告 -->
+    <string name="export_file_prefix">MedicationLog</string>
+    <string name="export_title">보고서 내보내기</string>
+    <string name="export_entry_button">보고서 내보내기</string>
+    <string name="export_range_label">기간</string>
+    <string name="export_range_7">지난 7일</string>
+    <string name="export_range_30">지난 30일</string>
+    <string name="export_range_90">지난 90일</string>
+    <string name="export_generate">미리보기 생성</string>
+    <string name="export_generating">생성 중…</string>
+    <string name="export_share">공유</string>
+    <string name="export_empty_message">선택한 기간에 복용 기록이 없습니다</string>
+    <string name="export_error_generate">PDF를 생성하지 못했습니다. 다시 시도해 주세요.</string>
+    <string name="export_preview_title">미리보기</string>
+    <string name="export_preview_range">기간</string>
+    <string name="export_preview_pages">페이지</string>
+    <string name="export_preview_records">기록</string>
+    <string name="export_preview_size">파일 크기</string>
+    <string name="export_share_dialog_title">이 파일을 공유할까요?</string>
+    <string name="export_share_dialog_message">이 파일에는 건강 정보가 포함되어 있습니다. 공유 대상을 확인해 주세요.</string>
+    <string name="export_share_confirm">공유</string>
+    <string name="export_share_chooser">보고서 공유</string>
+    <string name="export_status_on_time">복용함</string>
+    <string name="export_status_late">늦게 복용함</string>
+    <string name="export_status_unconfirmed">확인되지 않음</string>
+    <string name="export_status_uncertain">불확실</string>
+    <string name="export_status_skipped">건너뜀</string>
+    <string name="export_remaining">남음 %1$s</string>
+    <string name="export_rule_separator">"; "</string>
+    <string name="export_anomaly_morning">오전: %1$d건 확인되지 않음</string>
+    <string name="export_anomaly_afternoon">오후: %1$d건 확인되지 않음</string>
+    <string name="export_anomaly_evening">저녁: %1$d건 확인되지 않음</string>
+    <string name="export_anomaly_backfilled">나중에 추가된 기록 %1$d건</string>
+    <string name="export_pdf_title">복약 보고서</string>
+    <string name="export_pdf_range">기간: %1$s ~ %2$s</string>
+    <string name="export_pdf_generated">생성일 %1$s</string>
+    <string name="export_pdf_section_medicines">현재 약</string>
+    <string name="export_pdf_section_summary">복용 요약</string>
+    <string name="export_pdf_section_days">일별 개요</string>
+    <string name="export_pdf_section_anomalies">이상 징후 메모</string>
+    <string name="export_pdf_medicines_none">복용 중인 약 없음</string>
+    <string name="export_pdf_anomalies_none">이 기간에 이상 징후 메모가 없습니다</string>
+    <string name="export_pdf_count_on_time">제시간: %1$d</string>
+    <string name="export_pdf_count_late">늦음: %1$d</string>
+    <string name="export_pdf_count_unconfirmed">확인되지 않음: %1$d</string>
+    <string name="export_pdf_count_uncertain">불확실: %1$d</string>
+    <string name="export_pdf_count_skipped">건너뜀: %1$d</string>
+    <string name="export_pdf_count_total">예정된 복용: %1$d</string>
+    <string name="export_pdf_row">%1$s · %2$s · %3$s · %4$s</string>
+    <string name="export_pdf_footer">환자가 기록한 내용이며 의학적으로 검증되지 않았습니다. 이 앱은 의학적 조언을 제공하지 않습니다.</string>
+
+    <!-- 设置页 -->
+    <string name="settings_title">설정</string>
+    <string name="settings_section_meal_times">식사 시간</string>
+    <string name="settings_meal_breakfast">아침</string>
+    <string name="settings_meal_lunch">점심</string>
+    <string name="settings_meal_dinner">저녁</string>
+    <string name="settings_meal_bedtime">취침 전</string>
+    <string name="settings_section_defaults">알림 기본값</string>
+    <string name="settings_default_early">기본 사전 알림(분)</string>
+    <string name="settings_default_late">기본 지연 알림(분)</string>
+    <string name="settings_merge_window">병합 시간(분)</string>
+    <string name="settings_minutes_value">%1$d분</string>
+    <string name="settings_minutes_hint">0에서 720 사이의 분을 입력해 주세요.</string>
+    <string name="settings_quiet_start">방해 금지 시작</string>
+    <string name="settings_quiet_end">방해 금지 종료</string>
+    <string name="settings_section_permissions">권한 확인</string>
+    <string name="settings_perm_exact_alarm">정확한 알람</string>
+    <string name="settings_perm_notifications">알림</string>
+    <string name="settings_perm_full_screen">전체 화면 알림</string>
+    <string name="settings_perm_battery">배터리 최적화</string>
+    <string name="settings_status_ok">정상</string>
+    <string name="settings_status_denied">허용되지 않음</string>
+    <string name="settings_status_off">꺼짐</string>
+    <string name="settings_status_recommended">검토 권장</string>
+    <string name="settings_action_open">열기</string>
+    <string name="settings_action_allow">허용</string>
+    <string name="settings_full_screen_hint">허용하지 않아도 알림은 소리와 함께 도착합니다.</string>
+    <string name="settings_battery_hint">일부 제조사는 백그라운드 알람을 중지할 수 있습니다. 시스템 설정에서 이 앱의 백그라운드 실행을 허용해 주세요.</string>
+    <string name="settings_section_tools">테스트</string>
+    <string name="settings_test_reminder">1분 후 테스트 알림</string>
+    <string name="settings_test_reminder_toast">1분 후 테스트 알림이 표시됩니다.</string>
+    <string name="settings_section_pause">모든 알림 일시중지</string>
+    <string name="settings_pause_status">%1$s까지 알림 일시중지됨</string>
+    <string name="settings_pause_status_indefinite">알림이 일시중지되었습니다</string>
+    <string name="settings_pause_1h">1시간 동안 일시중지</string>
+    <string name="settings_pause_today">오늘 자정까지 일시중지</string>
+    <string name="settings_pause_resume">알림 재개</string>
+    <string name="settings_section_language">언어</string>
+    <string name="settings_language_system">시스템 설정 따르기</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_zh">简体中文</string>
+    <string name="settings_language_es">Español</string>
+    <string name="settings_language_pt">Português (Brasil)</string>
+    <string name="settings_language_ja">日本語</string>
+    <string name="settings_language_it">Italiano</string>
+    <string name="settings_language_de">Deutsch</string>
+    <string name="settings_language_zh_tw">繁體中文</string>
+    <string name="settings_language_id">Bahasa Indonesia</string>
+    <string name="settings_language_ko">한국어</string>
+    <string name="settings_language_ar">العربية</string>
+    <string name="settings_language_hi">हिन्दी</string>
+    <string name="settings_language_th">ไทย</string>
+    <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="settings_section_data">데이터</string>
+    <string name="settings_export_report">보고서 내보내기</string>
+    <string name="settings_section_about">정보 및 규정 준수</string>
+    <string name="settings_version">버전 %1$s</string>
+    <string name="settings_medical_disclaimer">이 앱은 알림과 기록만 제공하며 의학적 조언이 아닙니다.</string>
+    <string name="settings_privacy_local_processing">약 상자 사진과 인식은 이 기기에만 저장되며 절대 업로드되지 않습니다.</string>
+    <string name="settings_privacy_policy">개인정보 처리방침</string>
+    <string name="settings_invalid_minutes">0에서 720 사이의 분을 입력해 주세요.</string>
+
+    <!-- 首次启动引导 -->
+    <string name="onboarding_title">MedTimer에 오신 것을 환영합니다</string>
+    <string name="onboarding_purpose_title">이 앱의 기능</string>
+    <string name="onboarding_purpose_body">예정된 시간에 알림을 보내고 각 복용 기록을 보관합니다.</string>
+    <string name="onboarding_limits_body">의학적 조언, 네트워크 접근, 데이터 수집이 없습니다.</string>
+    <string name="onboarding_permissions_title">권한</string>
+    <string name="onboarding_permissions_body">이 권한은 알림이 제시간에 도착하도록 돕습니다. 건너뛰어도 앱을 사용할 수 있습니다.</string>
+    <string name="onboarding_perm_exact_alarm">정확한 알람: 예정된 시간에 울립니다.</string>
+    <string name="onboarding_perm_notifications">알림: 화면에 알림을 표시합니다.</string>
+    <string name="onboarding_perm_full_screen">전체 화면 알림: 잠금 화면에 알림을 표시합니다.</string>
+    <string name="onboarding_perm_note">거부해도 앱은 작동하지만 알림이 제시간에 도착하지 않을 수 있습니다.</string>
+    <string name="onboarding_disclaimer_title">의학적 면책 조항</string>
+    <string name="onboarding_disclaimer_body">이 앱은 알림과 기록만 제공합니다. 의학적 조언, 진단, 치료, 복용량 권장은 제공하지 않습니다. 의사의 지시를 따라 주세요.</string>
+    <string name="onboarding_grant_notifications">알림 허용</string>
+    <string name="onboarding_open_exact_alarm">정확한 알람 설정 열기</string>
+    <string name="onboarding_start">앱 사용 시작</string>
+
+    <!-- 桌面小组件 -->
+    <string name="widget_label">MedTimer 위젯</string>
+    <string name="widget_remaining">오늘 %1$d회 복용 남음</string>
+    <string name="widget_next_time">다음 복용 %1$s</string>
+    <string name="widget_done_today">오늘 모두 완료</string>
+    <string name="widget_no_schedule">오늘 예정된 복용이 없습니다</string>
+    <string name="widget_paused">알림 일시중지됨</string>
+</resources>

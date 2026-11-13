@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MedTimer</string>
+
+    <!-- 通知渠道 -->
+    <string name="notification_channel_reminder_name">تذكيرات الأدوية</string>
+    <string name="notification_channel_reminder_desc">تذكيرات بالجرعات المجدولة</string>
+    <string name="notification_channel_summary_name">ملخص الجرعات الفائتة</string>
+    <string name="notification_channel_summary_desc">ملخص الجرعات غير المؤكدة</string>
+
+    <!-- 提醒通知 -->
+    <string name="notification_title_reminder">تذكير بتناول الدواء</string>
+    <string name="notification_action_taken">تم التناول</string>
+    <string name="notification_action_snooze">تأجيل 10 دقائق</string>
+    <string name="notification_action_skip">تخطي</string>
+    <string name="notification_more_items">%1$d أخرى</string>
+
+    <!-- 漏服汇总 -->
+    <string name="notification_missed_summary_title">جرعات غير مؤكدة</string>
+    <string name="notification_missed_summary_text">%1$d جرعة لم يتم تأكيدها</string>
+
+    <!-- 底部导航 -->
+    <string name="tab_today">اليوم</string>
+    <string name="tab_medicines">الأدوية</string>
+    <string name="tab_history">السجل</string>
+    <string name="tab_settings">الإعدادات</string>
+    <string name="coming_soon">قريبًا</string>
+
+    <!-- 规则整句回显 -->
+    <string name="rule_daily">كل يوم · %1$s</string>
+    <string name="rule_every_other_day">يوم بعد يوم · %1$s</string>
+    <string name="rule_every_n_days">كل %1$d أيام · %2$s</string>
+    <string name="rule_weekly">كل %1$s · %2$s</string>
+    <string name="rule_monthly">يوم %1$d من كل شهر · %2$s</string>
+    <string name="rule_clock_phrase">%1$s في %2$s</string>
+    <string name="rule_meal_before">%1$s قبل %3$s بـ %2$d دقيقة</string>
+    <string name="rule_meal_after">%1$s بعد %3$s بـ %2$d دقيقة</string>
+    <string name="rule_meal_on">%1$s عند %2$s</string>
+    <string name="meal_breakfast">الإفطار</string>
+    <string name="meal_lunch">الغداء</string>
+    <string name="meal_dinner">العشاء</string>
+    <string name="meal_bedtime">وقت النوم</string>
+    <string name="weekday_mon">اثنين</string>
+    <string name="weekday_tue">ثلاثاء</string>
+    <string name="weekday_wed">أربعاء</string>
+    <string name="weekday_thu">خميس</string>
+    <string name="weekday_fri">جمعة</string>
+    <string name="weekday_sat">سبت</string>
+    <string name="weekday_sun">أحد</string>
+    <string name="weekday_separator">"، "</string>
+
+    <!-- 剂量复数 -->
+    <plurals name="dose_tablet">
+        <item quantity="zero">%1$s قرص</item>
+        <item quantity="one">%1$s قرص</item>
+        <item quantity="two">%1$s قرصان</item>
+        <item quantity="few">%1$s أقراص</item>
+        <item quantity="many">%1$s قرصًا</item>
+        <item quantity="other">%1$s قرص</item>
+    </plurals>
+    <plurals name="dose_capsule">
+        <item quantity="zero">%1$s كبسولة</item>
+        <item quantity="one">%1$s كبسولة</item>
+        <item quantity="two">%1$s كبسولتان</item>
+        <item quantity="few">%1$s كبسولات</item>
+        <item quantity="many">%1$s كبسولة</item>
+        <item quantity="other">%1$s كبسولة</item>
+    </plurals>
+    <plurals name="dose_sachet">
+        <item quantity="zero">%1$s كيس</item>
+        <item quantity="one">%1$s كيس</item>
+        <item quantity="two">%1$s كيسان</item>
+        <item quantity="few">%1$s أكياس</item>
+        <item quantity="many">%1$s كيسًا</item>
+        <item quantity="other">%1$s كيس</item>
+    </plurals>
+    <plurals name="dose_ml">
+        <item quantity="zero">%1$s مل</item>
+        <item quantity="one">%1$s مل</item>
+        <item quantity="two">%1$s مل</item>
+        <item quantity="few">%1$s مل</item>
+        <item quantity="many">%1$s مل</item>
+        <item quantity="other">%1$s مل</item>
+    </plurals>
+    <plurals name="dose_drop">
+        <item quantity="zero">%1$s قطرة</item>
+        <item quantity="one">%1$s قطرة</item>
+        <item quantity="two">%1$s قطرتان</item>
+        <item quantity="few">%1$s قطرات</item>
+        <item quantity="many">%1$s قطرة</item>
+        <item quantity="other">%1$s قطرة</item>
+    </plurals>
+    <plurals name="dose_spray">
+        <item quantity="zero">%1$s بخة</item>
+        <item quantity="one">%1$s بخة</item>
+        <item quantity="two">%1$s بختان</item>
+        <item quantity="few">%1$s بخات</item>
+        <item quantity="many">%1$s بخة</item>
+        <item quantity="other">%1$s بخة</item>
+    </plurals>
+    <plurals name="dose_unit">
+        <item quantity="zero">%1$s وحدة</item>
+        <item quantity="one">%1$s وحدة</item>
+        <item quantity="two">%1$s وحدتان</item>
+        <item quantity="few">%1$s وحدات</item>
+        <item quantity="many">%1$s وحدة</item>
+        <item quantity="other">%1$s وحدة</item>
+    </plurals>
+    <string name="dose_unknown_format">%1$s %2$s</string>
+
+    <!-- 今日服药单 -->
+    <string name="today_progress">%1$d / %2$d تم تناولها</string>
+    <string name="today_taken_all">تم تناول الجميع</string>
+    <string name="today_status_due">مستحقة</string>
+    <string name="today_status_missed">غير مؤكدة</string>
+    <string name="today_status_taken">تم التناول</string>
+    <string name="today_status_late">تم التناول متأخرًا</string>
+    <string name="today_status_skipped">تم التخطي</string>
+    <string name="today_status_uncertain">غير متأكد</string>
+    <string name="today_status_pending">قيد الانتظار</string>
+    <string name="today_not_due">غير مطلوبة اليوم · التالية %1$s</string>
+    <string name="today_not_due_section">غير مطلوبة اليوم</string>
+    <string name="today_stock_days">المخزون يكفي لنحو %1$d يومًا</string>
+    <string name="today_stock_empty">المخزون منخفض، يرجى إعادة التزويد</string>
+    <string name="today_alert_exact_alarm">قد لا تصل التذكيرات. يرجى التحقق من إذن المنبه الدقيق.</string>
+    <string name="today_alert_notifications">الإشعارات متوقفة. يرجى تفعيلها في إعدادات النظام.</string>
+    <string name="today_alert_paused">التذكيرات متوقفة مؤقتًا</string>
+    <string name="today_action_resume">استئناف</string>
+    <string name="today_missed_summary">%1$d غير مؤكدة</string>
+    <string name="today_empty_title">لا توجد أدوية بعد</string>
+    <string name="today_empty_action">إضافة دواء</string>
+    <string name="today_sheet_title">%1$s · %2$s</string>
+    <string name="today_action_uncertain">غير متأكد</string>
+    <string name="today_action_undo">تراجع</string>
+    <string name="today_loading">جارٍ التحميل</string>
+    <string name="cd_medicine_photo">صورة %1$s</string>
+    <string name="cd_not_due_toggle">إظهار أو إخفاء الأدوية غير المطلوبة اليوم</string>
+    <string name="common_cancel">إلغاء</string>
+
+    <!-- 提醒页 -->
+    <string name="reminder_item_format">%1$s · %2$s %3$s</string>
+    <string name="reminder_unknown_medicine">دواء</string>
+    <string name="reminder_screen_title">تذكير بتناول الدواء</string>
+    <string name="reminder_screen_time">مجدول في %1$s</string>
+    <string name="reminder_screen_all_taken">تم تناول الجميع</string>
+    <string name="reminder_item_line">%1$s · %2$s</string>
+    <string name="reminder_invalid_data">تفاصيل التذكير غير متاحة. يرجى الرجوع والمحاولة مرة أخرى.</string>
+    <string name="reminder_close">إغلاق</string>
+    <string name="tts_reminder_text">حان وقت تناول دوائك. %1$s</string>
+    <string name="tts_item_format">%1$s %2$s.</string>
+    <string name="tts_item_separator">" "</string>
+
+    <!-- 通用操作 -->
+    <string name="common_delete">حذف</string>
+    <string name="common_save">حفظ</string>
+    <string name="common_back">رجوع</string>
+    <string name="common_ok">موافق</string>
+    <string name="common_clear">مسح</string>
+    <string name="common_not_set">غير محدد</string>
+
+    <!-- 药品列表 -->
+    <string name="medicine_list_title">الأدوية</string>
+    <string name="medicine_list_add">إضافة دواء</string>
+    <string name="medicine_list_empty_title">لا توجد أدوية بعد</string>
+    <string name="medicine_list_stock_button">المخزون</string>
+    <string name="medicine_list_more_rules">بالإضافة إلى %1$d خطة أخرى</string>
+    <string name="medicine_no_rule">لا توجد خطة بعد</string>
+    <string name="medicine_stock_days">يتبقى نحو %1$d يومًا</string>
+    <string name="medicine_stock_low">المخزون منخفض، يرجى إعادة التزويد</string>
+    <string name="medicine_delete_title">حذف الدواء؟</string>
+    <string name="medicine_delete_message">حذف %1$s يحذف أيضًا خططه وسجلات جرعاته.</string>
+    <string name="medicine_delete_action">حذف الدواء</string>
+
+    <!-- 药品编辑 -->
+    <string name="medicine_edit_title_new">دواء جديد</string>
+    <string name="medicine_edit_title">تعديل الدواء</string>
+    <string name="medicine_name_label">اسم الدواء</string>
+    <string name="medicine_name_required">يرجى إدخال اسم الدواء</string>
+    <!-- 药盒识别与条码：端侧模型，识别全程离线 -->
+    <string name="medicine_scan_name_cd">امسح علبة الدواء لملء الاسم</string>
+    <string name="medicine_scan_name_failed">لم يتم العثور على اسم الدواء. يرجى إدخاله يدويًا.</string>
+    <string name="medicine_scan_name_title">اختر اسم الدواء</string>
+    <string name="medicine_scan_name_confirm">استخدام الاسم المحدد</string>
+    <string name="medicine_scan_barcode_label">الباركود</string>
+    <string name="medicine_scan_barcode_action">مسح الباركود</string>
+    <string name="medicine_scan_barcode_title">تأكيد الباركود</string>
+    <string name="medicine_scan_barcode_confirm">استخدام هذا الباركود</string>
+    <string name="medicine_scan_barcode_failed">لم يتم العثور على باركود. يرجى تجربة صورة أخرى.</string>
+    <string name="medicine_form_label">الشكل</string>
+    <string name="medicine_form_tablet">قرص</string>
+    <string name="medicine_form_capsule">كبسولة</string>
+    <string name="medicine_form_liquid">سائل</string>
+    <string name="medicine_form_drops">قطرات</string>
+    <string name="medicine_form_spray">بخاخ</string>
+    <string name="medicine_form_pen">قلم</string>
+    <string name="medicine_spec_value_label">التركيز</string>
+    <string name="medicine_spec_unit_label">وحدة التركيز</string>
+    <string name="medicine_dose_unit_label">وحدة الجرعة</string>
+    <string name="medicine_spec_required">يرجى إدخال التركيز ووحدة الجرعة</string>
+    <string name="medicine_splittable_label">قابل للتقسيم</string>
+    <string name="medicine_pack_size_label">الكمية في العلبة</string>
+    <string name="medicine_pack_unit_label">وحدة العلبة</string>
+    <string name="medicine_expire_label">تاريخ الانتهاء</string>
+    <string name="medicine_opened_label">تاريخ الفتح</string>
+    <string name="medicine_shelf_days_label">أيام الصلاحية بعد الفتح</string>
+    <string name="medicine_auto_deduct_label">خصم المخزون تلقائيًا</string>
+    <string name="medicine_note_label">ملاحظات</string>
+    <string name="medicine_date_value">%1$s: %2$s</string>
+    <string name="medicine_photo_title">صورة علبة الدواء</string>
+    <string name="medicine_photo_pick">اختيار صورة</string>
+    <string name="medicine_photo_retake">إعادة التقاط الصورة</string>
+    <string name="medicine_photo_delete">حذف الصورة</string>
+    <string name="medicine_photo_empty">لا توجد صورة بعد</string>
+    <string name="medicine_photo_error">تعذر حفظ الصورة. يرجى المحاولة مرة أخرى.</string>
+    <string name="medicine_rules_title">الخطط</string>
+    <string name="medicine_rules_empty">لا توجد خطط بعد</string>
+    <string name="medicine_rules_need_save">احفظ الدواء أولًا لإضافة خطة</string>
+    <string name="medicine_rule_add">إضافة خطة</string>
+    <string name="medicine_rule_edit">تعديل</string>
+
+    <!-- 剂量单位选项 -->
+    <string name="dose_unit_tablet">قرص</string>
+    <string name="dose_unit_capsule">كبسولة</string>
+    <string name="dose_unit_ml">مل</string>
+    <string name="dose_unit_drop">قطرة</string>
+    <string name="dose_unit_spray">بخة</string>
+    <string name="dose_unit_unit">وحدة</string>
+    <string name="dose_unit_other">وحدة</string>
+
+    <!-- 计划编辑 -->
+    <string name="schedule_edit_title_new">خطة جديدة</string>
+    <string name="schedule_edit_title">تعديل الخطة</string>
+    <string name="schedule_medicine_label">الدواء: %1$s</string>
+    <string name="schedule_anchor_label">وقت الجرعة</string>
+    <string name="schedule_anchor_clock">وقت ثابت</string>
+    <string name="schedule_anchor_meal">مع الوجبات</string>
+    <string name="schedule_time_value">الوقت: %1$s</string>
+    <string name="schedule_pick_time">اختر وقتًا</string>
+    <string name="schedule_offset_label">فارق الدقائق (سالب = قبل الوجبة)</string>
+    <string name="schedule_recurrence_label">التكرار</string>
+    <string name="schedule_recurrence_daily">كل يوم</string>
+    <string name="schedule_recurrence_every_n">كل N أيام</string>
+    <string name="schedule_recurrence_weekly">أسبوعيًا</string>
+    <string name="schedule_recurrence_monthly">شهريًا</string>
+    <string name="schedule_interval_label">الفاصل بالأيام</string>
+    <string name="schedule_weekdays_label">أيام الأسبوع</string>
+    <string name="schedule_monthly_day_label">يوم الشهر</string>
+    <string name="schedule_start_date_label">تاريخ البدء</string>
+    <string name="schedule_end_date_label">تاريخ الانتهاء</string>
+    <string name="schedule_long_term">طويل الأمد</string>
+    <string name="schedule_dose_label">الجرعة</string>
+    <string name="schedule_dose_label_with_unit">الجرعة لكل مرة (%1$s)</string>
+    <string name="schedule_dose_integer_error">لا يمكن تقسيم هذا الدواء. أدخل عددًا صحيحًا من %1$s.</string>
+    <string name="schedule_dose_invalid">أدخل جرعة صالحة</string>
+    <string name="schedule_window_label">نافذة التذكير</string>
+    <string name="schedule_early_label">مبكرًا (دقائق)</string>
+    <string name="schedule_late_label">متأخرًا (دقائق)</string>
+    <string name="schedule_prn_label">عند الحاجة (PRN)</string>
+    <string name="schedule_prn_hint">تُسجل الجرعات عند الحاجة. الحد اليومي إرشادي فقط.</string>
+    <string name="schedule_prn_max_label">الحد اليومي (إرشادي فقط)</string>
+    <string name="schedule_preview">معاينة القاعدة: %1$s</string>
+    <string name="schedule_error_offset">أدخل الفارق بالدقائق</string>
+    <string name="schedule_error_interval">يجب أن يكون الفاصل يومين على الأقل</string>
+    <string name="schedule_error_weekdays">اختر يومًا واحدًا على الأقل</string>
+    <string name="schedule_error_monthly_day">أدخل يومًا بين 1 و31</string>
+    <string name="schedule_error_window">أدخل دقائق صالحة لنافذة التذكير</string>
+    <string name="schedule_error_end_date">يجب أن يكون تاريخ الانتهاء في تاريخ البدء أو بعده</string>
+    <string name="schedule_error_prn_limit">أدخل حدًا يوميًا صالحًا</string>
+    <string name="schedule_delete_action">حذف الخطة</string>
+    <string name="schedule_delete_title">حذف الخطة؟</string>
+    <string name="schedule_delete_message">ستُحذف أيضًا سجلات جرعات هذه الخطة.</string>
+    <string name="rule_prn">عند الحاجة · %1$s</string>
+
+    <!-- 递减方案 -->
+    <string name="schedule_taper_label">خطة التدرج</string>
+    <string name="schedule_taper_hint">تتغير الجرعة من تاريخ بدء كل مرحلة. يمكن استخدام كل تاريخ مرة واحدة.</string>
+    <string name="schedule_taper_add_step">إضافة مرحلة</string>
+    <string name="schedule_taper_step_title">المرحلة %1$d</string>
+    <string name="schedule_taper_dose_label">جرعة المرحلة (%1$s)</string>
+    <string name="schedule_taper_remove">إزالة المرحلة</string>
+    <string name="schedule_error_taper_empty">أضف مرحلة واحدة على الأقل</string>
+    <string name="schedule_error_taper_date">يجب أن يكون لكل مرحلة تاريخ بدء مختلف</string>
+    <string name="schedule_error_taper_dose">أدخل جرعة صالحة لكل مرحلة</string>
+    <string name="schedule_error_taper_integer">يجب أن تكون جرعات المراحل أعدادًا صحيحة من %1$s</string>
+    <string name="medicine_taper_summary">التدرج: حاليًا %1$s · %2$d مراحل</string>
+
+    <!-- 按需用药 -->
+    <string name="today_prn_section">عند الحاجة</string>
+    <string name="today_prn_take_now">تناول الآن</string>
+    <string name="today_prn_taken_limit">تم التناول %1$d مرة اليوم (الحد %2$d)</string>
+
+    <!-- 用药人档案 -->
+    <string name="profile_title">ملفات العلاج</string>
+    <string name="profile_default_name">الملف الافتراضي</string>
+    <string name="profile_current">الحالي</string>
+    <string name="profile_rename">إعادة التسمية</string>
+    <string name="profile_add">إضافة ملف</string>
+    <string name="profile_add_title">إضافة ملف</string>
+    <string name="profile_rename_title">إعادة تسمية الملف</string>
+    <string name="profile_name_label">اسم الملف</string>
+    <string name="profile_name_error">أدخل اسمًا لا يزيد عن 30 حرفًا</string>
+    <string name="profile_delete_title">حذف الملف؟</string>
+    <string name="profile_delete_message">سيتم حذف جميع أدوية \"%1$s\" وخططه وسجلاته ومخزونه.</string>
+    <string name="settings_profiles">ملفات العلاج</string>
+
+    <!-- 历史/统计 -->
+    <string name="history_title">السجل</string>
+    <string name="history_range_7">آخر 7 أيام</string>
+    <string name="history_range_30">آخر 30 يومًا</string>
+    <string name="history_range_90">آخر 90 يومًا</string>
+    <string name="history_summary_title">الملخص</string>
+    <string name="history_summary_on_time">في الوقت</string>
+    <string name="history_summary_late">متأخر</string>
+    <string name="history_summary_unconfirmed">غير مؤكد</string>
+    <string name="history_summary_uncertain">غير متأكد</string>
+    <string name="history_summary_skipped">متخطى</string>
+    <string name="history_summary_total">الجرعات المجدولة</string>
+    <string name="history_status_on_time">في الوقت</string>
+    <string name="history_late_minutes">متأخر %1$d دقيقة</string>
+    <string name="history_empty">لا توجد سجلات جرعات في الفترة المحددة</string>
+    <string name="history_backfill_title">إضافة سجل</string>
+    <string name="history_backfill_message">%1$s · %2$s</string>
+    <string name="history_backfill_taken">تم التناول</string>
+    <string name="history_backfill_hint">اضغط لإضافة سجل</string>
+
+    <!-- 库存 -->
+    <string name="stock_title">المخزون</string>
+    <string name="stock_remaining">المتبقي: %1$s</string>
+    <string name="stock_days_long_term">طويل الأمد</string>
+    <string name="stock_expire">ينتهي في %1$s</string>
+    <string name="stock_shelf_days">صالح %1$d يومًا بعد الفتح</string>
+    <string name="stock_banner_empty">نفد المخزون. يرجى إعادة التزويد.</string>
+    <string name="stock_banner_low">المخزون منخفض. يرجى إعادة التزويد.</string>
+    <string name="stock_banner_expiring">مع الخطة الحالية، تاريخ النفاد المتوقع بعد تاريخ الانتهاء</string>
+    <string name="stock_banner_expired">تجاوز تاريخ الانتهاء</string>
+    <string name="stock_action_purchase">إدخال مخزون</string>
+    <string name="stock_action_adjust">جرد المخزون</string>
+    <string name="stock_purchase_title">إدخال مخزون</string>
+    <string name="stock_adjust_title">جرد المخزون</string>
+    <string name="stock_qty_label">الكمية (%1$s)</string>
+    <string name="stock_qty_invalid">أدخل كمية صالحة</string>
+    <string name="stock_no_change">لم يتغير المخزون</string>
+    <string name="stock_changes_title">التغييرات الأخيرة</string>
+    <string name="stock_changes_empty">لا توجد تغييرات في المخزون بعد</string>
+    <string name="stock_reason_purchase">إدخال مخزون</string>
+    <string name="stock_reason_taken">جرعة تم تناولها</string>
+    <string name="stock_reason_adjust">تعديل الجرد</string>
+    <string name="stock_reason_lost">فقدان</string>
+    <string name="stock_reason_expired">منتهي الصلاحية</string>
+    <string name="stock_reason_undo">تراجع</string>
+    <string name="stock_delta_plus">+%1$s</string>
+    <string name="stock_delta_minus">-%1$s</string>
+    <string name="stock_not_found">الدواء غير موجود</string>
+
+    <!-- 导出报告 -->
+    <string name="export_file_prefix">MedicationLog</string>
+    <string name="export_title">تصدير التقرير</string>
+    <string name="export_entry_button">تصدير التقرير</string>
+    <string name="export_range_label">النطاق الزمني</string>
+    <string name="export_range_7">آخر 7 أيام</string>
+    <string name="export_range_30">آخر 30 يومًا</string>
+    <string name="export_range_90">آخر 90 يومًا</string>
+    <string name="export_generate">إنشاء معاينة</string>
+    <string name="export_generating">جارٍ الإنشاء…</string>
+    <string name="export_share">مشاركة</string>
+    <string name="export_empty_message">لا توجد سجلات جرعات في الفترة المحددة</string>
+    <string name="export_error_generate">تعذر إنشاء PDF. يرجى المحاولة مرة أخرى.</string>
+    <string name="export_preview_title">معاينة</string>
+    <string name="export_preview_range">النطاق</string>
+    <string name="export_preview_pages">الصفحات</string>
+    <string name="export_preview_records">السجلات</string>
+    <string name="export_preview_size">حجم الملف</string>
+    <string name="export_share_dialog_title">مشاركة هذا الملف؟</string>
+    <string name="export_share_dialog_message">يحتوي الملف على معلومات صحية. يرجى تأكيد الجهة التي تشاركه معها.</string>
+    <string name="export_share_confirm">مشاركة</string>
+    <string name="export_share_chooser">مشاركة التقرير</string>
+    <string name="export_status_on_time">تم التناول</string>
+    <string name="export_status_late">تم التناول متأخرًا</string>
+    <string name="export_status_unconfirmed">غير مؤكد</string>
+    <string name="export_status_uncertain">غير متأكد</string>
+    <string name="export_status_skipped">متخطى</string>
+    <string name="export_remaining">المتبقي %1$s</string>
+    <string name="export_rule_separator">"؛ "</string>
+    <string name="export_anomaly_morning">صباحًا: %1$d غير مؤكد</string>
+    <string name="export_anomaly_afternoon">بعد الظهر: %1$d غير مؤكد</string>
+    <string name="export_anomaly_evening">مساءً: %1$d غير مؤكد</string>
+    <string name="export_anomaly_backfilled">%1$d سجل أضيف لاحقًا</string>
+    <string name="export_pdf_title">تقرير الأدوية</string>
+    <string name="export_pdf_range">النطاق: %1$s ~ %2$s</string>
+    <string name="export_pdf_generated">تم الإنشاء في %1$s</string>
+    <string name="export_pdf_section_medicines">الأدوية الحالية</string>
+    <string name="export_pdf_section_summary">ملخص الجرعات</string>
+    <string name="export_pdf_section_days">نظرة يومية</string>
+    <string name="export_pdf_section_anomalies">ملاحظات الحالات الشاذة</string>
+    <string name="export_pdf_medicines_none">لا توجد أدوية نشطة</string>
+    <string name="export_pdf_anomalies_none">لا توجد ملاحظات شاذة في هذه الفترة</string>
+    <string name="export_pdf_count_on_time">في الوقت: %1$d</string>
+    <string name="export_pdf_count_late">متأخر: %1$d</string>
+    <string name="export_pdf_count_unconfirmed">غير مؤكد: %1$d</string>
+    <string name="export_pdf_count_uncertain">غير متأكد: %1$d</string>
+    <string name="export_pdf_count_skipped">متخطى: %1$d</string>
+    <string name="export_pdf_count_total">الجرعات المجدولة: %1$d</string>
+    <string name="export_pdf_row">%1$s · %2$s · %3$s · %4$s</string>
+    <string name="export_pdf_footer">سجله المريض، ولم يُتحقق منه طبيًا. لا يقدم هذا التطبيق مشورة طبية.</string>
+
+    <!-- 设置页 -->
+    <string name="settings_title">الإعدادات</string>
+    <string name="settings_section_meal_times">أوقات الوجبات</string>
+    <string name="settings_meal_breakfast">الإفطار</string>
+    <string name="settings_meal_lunch">الغداء</string>
+    <string name="settings_meal_dinner">العشاء</string>
+    <string name="settings_meal_bedtime">وقت النوم</string>
+    <string name="settings_section_defaults">إعدادات التذكير الافتراضية</string>
+    <string name="settings_default_early">التذكير المبكر الافتراضي (دقائق)</string>
+    <string name="settings_default_late">التذكير المتأخر الافتراضي (دقائق)</string>
+    <string name="settings_merge_window">نافذة الدمج (دقائق)</string>
+    <string name="settings_minutes_value">%1$d دقيقة</string>
+    <string name="settings_minutes_hint">أدخل عددًا من الدقائق بين 0 و720.</string>
+    <string name="settings_quiet_start">بداية ساعات الهدوء</string>
+    <string name="settings_quiet_end">نهاية ساعات الهدوء</string>
+    <string name="settings_section_permissions">فحص الأذونات</string>
+    <string name="settings_perm_exact_alarm">المنبهات الدقيقة</string>
+    <string name="settings_perm_notifications">الإشعارات</string>
+    <string name="settings_perm_full_screen">تذكيرات ملء الشاشة</string>
+    <string name="settings_perm_battery">تحسين البطارية</string>
+    <string name="settings_status_ok">جيد</string>
+    <string name="settings_status_denied">غير ممنوح</string>
+    <string name="settings_status_off">متوقف</string>
+    <string name="settings_status_recommended">يُنصح بالمراجعة</string>
+    <string name="settings_action_open">فتح</string>
+    <string name="settings_action_allow">السماح</string>
+    <string name="settings_full_screen_hint">إذا لم يُمنح الإذن، ستصل التذكيرات مع الصوت.</string>
+    <string name="settings_battery_hint">قد توقف بعض الشركات المصنعة المنبهات في الخلفية. اسمح لهذا التطبيق بالعمل في الخلفية من إعدادات النظام.</string>
+    <string name="settings_section_tools">الاختبار</string>
+    <string name="settings_test_reminder">تذكير تجريبي بعد دقيقة</string>
+    <string name="settings_test_reminder_toast">سيظهر تذكير تجريبي بعد دقيقة.</string>
+    <string name="settings_section_pause">إيقاف كل التذكيرات مؤقتًا</string>
+    <string name="settings_pause_status">التذكيرات متوقفة حتى %1$s</string>
+    <string name="settings_pause_status_indefinite">التذكيرات متوقفة مؤقتًا</string>
+    <string name="settings_pause_1h">إيقاف لمدة ساعة</string>
+    <string name="settings_pause_today">إيقاف حتى نهاية اليوم</string>
+    <string name="settings_pause_resume">استئناف التذكيرات</string>
+    <string name="settings_section_language">اللغة</string>
+    <string name="settings_language_system">اتباع النظام</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_zh">简体中文</string>
+    <string name="settings_language_es">Español</string>
+    <string name="settings_language_pt">Português (Brasil)</string>
+    <string name="settings_language_ja">日本語</string>
+    <string name="settings_language_it">Italiano</string>
+    <string name="settings_language_de">Deutsch</string>
+    <string name="settings_language_zh_tw">繁體中文</string>
+    <string name="settings_language_id">Bahasa Indonesia</string>
+    <string name="settings_language_ko">한국어</string>
+    <string name="settings_language_ar">العربية</string>
+    <string name="settings_language_hi">हिन्दी</string>
+    <string name="settings_language_th">ไทย</string>
+    <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="settings_section_data">البيانات</string>
+    <string name="settings_export_report">تصدير التقرير</string>
+    <string name="settings_section_about">حول والامتثال</string>
+    <string name="settings_version">الإصدار %1$s</string>
+    <string name="settings_medical_disclaimer">يقدم هذا التطبيق التذكيرات والسجلات فقط ولا يُعد مشورة طبية.</string>
+    <string name="settings_privacy_local_processing">تبقى صور علب الأدوية والتعرف عليها على هذا الجهاز ولا تُرفع أبدًا.</string>
+    <string name="settings_privacy_policy">سياسة الخصوصية</string>
+    <string name="settings_invalid_minutes">أدخل عددًا من الدقائق بين 0 و720.</string>
+
+    <!-- 首次启动引导 -->
+    <string name="onboarding_title">مرحبًا بك في MedTimer</string>
+    <string name="onboarding_purpose_title">وظيفة هذا التطبيق</string>
+    <string name="onboarding_purpose_body">يرسل تذكيرات في أوقاتك المجدولة ويحتفظ بسجل لكل جرعة.</string>
+    <string name="onboarding_limits_body">لا مشورة طبية، ولا وصول للشبكة، ولا جمع للبيانات.</string>
+    <string name="onboarding_permissions_title">الأذونات</string>
+    <string name="onboarding_permissions_body">تساعد هذه الأذونات في وصول التذكيرات في الوقت المحدد. يمكنك تخطيها واستخدام التطبيق.</string>
+    <string name="onboarding_perm_exact_alarm">المنبهات الدقيقة: الرنين في الوقت المخطط.</string>
+    <string name="onboarding_perm_notifications">الإشعارات: عرض التذكير على الشاشة.</string>
+    <string name="onboarding_perm_full_screen">تذكيرات ملء الشاشة: عرض التذكير على شاشة القفل.</string>
+    <string name="onboarding_perm_note">إذا رفضت، سيظل التطبيق يعمل، لكن قد لا تصل التذكيرات في الوقت المحدد.</string>
+    <string name="onboarding_disclaimer_title">إخلاء المسؤولية الطبية</string>
+    <string name="onboarding_disclaimer_body">يقدم هذا التطبيق تذكيرات وسجلات فقط. لا يقدم مشورة طبية أو تشخيصًا أو علاجًا أو توصيات بالجرعات. اتبع تعليمات طبيبك.</string>
+    <string name="onboarding_grant_notifications">السماح بالإشعارات</string>
+    <string name="onboarding_open_exact_alarm">فتح إعدادات المنبه الدقيق</string>
+    <string name="onboarding_start">ابدأ استخدام التطبيق</string>
+
+    <!-- 桌面小组件 -->
+    <string name="widget_label">أداة MedTimer</string>
+    <string name="widget_remaining">%1$d جرعات متبقية اليوم</string>
+    <string name="widget_next_time">الجرعة التالية %1$s</string>
+    <string name="widget_done_today">اكتمل كل شيء اليوم</string>
+    <string name="widget_no_schedule">لا توجد جرعات مجدولة اليوم</string>
+    <string name="widget_paused">التذكيرات متوقفة مؤقتًا</string>
+</resources>

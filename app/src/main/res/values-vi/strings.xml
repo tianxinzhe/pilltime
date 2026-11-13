@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Machine-translated draft, needs human review before release. -->
+<resources>
+    <string name="app_name">MedTimer</string>
+
+    <!-- 通知渠道 -->
+    <string name="notification_channel_reminder_name">Nhắc nhở dùng thuốc</string>
+    <string name="notification_channel_reminder_desc">Nhắc nhở cho các liều đã lên lịch</string>
+    <string name="notification_channel_summary_name">Tóm tắt liều đã bỏ lỡ</string>
+    <string name="notification_channel_summary_desc">Tóm tắt các liều chưa xác nhận</string>
+
+    <!-- 提醒通知 -->
+    <string name="notification_title_reminder">Nhắc nhở dùng thuốc</string>
+    <string name="notification_action_taken">Đã uống</string>
+    <string name="notification_action_snooze">Hoãn 10 phút</string>
+    <string name="notification_action_skip">Bỏ qua</string>
+    <string name="notification_more_items">%1$d mục khác</string>
+
+    <!-- 漏服汇总 -->
+    <string name="notification_missed_summary_title">Các liều chưa xác nhận</string>
+    <string name="notification_missed_summary_text">%1$d liều chưa được xác nhận</string>
+
+    <!-- 底部导航 -->
+    <string name="tab_today">Hôm nay</string>
+    <string name="tab_medicines">Thuốc</string>
+    <string name="tab_history">Lịch sử</string>
+    <string name="tab_settings">Cài đặt</string>
+    <string name="coming_soon">Sắp ra mắt</string>
+
+    <!-- 规则整句回显 -->
+    <string name="rule_daily">Hằng ngày · %1$s</string>
+    <string name="rule_every_other_day">Cách ngày · %1$s</string>
+    <string name="rule_every_n_days">Mỗi %1$d ngày · %2$s</string>
+    <string name="rule_weekly">Mỗi %1$s · %2$s</string>
+    <string name="rule_monthly">Ngày %1$d hằng tháng · %2$s</string>
+    <string name="rule_clock_phrase">%1$s lúc %2$s</string>
+    <string name="rule_meal_before">%1$s %2$d phút trước %3$s</string>
+    <string name="rule_meal_after">%1$s %2$d phút sau %3$s</string>
+    <string name="rule_meal_on">%1$s lúc %2$s</string>
+    <string name="meal_breakfast">bữa sáng</string>
+    <string name="meal_lunch">bữa trưa</string>
+    <string name="meal_dinner">bữa tối</string>
+    <string name="meal_bedtime">giờ đi ngủ</string>
+    <string name="weekday_mon">T2</string>
+    <string name="weekday_tue">T3</string>
+    <string name="weekday_wed">T4</string>
+    <string name="weekday_thu">T5</string>
+    <string name="weekday_fri">T6</string>
+    <string name="weekday_sat">T7</string>
+    <string name="weekday_sun">CN</string>
+    <string name="weekday_separator">", "</string>
+
+    <!-- 剂量复数 -->
+    <plurals name="dose_tablet">
+        <item quantity="one">%1$s viên</item>
+        <item quantity="other">%1$s viên</item>
+    </plurals>
+    <plurals name="dose_capsule">
+        <item quantity="one">%1$s viên nang</item>
+        <item quantity="other">%1$s viên nang</item>
+    </plurals>
+    <plurals name="dose_sachet">
+        <item quantity="one">%1$s gói</item>
+        <item quantity="other">%1$s gói</item>
+    </plurals>
+    <plurals name="dose_ml">
+        <item quantity="one">%1$s ml</item>
+        <item quantity="other">%1$s ml</item>
+    </plurals>
+    <plurals name="dose_drop">
+        <item quantity="one">%1$s giọt</item>
+        <item quantity="other">%1$s giọt</item>
+    </plurals>
+    <plurals name="dose_spray">
+        <item quantity="one">%1$s lần xịt</item>
+        <item quantity="other">%1$s lần xịt</item>
+    </plurals>
+    <plurals name="dose_unit">
+        <item quantity="one">%1$s đơn vị</item>
+        <item quantity="other">%1$s đơn vị</item>
+    </plurals>
+    <string name="dose_unknown_format">%1$s %2$s</string>
+
+    <!-- 今日服药单 -->
+    <string name="today_progress">Đã uống %1$d / %2$d</string>
+    <string name="today_taken_all">Đã uống tất cả</string>
+    <string name="today_status_due">Đến giờ</string>
+    <string name="today_status_missed">Chưa xác nhận</string>
+    <string name="today_status_taken">Đã uống</string>
+    <string name="today_status_late">Uống muộn</string>
+    <string name="today_status_skipped">Đã bỏ qua</string>
+    <string name="today_status_uncertain">Không chắc</string>
+    <string name="today_status_pending">Đang chờ</string>
+    <string name="today_not_due">Hôm nay không cần · Lần tới %1$s</string>
+    <string name="today_not_due_section">Hôm nay không cần</string>
+    <string name="today_stock_days">Còn đủ khoảng %1$d ngày</string>
+    <string name="today_stock_empty">Sắp hết thuốc, vui lòng nhập thêm</string>
+    <string name="today_alert_exact_alarm">Nhắc nhở có thể không đến. Vui lòng kiểm tra quyền báo thức chính xác.</string>
+    <string name="today_alert_notifications">Thông báo đang tắt. Vui lòng bật trong cài đặt hệ thống.</string>
+    <string name="today_alert_paused">Nhắc nhở đang tạm dừng</string>
+    <string name="today_action_resume">Tiếp tục</string>
+    <string name="today_missed_summary">%1$d chưa xác nhận</string>
+    <string name="today_empty_title">Chưa có thuốc</string>
+    <string name="today_empty_action">Thêm thuốc</string>
+    <string name="today_sheet_title">%1$s · %2$s</string>
+    <string name="today_action_uncertain">Không chắc</string>
+    <string name="today_action_undo">Hoàn tác</string>
+    <string name="today_loading">Đang tải</string>
+    <string name="cd_medicine_photo">Ảnh của %1$s</string>
+    <string name="cd_not_due_toggle">Hiện hoặc ẩn các thuốc không cần dùng hôm nay</string>
+    <string name="common_cancel">Hủy</string>
+
+    <!-- 提醒页 -->
+    <string name="reminder_item_format">%1$s · %2$s %3$s</string>
+    <string name="reminder_unknown_medicine">Thuốc</string>
+    <string name="reminder_screen_title">Nhắc nhở dùng thuốc</string>
+    <string name="reminder_screen_time">Dự kiến lúc %1$s</string>
+    <string name="reminder_screen_all_taken">Đã uống tất cả</string>
+    <string name="reminder_item_line">%1$s · %2$s</string>
+    <string name="reminder_invalid_data">Không có thông tin nhắc nhở. Vui lòng quay lại và thử lại.</string>
+    <string name="reminder_close">Đóng</string>
+    <string name="tts_reminder_text">Đã đến giờ uống thuốc. %1$s</string>
+    <string name="tts_item_format">%1$s %2$s.</string>
+    <string name="tts_item_separator">" "</string>
+
+    <!-- 通用操作 -->
+    <string name="common_delete">Xóa</string>
+    <string name="common_save">Lưu</string>
+    <string name="common_back">Quay lại</string>
+    <string name="common_ok">OK</string>
+    <string name="common_clear">Xóa nội dung</string>
+    <string name="common_not_set">Chưa đặt</string>
+
+    <!-- 药品列表 -->
+    <string name="medicine_list_title">Thuốc</string>
+    <string name="medicine_list_add">Thêm thuốc</string>
+    <string name="medicine_list_empty_title">Chưa có thuốc</string>
+    <string name="medicine_list_stock_button">Tồn kho</string>
+    <string name="medicine_list_more_rules">Thêm %1$d quy tắc</string>
+    <string name="medicine_no_rule">Chưa có kế hoạch</string>
+    <string name="medicine_stock_days">Còn khoảng %1$d ngày</string>
+    <string name="medicine_stock_low">Sắp hết thuốc, vui lòng nhập thêm</string>
+    <string name="medicine_delete_title">Xóa thuốc?</string>
+    <string name="medicine_delete_message">Xóa %1$s cũng sẽ xóa các kế hoạch và bản ghi liều.</string>
+    <string name="medicine_delete_action">Xóa thuốc</string>
+
+    <!-- 药品编辑 -->
+    <string name="medicine_edit_title_new">Thuốc mới</string>
+    <string name="medicine_edit_title">Sửa thuốc</string>
+    <string name="medicine_name_label">Tên thuốc</string>
+    <string name="medicine_name_required">Vui lòng nhập tên thuốc</string>
+    <!-- 药盒识别与条码：端侧模型，识别全程离线 -->
+    <string name="medicine_scan_name_cd">Quét hộp thuốc để điền tên</string>
+    <string name="medicine_scan_name_failed">Không tìm thấy tên thuốc. Vui lòng nhập thủ công.</string>
+    <string name="medicine_scan_name_title">Chọn tên thuốc</string>
+    <string name="medicine_scan_name_confirm">Dùng tên đã chọn</string>
+    <string name="medicine_scan_barcode_label">Mã vạch</string>
+    <string name="medicine_scan_barcode_action">Quét mã vạch</string>
+    <string name="medicine_scan_barcode_title">Xác nhận mã vạch</string>
+    <string name="medicine_scan_barcode_confirm">Dùng mã vạch này</string>
+    <string name="medicine_scan_barcode_failed">Không tìm thấy mã vạch. Vui lòng thử ảnh khác.</string>
+    <string name="medicine_form_label">Dạng thuốc</string>
+    <string name="medicine_form_tablet">Viên nén</string>
+    <string name="medicine_form_capsule">Viên nang</string>
+    <string name="medicine_form_liquid">Dung dịch</string>
+    <string name="medicine_form_drops">Thuốc nhỏ</string>
+    <string name="medicine_form_spray">Dạng xịt</string>
+    <string name="medicine_form_pen">Bút tiêm</string>
+    <string name="medicine_spec_value_label">Hàm lượng</string>
+    <string name="medicine_spec_unit_label">Đơn vị hàm lượng</string>
+    <string name="medicine_dose_unit_label">Đơn vị liều</string>
+    <string name="medicine_spec_required">Vui lòng nhập hàm lượng và đơn vị liều</string>
+    <string name="medicine_splittable_label">Có thể chia nhỏ</string>
+    <string name="medicine_pack_size_label">Số lượng mỗi hộp</string>
+    <string name="medicine_pack_unit_label">Đơn vị đóng gói</string>
+    <string name="medicine_expire_label">Hạn sử dụng</string>
+    <string name="medicine_opened_label">Ngày mở</string>
+    <string name="medicine_shelf_days_label">Số ngày dùng sau khi mở</string>
+    <string name="medicine_auto_deduct_label">Tự động trừ tồn kho</string>
+    <string name="medicine_note_label">Ghi chú</string>
+    <string name="medicine_date_value">%1$s: %2$s</string>
+    <string name="medicine_photo_title">Ảnh hộp thuốc</string>
+    <string name="medicine_photo_pick">Chọn ảnh</string>
+    <string name="medicine_photo_retake">Chụp lại ảnh</string>
+    <string name="medicine_photo_delete">Xóa ảnh</string>
+    <string name="medicine_photo_empty">Chưa có ảnh</string>
+    <string name="medicine_photo_error">Không lưu được ảnh. Vui lòng thử lại.</string>
+    <string name="medicine_rules_title">Kế hoạch</string>
+    <string name="medicine_rules_empty">Chưa có kế hoạch</string>
+    <string name="medicine_rules_need_save">Lưu thuốc trước để thêm kế hoạch</string>
+    <string name="medicine_rule_add">Thêm kế hoạch</string>
+    <string name="medicine_rule_edit">Sửa</string>
+
+    <!-- 剂量单位选项 -->
+    <string name="dose_unit_tablet">Viên nén</string>
+    <string name="dose_unit_capsule">Viên nang</string>
+    <string name="dose_unit_ml">ml</string>
+    <string name="dose_unit_drop">Giọt</string>
+    <string name="dose_unit_spray">Dạng xịt</string>
+    <string name="dose_unit_unit">Đơn vị</string>
+    <string name="dose_unit_other">Đơn vị</string>
+
+    <!-- 计划编辑 -->
+    <string name="schedule_edit_title_new">Kế hoạch mới</string>
+    <string name="schedule_edit_title">Sửa kế hoạch</string>
+    <string name="schedule_medicine_label">Thuốc: %1$s</string>
+    <string name="schedule_anchor_label">Thời điểm dùng</string>
+    <string name="schedule_anchor_clock">Giờ cố định</string>
+    <string name="schedule_anchor_meal">Theo bữa ăn</string>
+    <string name="schedule_time_value">Giờ: %1$s</string>
+    <string name="schedule_pick_time">Chọn giờ</string>
+    <string name="schedule_offset_label">Số phút lệch (âm = trước bữa ăn)</string>
+    <string name="schedule_recurrence_label">Lặp lại</string>
+    <string name="schedule_recurrence_daily">Hằng ngày</string>
+    <string name="schedule_recurrence_every_n">Mỗi N ngày</string>
+    <string name="schedule_recurrence_weekly">Hằng tuần</string>
+    <string name="schedule_recurrence_monthly">Hằng tháng</string>
+    <string name="schedule_interval_label">Khoảng cách (ngày)</string>
+    <string name="schedule_weekdays_label">Thứ trong tuần</string>
+    <string name="schedule_monthly_day_label">Ngày trong tháng</string>
+    <string name="schedule_start_date_label">Ngày bắt đầu</string>
+    <string name="schedule_end_date_label">Ngày kết thúc</string>
+    <string name="schedule_long_term">Dài hạn</string>
+    <string name="schedule_dose_label">Liều</string>
+    <string name="schedule_dose_label_with_unit">Liều mỗi lần (%1$s)</string>
+    <string name="schedule_dose_integer_error">Thuốc này không thể chia nhỏ. Vui lòng nhập số nguyên %1$s.</string>
+    <string name="schedule_dose_invalid">Nhập liều hợp lệ</string>
+    <string name="schedule_window_label">Khung giờ nhắc</string>
+    <string name="schedule_early_label">Sớm (phút)</string>
+    <string name="schedule_late_label">Muộn (phút)</string>
+    <string name="schedule_prn_label">Dùng khi cần (PRN)</string>
+    <string name="schedule_prn_hint">Liều được ghi khi cần. Giới hạn hằng ngày chỉ là gợi ý.</string>
+    <string name="schedule_prn_max_label">Giới hạn hằng ngày (chỉ gợi ý)</string>
+    <string name="schedule_preview">Xem trước quy tắc: %1$s</string>
+    <string name="schedule_error_offset">Nhập số phút lệch</string>
+    <string name="schedule_error_interval">Khoảng cách tối thiểu 2 ngày</string>
+    <string name="schedule_error_weekdays">Chọn ít nhất một thứ</string>
+    <string name="schedule_error_monthly_day">Nhập ngày từ 1 đến 31</string>
+    <string name="schedule_error_window">Nhập số phút khung nhắc hợp lệ</string>
+    <string name="schedule_error_end_date">Ngày kết thúc phải bằng hoặc sau ngày bắt đầu</string>
+    <string name="schedule_error_prn_limit">Nhập giới hạn hằng ngày hợp lệ</string>
+    <string name="schedule_delete_action">Xóa kế hoạch</string>
+    <string name="schedule_delete_title">Xóa kế hoạch?</string>
+    <string name="schedule_delete_message">Bản ghi liều của kế hoạch này cũng sẽ bị xóa.</string>
+    <string name="rule_prn">Khi cần · %1$s</string>
+
+    <!-- 递减方案 -->
+    <string name="schedule_taper_label">Kế hoạch giảm liều</string>
+    <string name="schedule_taper_hint">Liều thay đổi từ ngày bắt đầu của mỗi giai đoạn. Mỗi ngày chỉ dùng được một lần.</string>
+    <string name="schedule_taper_add_step">Thêm giai đoạn</string>
+    <string name="schedule_taper_step_title">Giai đoạn %1$d</string>
+    <string name="schedule_taper_dose_label">Liều giai đoạn (%1$s)</string>
+    <string name="schedule_taper_remove">Xóa giai đoạn</string>
+    <string name="schedule_error_taper_empty">Thêm ít nhất một giai đoạn</string>
+    <string name="schedule_error_taper_date">Mỗi giai đoạn phải có ngày bắt đầu khác nhau</string>
+    <string name="schedule_error_taper_dose">Nhập liều hợp lệ cho mọi giai đoạn</string>
+    <string name="schedule_error_taper_integer">Liều giai đoạn phải là số nguyên %1$s</string>
+    <string name="medicine_taper_summary">Giảm liều: hiện tại %1$s · %2$d giai đoạn</string>
+
+    <!-- 按需用药 -->
+    <string name="today_prn_section">Khi cần</string>
+    <string name="today_prn_take_now">Uống ngay</string>
+    <string name="today_prn_taken_limit">Đã uống %1$d lần hôm nay (giới hạn %2$d)</string>
+
+    <!-- 用药人档案 -->
+    <string name="profile_title">Hồ sơ dùng thuốc</string>
+    <string name="profile_default_name">Hồ sơ mặc định</string>
+    <string name="profile_current">Hiện tại</string>
+    <string name="profile_rename">Đổi tên</string>
+    <string name="profile_add">Thêm hồ sơ</string>
+    <string name="profile_add_title">Thêm hồ sơ</string>
+    <string name="profile_rename_title">Đổi tên hồ sơ</string>
+    <string name="profile_name_label">Tên hồ sơ</string>
+    <string name="profile_name_error">Nhập tên tối đa 30 ký tự</string>
+    <string name="profile_delete_title">Xóa hồ sơ?</string>
+    <string name="profile_delete_message">Tất cả thuốc, kế hoạch, bản ghi và tồn kho của \"%1$s\" sẽ bị xóa.</string>
+    <string name="settings_profiles">Hồ sơ dùng thuốc</string>
+
+    <!-- 历史/统计 -->
+    <string name="history_title">Lịch sử</string>
+    <string name="history_range_7">7 ngày qua</string>
+    <string name="history_range_30">30 ngày qua</string>
+    <string name="history_range_90">90 ngày qua</string>
+    <string name="history_summary_title">Tóm tắt</string>
+    <string name="history_summary_on_time">Đúng giờ</string>
+    <string name="history_summary_late">Muộn</string>
+    <string name="history_summary_unconfirmed">Chưa xác nhận</string>
+    <string name="history_summary_uncertain">Không chắc</string>
+    <string name="history_summary_skipped">Đã bỏ qua</string>
+    <string name="history_summary_total">Liều đã lên lịch</string>
+    <string name="history_status_on_time">Đúng giờ</string>
+    <string name="history_late_minutes">Muộn %1$d phút</string>
+    <string name="history_empty">Không có bản ghi liều trong khoảng thời gian đã chọn</string>
+    <string name="history_backfill_title">Thêm bản ghi</string>
+    <string name="history_backfill_message">%1$s · %2$s</string>
+    <string name="history_backfill_taken">Đã uống</string>
+    <string name="history_backfill_hint">Nhấn để thêm bản ghi</string>
+
+    <!-- 库存 -->
+    <string name="stock_title">Tồn kho</string>
+    <string name="stock_remaining">Còn lại: %1$s</string>
+    <string name="stock_days_long_term">Dài hạn</string>
+    <string name="stock_expire">Hết hạn %1$s</string>
+    <string name="stock_shelf_days">Dùng được %1$d ngày sau khi mở</string>
+    <string name="stock_banner_empty">Hết thuốc. Vui lòng nhập thêm.</string>
+    <string name="stock_banner_low">Sắp hết thuốc. Vui lòng nhập thêm.</string>
+    <string name="stock_banner_expiring">Với kế hoạch hiện tại, ngày hết dự kiến muộn hơn hạn sử dụng</string>
+    <string name="stock_banner_expired">Đã quá hạn sử dụng</string>
+    <string name="stock_action_purchase">Nhập kho</string>
+    <string name="stock_action_adjust">Số lượng tồn</string>
+    <string name="stock_purchase_title">Nhập kho</string>
+    <string name="stock_adjust_title">Số lượng tồn</string>
+    <string name="stock_qty_label">Số lượng (%1$s)</string>
+    <string name="stock_qty_invalid">Nhập số lượng hợp lệ</string>
+    <string name="stock_no_change">Tồn kho không đổi</string>
+    <string name="stock_changes_title">Thay đổi gần đây</string>
+    <string name="stock_changes_empty">Chưa có thay đổi tồn kho</string>
+    <string name="stock_reason_purchase">Nhập kho</string>
+    <string name="stock_reason_taken">Đã uống liều</string>
+    <string name="stock_reason_adjust">Điều chỉnh số lượng tồn</string>
+    <string name="stock_reason_lost">Mất</string>
+    <string name="stock_reason_expired">Hết hạn</string>
+    <string name="stock_reason_undo">Hoàn tác</string>
+    <string name="stock_delta_plus">+%1$s</string>
+    <string name="stock_delta_minus">-%1$s</string>
+    <string name="stock_not_found">Không tìm thấy thuốc</string>
+
+    <!-- 导出报告 -->
+    <string name="export_file_prefix">MedicationLog</string>
+    <string name="export_title">Xuất báo cáo</string>
+    <string name="export_entry_button">Xuất báo cáo</string>
+    <string name="export_range_label">Khoảng thời gian</string>
+    <string name="export_range_7">7 ngày qua</string>
+    <string name="export_range_30">30 ngày qua</string>
+    <string name="export_range_90">90 ngày qua</string>
+    <string name="export_generate">Tạo bản xem trước</string>
+    <string name="export_generating">Đang tạo…</string>
+    <string name="export_share">Chia sẻ</string>
+    <string name="export_empty_message">Không có bản ghi liều trong khoảng thời gian đã chọn</string>
+    <string name="export_error_generate">Không tạo được PDF. Vui lòng thử lại.</string>
+    <string name="export_preview_title">Xem trước</string>
+    <string name="export_preview_range">Khoảng</string>
+    <string name="export_preview_pages">Số trang</string>
+    <string name="export_preview_records">Bản ghi</string>
+    <string name="export_preview_size">Kích thước tệp</string>
+    <string name="export_share_dialog_title">Chia sẻ tệp này?</string>
+    <string name="export_share_dialog_message">Tệp chứa thông tin sức khỏe. Vui lòng xác nhận người bạn chia sẻ.</string>
+    <string name="export_share_confirm">Chia sẻ</string>
+    <string name="export_share_chooser">Chia sẻ báo cáo</string>
+    <string name="export_status_on_time">Đã uống</string>
+    <string name="export_status_late">Uống muộn</string>
+    <string name="export_status_unconfirmed">Chưa xác nhận</string>
+    <string name="export_status_uncertain">Không chắc</string>
+    <string name="export_status_skipped">Đã bỏ qua</string>
+    <string name="export_remaining">Còn lại %1$s</string>
+    <string name="export_rule_separator">"; "</string>
+    <string name="export_anomaly_morning">Buổi sáng: %1$d chưa xác nhận</string>
+    <string name="export_anomaly_afternoon">Buổi chiều: %1$d chưa xác nhận</string>
+    <string name="export_anomaly_evening">Buổi tối: %1$d chưa xác nhận</string>
+    <string name="export_anomaly_backfilled">%1$d bản ghi được thêm sau</string>
+    <string name="export_pdf_title">Báo cáo dùng thuốc</string>
+    <string name="export_pdf_range">Khoảng: %1$s ~ %2$s</string>
+    <string name="export_pdf_generated">Tạo ngày %1$s</string>
+    <string name="export_pdf_section_medicines">Thuốc hiện tại</string>
+    <string name="export_pdf_section_summary">Tóm tắt liều</string>
+    <string name="export_pdf_section_days">Tổng quan theo ngày</string>
+    <string name="export_pdf_section_anomalies">Ghi chú bất thường</string>
+    <string name="export_pdf_medicines_none">Không có thuốc đang dùng</string>
+    <string name="export_pdf_anomalies_none">Không có ghi chú bất thường trong kỳ này</string>
+    <string name="export_pdf_count_on_time">Đúng giờ: %1$d</string>
+    <string name="export_pdf_count_late">Muộn: %1$d</string>
+    <string name="export_pdf_count_unconfirmed">Chưa xác nhận: %1$d</string>
+    <string name="export_pdf_count_uncertain">Không chắc: %1$d</string>
+    <string name="export_pdf_count_skipped">Đã bỏ qua: %1$d</string>
+    <string name="export_pdf_count_total">Liều đã lên lịch: %1$d</string>
+    <string name="export_pdf_row">%1$s · %2$s · %3$s · %4$s</string>
+    <string name="export_pdf_footer">Do bệnh nhân ghi lại, chưa được xác minh y khoa. Ứng dụng này không cung cấp lời khuyên y khoa.</string>
+
+    <!-- 设置页 -->
+    <string name="settings_title">Cài đặt</string>
+    <string name="settings_section_meal_times">Giờ bữa ăn</string>
+    <string name="settings_meal_breakfast">Bữa sáng</string>
+    <string name="settings_meal_lunch">Bữa trưa</string>
+    <string name="settings_meal_dinner">Bữa tối</string>
+    <string name="settings_meal_bedtime">Giờ đi ngủ</string>
+    <string name="settings_section_defaults">Mặc định nhắc nhở</string>
+    <string name="settings_default_early">Nhắc trước mặc định (phút)</string>
+    <string name="settings_default_late">Nhắc muộn mặc định (phút)</string>
+    <string name="settings_merge_window">Khung gộp (phút)</string>
+    <string name="settings_minutes_value">%1$d phút</string>
+    <string name="settings_minutes_hint">Nhập số phút từ 0 đến 720.</string>
+    <string name="settings_quiet_start">Bắt đầu giờ yên tĩnh</string>
+    <string name="settings_quiet_end">Kết thúc giờ yên tĩnh</string>
+    <string name="settings_section_permissions">Kiểm tra quyền</string>
+    <string name="settings_perm_exact_alarm">Báo thức chính xác</string>
+    <string name="settings_perm_notifications">Thông báo</string>
+    <string name="settings_perm_full_screen">Nhắc toàn màn hình</string>
+    <string name="settings_perm_battery">Tối ưu pin</string>
+    <string name="settings_status_ok">Bình thường</string>
+    <string name="settings_status_denied">Chưa được cấp</string>
+    <string name="settings_status_off">Đang tắt</string>
+    <string name="settings_status_recommended">Nên xem lại</string>
+    <string name="settings_action_open">Mở</string>
+    <string name="settings_action_allow">Cho phép</string>
+    <string name="settings_full_screen_hint">Nếu không cấp quyền, nhắc nhở vẫn đến kèm âm thanh.</string>
+    <string name="settings_battery_hint">Một số nhà sản xuất có thể dừng báo thức chạy nền. Hãy cho phép ứng dụng này chạy nền trong cài đặt hệ thống.</string>
+    <string name="settings_section_tools">Kiểm thử</string>
+    <string name="settings_test_reminder">Nhắc thử sau 1 phút</string>
+    <string name="settings_test_reminder_toast">Nhắc thử sẽ hiện sau 1 phút.</string>
+    <string name="settings_section_pause">Tạm dừng mọi nhắc nhở</string>
+    <string name="settings_pause_status">Nhắc nhở tạm dừng đến %1$s</string>
+    <string name="settings_pause_status_indefinite">Nhắc nhở đang tạm dừng</string>
+    <string name="settings_pause_1h">Tạm dừng 1 giờ</string>
+    <string name="settings_pause_today">Tạm dừng đến hết hôm nay</string>
+    <string name="settings_pause_resume">Tiếp tục nhắc nhở</string>
+    <string name="settings_section_language">Ngôn ngữ</string>
+    <string name="settings_language_system">Theo hệ thống</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_zh">简体中文</string>
+    <string name="settings_language_es">Español</string>
+    <string name="settings_language_pt">Português (Brasil)</string>
+    <string name="settings_language_ja">日本語</string>
+    <string name="settings_language_it">Italiano</string>
+    <string name="settings_language_de">Deutsch</string>
+    <string name="settings_language_zh_tw">繁體中文</string>
+    <string name="settings_language_id">Bahasa Indonesia</string>
+    <string name="settings_language_ko">한국어</string>
+    <string name="settings_language_ar">العربية</string>
+    <string name="settings_language_hi">हिन्दी</string>
+    <string name="settings_language_th">ไทย</string>
+    <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="settings_section_data">Dữ liệu</string>
+    <string name="settings_export_report">Xuất báo cáo</string>
+    <string name="settings_section_about">Giới thiệu và tuân thủ</string>
+    <string name="settings_version">Phiên bản %1$s</string>
+    <string name="settings_medical_disclaimer">Ứng dụng này chỉ cung cấp nhắc nhở và bản ghi, không phải lời khuyên y khoa.</string>
+    <string name="settings_privacy_local_processing">Ảnh hộp thuốc và quá trình nhận dạng chỉ ở trên thiết bị này và không bao giờ được tải lên.</string>
+    <string name="settings_privacy_policy">Chính sách quyền riêng tư</string>
+    <string name="settings_invalid_minutes">Nhập số phút từ 0 đến 720.</string>
+
+    <!-- 首次启动引导 -->
+    <string name="onboarding_title">Chào mừng đến với MedTimer</string>
+    <string name="onboarding_purpose_title">Ứng dụng này làm gì</string>
+    <string name="onboarding_purpose_body">Gửi nhắc nhở vào giờ đã lên lịch và lưu bản ghi từng liều.</string>
+    <string name="onboarding_limits_body">Không có lời khuyên y khoa, không truy cập mạng và không thu thập dữ liệu.</string>
+    <string name="onboarding_permissions_title">Quyền</string>
+    <string name="onboarding_permissions_body">Các quyền này giúp nhắc nhở đến đúng giờ. Bạn có thể bỏ qua và vẫn dùng ứng dụng.</string>
+    <string name="onboarding_perm_exact_alarm">Báo thức chính xác: đổ chuông vào giờ đã định.</string>
+    <string name="onboarding_perm_notifications">Thông báo: hiển thị nhắc nhở trên màn hình.</string>
+    <string name="onboarding_perm_full_screen">Nhắc toàn màn hình: hiển thị nhắc nhở trên màn hình khóa.</string>
+    <string name="onboarding_perm_note">Nếu bạn từ chối, ứng dụng vẫn hoạt động nhưng nhắc nhở có thể không đến đúng giờ.</string>
+    <string name="onboarding_disclaimer_title">Tuyên bố từ chối trách nhiệm y khoa</string>
+    <string name="onboarding_disclaimer_body">Ứng dụng này chỉ cung cấp nhắc nhở và bản ghi. Ứng dụng không cung cấp lời khuyên y khoa, chẩn đoán, điều trị hoặc khuyến nghị liều. Hãy làm theo hướng dẫn của bác sĩ.</string>
+    <string name="onboarding_grant_notifications">Cho phép thông báo</string>
+    <string name="onboarding_open_exact_alarm">Mở cài đặt báo thức chính xác</string>
+    <string name="onboarding_start">Bắt đầu dùng ứng dụng</string>
+
+    <!-- 桌面小组件 -->
+    <string name="widget_label">Tiện ích MedTimer</string>
+    <string name="widget_remaining">Còn %1$d liều hôm nay</string>
+    <string name="widget_next_time">Liều tiếp theo %1$s</string>
+    <string name="widget_done_today">Đã xong hôm nay</string>
+    <string name="widget_no_schedule">Hôm nay không có liều nào được lên lịch</string>
+    <string name="widget_paused">Nhắc nhở đang tạm dừng</string>
+</resources>

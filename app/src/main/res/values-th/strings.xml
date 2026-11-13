@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Machine-translated draft, needs human review before release. -->
+<resources>
+    <string name="app_name">MedTimer</string>
+
+    <!-- 通知渠道 -->
+    <string name="notification_channel_reminder_name">การแจ้งเตือนยา</string>
+    <string name="notification_channel_reminder_desc">แจ้งเตือนสำหรับมื้อที่ตั้งไว้</string>
+    <string name="notification_channel_summary_name">สรุปรายการยาที่ลืม</string>
+    <string name="notification_channel_summary_desc">สรุปรายการยาที่ยังไม่ยืนยัน</string>
+
+    <!-- 提醒通知 -->
+    <string name="notification_title_reminder">แจ้งเตือนรับประทานยา</string>
+    <string name="notification_action_taken">รับประทานแล้ว</string>
+    <string name="notification_action_snooze">เลื่อน 10 นาที</string>
+    <string name="notification_action_skip">ข้าม</string>
+    <string name="notification_more_items">อีก %1$d รายการ</string>
+
+    <!-- 漏服汇总 -->
+    <string name="notification_missed_summary_title">รายการที่ยังไม่ยืนยัน</string>
+    <string name="notification_missed_summary_text">%1$d มื้อยังไม่ได้รับการยืนยัน</string>
+
+    <!-- 底部导航 -->
+    <string name="tab_today">วันนี้</string>
+    <string name="tab_medicines">ยา</string>
+    <string name="tab_history">ประวัติ</string>
+    <string name="tab_settings">การตั้งค่า</string>
+    <string name="coming_soon">เร็ว ๆ นี้</string>
+
+    <!-- 规则整句回显 -->
+    <string name="rule_daily">ทุกวัน · %1$s</string>
+    <string name="rule_every_other_day">วันเว้นวัน · %1$s</string>
+    <string name="rule_every_n_days">ทุก %1$d วัน · %2$s</string>
+    <string name="rule_weekly">ทุก %1$s · %2$s</string>
+    <string name="rule_monthly">วันที่ %1$d ของทุกเดือน · %2$s</string>
+    <string name="rule_clock_phrase">%1$s เวลา %2$s</string>
+    <string name="rule_meal_before">%1$s ก่อน%3$s %2$d นาที</string>
+    <string name="rule_meal_after">%1$s หลัง%3$s %2$d นาที</string>
+    <string name="rule_meal_on">%1$s เวลา %2$s</string>
+    <string name="meal_breakfast">มื้อเช้า</string>
+    <string name="meal_lunch">มื้อกลางวัน</string>
+    <string name="meal_dinner">มื้อเย็น</string>
+    <string name="meal_bedtime">ก่อนนอน</string>
+    <string name="weekday_mon">จ.</string>
+    <string name="weekday_tue">อ.</string>
+    <string name="weekday_wed">พ.</string>
+    <string name="weekday_thu">พฤ.</string>
+    <string name="weekday_fri">ศ.</string>
+    <string name="weekday_sat">ส.</string>
+    <string name="weekday_sun">อา.</string>
+    <string name="weekday_separator">", "</string>
+
+    <!-- 剂量复数 -->
+    <plurals name="dose_tablet">
+        <item quantity="one">%1$s เม็ด</item>
+        <item quantity="other">%1$s เม็ด</item>
+    </plurals>
+    <plurals name="dose_capsule">
+        <item quantity="one">%1$s แคปซูล</item>
+        <item quantity="other">%1$s แคปซูล</item>
+    </plurals>
+    <plurals name="dose_sachet">
+        <item quantity="one">%1$s ซอง</item>
+        <item quantity="other">%1$s ซอง</item>
+    </plurals>
+    <plurals name="dose_ml">
+        <item quantity="one">%1$s มล.</item>
+        <item quantity="other">%1$s มล.</item>
+    </plurals>
+    <plurals name="dose_drop">
+        <item quantity="one">%1$s หยด</item>
+        <item quantity="other">%1$s หยด</item>
+    </plurals>
+    <plurals name="dose_spray">
+        <item quantity="one">%1$s สเปรย์</item>
+        <item quantity="other">%1$s สเปรย์</item>
+    </plurals>
+    <plurals name="dose_unit">
+        <item quantity="one">%1$s หน่วย</item>
+        <item quantity="other">%1$s หน่วย</item>
+    </plurals>
+    <string name="dose_unknown_format">%1$s %2$s</string>
+
+    <!-- 今日服药单 -->
+    <string name="today_progress">รับประทานแล้ว %1$d / %2$d</string>
+    <string name="today_taken_all">รับประทานครบแล้ว</string>
+    <string name="today_status_due">ถึงเวลา</string>
+    <string name="today_status_missed">ยังไม่ยืนยัน</string>
+    <string name="today_status_taken">รับประทานแล้ว</string>
+    <string name="today_status_late">รับประทานช้า</string>
+    <string name="today_status_skipped">ข้ามแล้ว</string>
+    <string name="today_status_uncertain">ไม่แน่ใจ</string>
+    <string name="today_status_pending">รอดำเนินการ</string>
+    <string name="today_not_due">วันนี้ไม่ต้องใช้ · ครั้งถัดไป %1$s</string>
+    <string name="today_not_due_section">วันนี้ไม่ต้องใช้</string>
+    <string name="today_stock_days">พอใช้ได้ประมาณ %1$d วัน</string>
+    <string name="today_stock_empty">ยาใกล้หมด กรุณาเติมยา</string>
+    <string name="today_alert_exact_alarm">การแจ้งเตือนอาจมาไม่ถึง กรุณาตรวจสอบสิทธิ์การตั้งเตือนแบบแม่นยำ</string>
+    <string name="today_alert_notifications">การแจ้งเตือนถูกปิด กรุณาเปิดในการตั้งค่าระบบ</string>
+    <string name="today_alert_paused">การแจ้งเตือนหยุดชั่วคราว</string>
+    <string name="today_action_resume">ดำเนินการต่อ</string>
+    <string name="today_missed_summary">ยังไม่ยืนยัน %1$d รายการ</string>
+    <string name="today_empty_title">ยังไม่มีรายการยา</string>
+    <string name="today_empty_action">เพิ่มยา</string>
+    <string name="today_sheet_title">%1$s · %2$s</string>
+    <string name="today_action_uncertain">ไม่แน่ใจ</string>
+    <string name="today_action_undo">เลิกทำ</string>
+    <string name="today_loading">กำลังโหลด</string>
+    <string name="cd_medicine_photo">รูปของ %1$s</string>
+    <string name="cd_not_due_toggle">แสดงหรือซ่อนยาที่ไม่ต้องใช้วันนี้</string>
+    <string name="common_cancel">ยกเลิก</string>
+
+    <!-- 提醒页 -->
+    <string name="reminder_item_format">%1$s · %2$s %3$s</string>
+    <string name="reminder_unknown_medicine">ยา</string>
+    <string name="reminder_screen_title">แจ้งเตือนรับประทานยา</string>
+    <string name="reminder_screen_time">กำหนดเวลา %1$s</string>
+    <string name="reminder_screen_all_taken">รับประทานครบแล้ว</string>
+    <string name="reminder_item_line">%1$s · %2$s</string>
+    <string name="reminder_invalid_data">ไม่พบข้อมูลการแจ้งเตือน กรุณากลับและลองอีกครั้ง</string>
+    <string name="reminder_close">ปิด</string>
+    <string name="tts_reminder_text">ถึงเวลารับประทานยา %1$s</string>
+    <string name="tts_item_format">%1$s %2$s</string>
+    <string name="tts_item_separator">" "</string>
+
+    <!-- 通用操作 -->
+    <string name="common_delete">ลบ</string>
+    <string name="common_save">บันทึก</string>
+    <string name="common_back">ย้อนกลับ</string>
+    <string name="common_ok">ตกลง</string>
+    <string name="common_clear">ล้าง</string>
+    <string name="common_not_set">ยังไม่ตั้งค่า</string>
+
+    <!-- 药品列表 -->
+    <string name="medicine_list_title">ยา</string>
+    <string name="medicine_list_add">เพิ่มยา</string>
+    <string name="medicine_list_empty_title">ยังไม่มีรายการยา</string>
+    <string name="medicine_list_stock_button">คลังยา</string>
+    <string name="medicine_list_more_rules">เพิ่มอีก %1$d กฎ</string>
+    <string name="medicine_no_rule">ยังไม่มีแผน</string>
+    <string name="medicine_stock_days">เหลือประมาณ %1$d วัน</string>
+    <string name="medicine_stock_low">ยาใกล้หมด กรุณาเติมยา</string>
+    <string name="medicine_delete_title">ลบยาหรือไม่</string>
+    <string name="medicine_delete_message">การลบ %1$s จะลบแผนและบันทึกมื้อด้วย</string>
+    <string name="medicine_delete_action">ลบยา</string>
+
+    <!-- 药品编辑 -->
+    <string name="medicine_edit_title_new">ยาใหม่</string>
+    <string name="medicine_edit_title">แก้ไขยา</string>
+    <string name="medicine_name_label">ชื่อยา</string>
+    <string name="medicine_name_required">กรุณากรอกชื่อยา</string>
+    <!-- 药盒识别与条码：端侧模型，识别全程离线 -->
+    <string name="medicine_scan_name_cd">สแกนกล่องยาเพื่อกรอกชื่อ</string>
+    <string name="medicine_scan_name_failed">ไม่พบชื่อยา กรุณากรอกเอง</string>
+    <string name="medicine_scan_name_title">เลือกชื่อยา</string>
+    <string name="medicine_scan_name_confirm">ใช้ชื่อที่เลือก</string>
+    <string name="medicine_scan_barcode_label">บาร์โค้ด</string>
+    <string name="medicine_scan_barcode_action">สแกนบาร์โค้ด</string>
+    <string name="medicine_scan_barcode_title">ยืนยันบาร์โค้ด</string>
+    <string name="medicine_scan_barcode_confirm">ใช้บาร์โค้ดนี้</string>
+    <string name="medicine_scan_barcode_failed">ไม่พบบาร์โค้ด กรุณาลองรูปอื่น</string>
+    <string name="medicine_form_label">รูปแบบยา</string>
+    <string name="medicine_form_tablet">ยาเม็ด</string>
+    <string name="medicine_form_capsule">แคปซูล</string>
+    <string name="medicine_form_liquid">ยาน้ำ</string>
+    <string name="medicine_form_drops">ยาหยอด</string>
+    <string name="medicine_form_spray">สเปรย์</string>
+    <string name="medicine_form_pen">ปากกา</string>
+    <string name="medicine_spec_value_label">ความแรง</string>
+    <string name="medicine_spec_unit_label">หน่วยความแรง</string>
+    <string name="medicine_dose_unit_label">หน่วยยา</string>
+    <string name="medicine_spec_required">กรุณากรอกความแรงและหน่วยยา</string>
+    <string name="medicine_splittable_label">แบ่งได้</string>
+    <string name="medicine_pack_size_label">จำนวนต่อแพ็ค</string>
+    <string name="medicine_pack_unit_label">หน่วยบรรจุ</string>
+    <string name="medicine_expire_label">วันหมดอายุ</string>
+    <string name="medicine_opened_label">เปิดเมื่อ</string>
+    <string name="medicine_shelf_days_label">จำนวนวันใช้หลังเปิด</string>
+    <string name="medicine_auto_deduct_label">หักคลังยาอัตโนมัติ</string>
+    <string name="medicine_note_label">หมายเหตุ</string>
+    <string name="medicine_date_value">%1$s: %2$s</string>
+    <string name="medicine_photo_title">รูปกล่องยา</string>
+    <string name="medicine_photo_pick">เลือกรูป</string>
+    <string name="medicine_photo_retake">ถ่ายรูปใหม่</string>
+    <string name="medicine_photo_delete">ลบรูป</string>
+    <string name="medicine_photo_empty">ยังไม่มีรูป</string>
+    <string name="medicine_photo_error">บันทึกรูปไม่สำเร็จ กรุณาลองอีกครั้ง</string>
+    <string name="medicine_rules_title">แผนการใช้ยา</string>
+    <string name="medicine_rules_empty">ยังไม่มีแผน</string>
+    <string name="medicine_rules_need_save">บันทึกยาก่อนเพื่อเพิ่มแผน</string>
+    <string name="medicine_rule_add">เพิ่มแผน</string>
+    <string name="medicine_rule_edit">แก้ไข</string>
+
+    <!-- 剂量单位选项 -->
+    <string name="dose_unit_tablet">ยาเม็ด</string>
+    <string name="dose_unit_capsule">แคปซูล</string>
+    <string name="dose_unit_ml">มล.</string>
+    <string name="dose_unit_drop">หยด</string>
+    <string name="dose_unit_spray">สเปรย์</string>
+    <string name="dose_unit_unit">หน่วย</string>
+    <string name="dose_unit_other">หน่วย</string>
+
+    <!-- 计划编辑 -->
+    <string name="schedule_edit_title_new">แผนใหม่</string>
+    <string name="schedule_edit_title">แก้ไขแผน</string>
+    <string name="schedule_medicine_label">ยา: %1$s</string>
+    <string name="schedule_anchor_label">เวลารับยา</string>
+    <string name="schedule_anchor_clock">เวลาคงที่</string>
+    <string name="schedule_anchor_meal">ตามมื้ออาหาร</string>
+    <string name="schedule_time_value">เวลา: %1$s</string>
+    <string name="schedule_pick_time">เลือกเวลา</string>
+    <string name="schedule_offset_label">ชดเชยเป็นนาที (ค่าลบ = ก่อนมื้อ)</string>
+    <string name="schedule_recurrence_label">ทำซ้ำ</string>
+    <string name="schedule_recurrence_daily">ทุกวัน</string>
+    <string name="schedule_recurrence_every_n">ทุก N วัน</string>
+    <string name="schedule_recurrence_weekly">รายสัปดาห์</string>
+    <string name="schedule_recurrence_monthly">รายเดือน</string>
+    <string name="schedule_interval_label">ระยะห่าง (วัน)</string>
+    <string name="schedule_weekdays_label">วันในสัปดาห์</string>
+    <string name="schedule_monthly_day_label">วันที่ในเดือน</string>
+    <string name="schedule_start_date_label">วันเริ่มต้น</string>
+    <string name="schedule_end_date_label">วันสิ้นสุด</string>
+    <string name="schedule_long_term">ระยะยาว</string>
+    <string name="schedule_dose_label">ขนาดยา</string>
+    <string name="schedule_dose_label_with_unit">ขนาดยาต่อครั้ง (%1$s)</string>
+    <string name="schedule_dose_integer_error">ยานี้แบ่งไม่ได้ กรุณากรอกจำนวนเต็ม %1$s</string>
+    <string name="schedule_dose_invalid">กรุณากรอกขนาดยาที่ถูกต้อง</string>
+    <string name="schedule_window_label">ช่วงเวลาแจ้งเตือน</string>
+    <string name="schedule_early_label">ก่อนเวลา (นาที)</string>
+    <string name="schedule_late_label">หลังเวลา (นาที)</string>
+    <string name="schedule_prn_label">ใช้เมื่อจำเป็น (PRN)</string>
+    <string name="schedule_prn_hint">บันทึกมื้อเมื่อจำเป็น ขีดจำกัดต่อวันเป็นเพียงคำแนะนำ</string>
+    <string name="schedule_prn_max_label">ขีดจำกัดต่อวัน (คำแนะนำเท่านั้น)</string>
+    <string name="schedule_preview">ตัวอย่างกฎ: %1$s</string>
+    <string name="schedule_error_offset">กรุณากรอกชดเชยเป็นนาที</string>
+    <string name="schedule_error_interval">ระยะห่างต้องอย่างน้อย 2 วัน</string>
+    <string name="schedule_error_weekdays">เลือกอย่างน้อยหนึ่งวัน</string>
+    <string name="schedule_error_monthly_day">กรุณากรอกวันที่ 1 ถึง 31</string>
+    <string name="schedule_error_window">กรุณากรอกนาทีช่วงแจ้งเตือนที่ถูกต้อง</string>
+    <string name="schedule_error_end_date">วันสิ้นสุดต้องไม่ก่อนวันเริ่มต้น</string>
+    <string name="schedule_error_prn_limit">กรุณากรอกขีดจำกัดต่อวันที่ถูกต้อง</string>
+    <string name="schedule_delete_action">ลบแผน</string>
+    <string name="schedule_delete_title">ลบแผนหรือไม่</string>
+    <string name="schedule_delete_message">บันทึกมื้อของแผนนี้จะถูกลบด้วย</string>
+    <string name="rule_prn">ใช้เมื่อจำเป็น · %1$s</string>
+
+    <!-- 递减方案 -->
+    <string name="schedule_taper_label">แผนลดขนาดยา</string>
+    <string name="schedule_taper_hint">ขนาดยาเปลี่ยนตามวันเริ่มต้นของแต่ละขั้น ใช้แต่ละวันได้ครั้งเดียว</string>
+    <string name="schedule_taper_add_step">เพิ่มขั้น</string>
+    <string name="schedule_taper_step_title">ขั้นที่ %1$d</string>
+    <string name="schedule_taper_dose_label">ขนาดยาขั้น (%1$s)</string>
+    <string name="schedule_taper_remove">ลบขั้น</string>
+    <string name="schedule_error_taper_empty">เพิ่มอย่างน้อยหนึ่งขั้น</string>
+    <string name="schedule_error_taper_date">แต่ละขั้นต้องมีวันเริ่มต้นต่างกัน</string>
+    <string name="schedule_error_taper_dose">กรุณากรอกขนาดยาที่ถูกต้องทุกขั้น</string>
+    <string name="schedule_error_taper_integer">ขนาดยาขั้นต้องเป็นจำนวนเต็ม %1$s</string>
+    <string name="medicine_taper_summary">ลดขนาด: ปัจจุบัน %1$s · %2$d ขั้น</string>
+
+    <!-- 按需用药 -->
+    <string name="today_prn_section">ใช้เมื่อจำเป็น</string>
+    <string name="today_prn_take_now">รับประทานเลย</string>
+    <string name="today_prn_taken_limit">วันนี้รับ %1$d ครั้ง (จำกัด %2$d)</string>
+
+    <!-- 用药人档案 -->
+    <string name="profile_title">โปรไฟล์การใช้ยา</string>
+    <string name="profile_default_name">โปรไฟล์เริ่มต้น</string>
+    <string name="profile_current">ปัจจุบัน</string>
+    <string name="profile_rename">เปลี่ยนชื่อ</string>
+    <string name="profile_add">เพิ่มโปรไฟล์</string>
+    <string name="profile_add_title">เพิ่มโปรไฟล์</string>
+    <string name="profile_rename_title">เปลี่ยนชื่อโปรไฟล์</string>
+    <string name="profile_name_label">ชื่อโปรไฟล์</string>
+    <string name="profile_name_error">กรอกชื่อไม่เกิน 30 ตัวอักษร</string>
+    <string name="profile_delete_title">ลบโปรไฟล์หรือไม่</string>
+    <string name="profile_delete_message">ยา แผน บันทึก และคลังยาทั้งหมดของ \"%1$s\" จะถูกลบ</string>
+    <string name="settings_profiles">โปรไฟล์การใช้ยา</string>
+
+    <!-- 历史/统计 -->
+    <string name="history_title">ประวัติ</string>
+    <string name="history_range_7">7 วันล่าสุด</string>
+    <string name="history_range_30">30 วันล่าสุด</string>
+    <string name="history_range_90">90 วันล่าสุด</string>
+    <string name="history_summary_title">สรุป</string>
+    <string name="history_summary_on_time">ตรงเวลา</string>
+    <string name="history_summary_late">ช้า</string>
+    <string name="history_summary_unconfirmed">ยังไม่ยืนยัน</string>
+    <string name="history_summary_uncertain">ไม่แน่ใจ</string>
+    <string name="history_summary_skipped">ข้ามแล้ว</string>
+    <string name="history_summary_total">มื้อที่ตั้งไว้</string>
+    <string name="history_status_on_time">ตรงเวลา</string>
+    <string name="history_late_minutes">ช้า %1$d นาที</string>
+    <string name="history_empty">ไม่มีบันทึกมื้อในช่วงที่เลือก</string>
+    <string name="history_backfill_title">เพิ่มบันทึก</string>
+    <string name="history_backfill_message">%1$s · %2$s</string>
+    <string name="history_backfill_taken">รับประทานแล้ว</string>
+    <string name="history_backfill_hint">แตะเพื่อเพิ่มบันทึก</string>
+
+    <!-- 库存 -->
+    <string name="stock_title">คลังยา</string>
+    <string name="stock_remaining">คงเหลือ: %1$s</string>
+    <string name="stock_days_long_term">ระยะยาว</string>
+    <string name="stock_expire">หมดอายุ %1$s</string>
+    <string name="stock_shelf_days">ใช้ได้ %1$d วันหลังเปิด</string>
+    <string name="stock_banner_empty">ยาหมด กรุณาเติมยา</string>
+    <string name="stock_banner_low">ยาใกล้หมด กรุณาเติมยา</string>
+    <string name="stock_banner_expiring">ตามแผนปัจจุบัน วันหมดจะช้ากว่าวันหมดอายุ</string>
+    <string name="stock_banner_expired">เกินวันหมดอายุแล้ว</string>
+    <string name="stock_action_purchase">รับเข้า</string>
+    <string name="stock_action_adjust">นับจำนวน</string>
+    <string name="stock_purchase_title">รับเข้า</string>
+    <string name="stock_adjust_title">นับจำนวน</string>
+    <string name="stock_qty_label">จำนวน (%1$s)</string>
+    <string name="stock_qty_invalid">กรุณากรอกจำนวนที่ถูกต้อง</string>
+    <string name="stock_no_change">คลังยาไม่เปลี่ยน</string>
+    <string name="stock_changes_title">การเปลี่ยนแปลงล่าสุด</string>
+    <string name="stock_changes_empty">ยังไม่มีการเปลี่ยนคลังยา</string>
+    <string name="stock_reason_purchase">รับเข้า</string>
+    <string name="stock_reason_taken">รับประทานยา</string>
+    <string name="stock_reason_adjust">ปรับจำนวนคลัง</string>
+    <string name="stock_reason_lost">สูญหาย</string>
+    <string name="stock_reason_expired">หมดอายุ</string>
+    <string name="stock_reason_undo">เลิกทำ</string>
+    <string name="stock_delta_plus">+%1$s</string>
+    <string name="stock_delta_minus">-%1$s</string>
+    <string name="stock_not_found">ไม่พบยา</string>
+
+    <!-- 导出报告 -->
+    <string name="export_file_prefix">MedicationLog</string>
+    <string name="export_title">ส่งออกรายงาน</string>
+    <string name="export_entry_button">ส่งออกรายงาน</string>
+    <string name="export_range_label">ช่วงเวลา</string>
+    <string name="export_range_7">7 วันล่าสุด</string>
+    <string name="export_range_30">30 วันล่าสุด</string>
+    <string name="export_range_90">90 วันล่าสุด</string>
+    <string name="export_generate">สร้างตัวอย่าง</string>
+    <string name="export_generating">กำลังสร้าง…</string>
+    <string name="export_share">แชร์</string>
+    <string name="export_empty_message">ไม่มีบันทึกมื้อในช่วงที่เลือก</string>
+    <string name="export_error_generate">สร้าง PDF ไม่สำเร็จ กรุณาลองอีกครั้ง</string>
+    <string name="export_preview_title">ตัวอย่าง</string>
+    <string name="export_preview_range">ช่วง</string>
+    <string name="export_preview_pages">หน้า</string>
+    <string name="export_preview_records">บันทึก</string>
+    <string name="export_preview_size">ขนาดไฟล์</string>
+    <string name="export_share_dialog_title">แชร์ไฟล์นี้หรือไม่</string>
+    <string name="export_share_dialog_message">ไฟล์มีข้อมูลสุขภาพ กรุณายืนยันผู้รับ</string>
+    <string name="export_share_confirm">แชร์</string>
+    <string name="export_share_chooser">แชร์รายงาน</string>
+    <string name="export_status_on_time">รับประทานแล้ว</string>
+    <string name="export_status_late">รับประทานช้า</string>
+    <string name="export_status_unconfirmed">ยังไม่ยืนยัน</string>
+    <string name="export_status_uncertain">ไม่แน่ใจ</string>
+    <string name="export_status_skipped">ข้ามแล้ว</string>
+    <string name="export_remaining">เหลือ %1$s</string>
+    <string name="export_rule_separator">"; "</string>
+    <string name="export_anomaly_morning">เช้า: ยังไม่ยืนยัน %1$d</string>
+    <string name="export_anomaly_afternoon">บ่าย: ยังไม่ยืนยัน %1$d</string>
+    <string name="export_anomaly_evening">เย็น: ยังไม่ยืนยัน %1$d</string>
+    <string name="export_anomaly_backfilled">เพิ่มบันทึกย้อนหลัง %1$d รายการ</string>
+    <string name="export_pdf_title">รายงานการใช้ยา</string>
+    <string name="export_pdf_range">ช่วง: %1$s ~ %2$s</string>
+    <string name="export_pdf_generated">สร้างเมื่อ %1$s</string>
+    <string name="export_pdf_section_medicines">ยาปัจจุบัน</string>
+    <string name="export_pdf_section_summary">สรุปมื้อ</string>
+    <string name="export_pdf_section_days">ภาพรวมรายวัน</string>
+    <string name="export_pdf_section_anomalies">หมายเหตุความผิดปกติ</string>
+    <string name="export_pdf_medicines_none">ไม่มียาที่ใช้อยู่</string>
+    <string name="export_pdf_anomalies_none">ไม่มีหมายเหตุความผิดปกติในช่วงนี้</string>
+    <string name="export_pdf_count_on_time">ตรงเวลา: %1$d</string>
+    <string name="export_pdf_count_late">ช้า: %1$d</string>
+    <string name="export_pdf_count_unconfirmed">ยังไม่ยืนยัน: %1$d</string>
+    <string name="export_pdf_count_uncertain">ไม่แน่ใจ: %1$d</string>
+    <string name="export_pdf_count_skipped">ข้ามแล้ว: %1$d</string>
+    <string name="export_pdf_count_total">มื้อที่ตั้งไว้: %1$d</string>
+    <string name="export_pdf_row">%1$s · %2$s · %3$s · %4$s</string>
+    <string name="export_pdf_footer">ผู้ป่วยบันทึกเอง ยังไม่ผ่านการตรวจสอบทางการแพทย์ แอปนี้ไม่ได้ให้คำแนะนำทางการแพทย์</string>
+
+    <!-- 设置页 -->
+    <string name="settings_title">การตั้งค่า</string>
+    <string name="settings_section_meal_times">เวลามื้ออาหาร</string>
+    <string name="settings_meal_breakfast">มื้อเช้า</string>
+    <string name="settings_meal_lunch">มื้อกลางวัน</string>
+    <string name="settings_meal_dinner">มื้อเย็น</string>
+    <string name="settings_meal_bedtime">ก่อนนอน</string>
+    <string name="settings_section_defaults">ค่าเริ่มต้นการแจ้งเตือน</string>
+    <string name="settings_default_early">แจ้งเตือนก่อนเวลาเริ่มต้น (นาที)</string>
+    <string name="settings_default_late">แจ้งเตือนหลังเวลาเริ่มต้น (นาที)</string>
+    <string name="settings_merge_window">ช่วงรวมการแจ้งเตือน (นาที)</string>
+    <string name="settings_minutes_value">%1$d นาที</string>
+    <string name="settings_minutes_hint">กรอกจำนวนนาทีระหว่าง 0 ถึง 720</string>
+    <string name="settings_quiet_start">เริ่มช่วงเงียบ</string>
+    <string name="settings_quiet_end">สิ้นสุดช่วงเงียบ</string>
+    <string name="settings_section_permissions">ตรวจสอบสิทธิ์</string>
+    <string name="settings_perm_exact_alarm">การตั้งเตือนแบบแม่นยำ</string>
+    <string name="settings_perm_notifications">การแจ้งเตือน</string>
+    <string name="settings_perm_full_screen">แจ้งเตือนเต็มหน้าจอ</string>
+    <string name="settings_perm_battery">การประหยัดแบตเตอรี่</string>
+    <string name="settings_status_ok">ปกติ</string>
+    <string name="settings_status_denied">ยังไม่อนุญาต</string>
+    <string name="settings_status_off">ปิดอยู่</string>
+    <string name="settings_status_recommended">แนะนำให้ตรวจสอบ</string>
+    <string name="settings_action_open">เปิด</string>
+    <string name="settings_action_allow">อนุญาต</string>
+    <string name="settings_full_screen_hint">หากไม่อนุญาต การแจ้งเตือนยังมาพร้อมเสียง</string>
+    <string name="settings_battery_hint">ผู้ผลิตบางรายอาจหยุดการตั้งเตือนเบื้องหลัง อนุญาตให้แอปทำงานเบื้องหลังในการตั้งค่าระบบ</string>
+    <string name="settings_section_tools">ทดสอบ</string>
+    <string name="settings_test_reminder">แจ้งเตือนทดสอบใน 1 นาที</string>
+    <string name="settings_test_reminder_toast">การแจ้งเตือนทดสอบจะแสดงใน 1 นาที</string>
+    <string name="settings_section_pause">หยุดการแจ้งเตือนทั้งหมด</string>
+    <string name="settings_pause_status">หยุดการแจ้งเตือนถึง %1$s</string>
+    <string name="settings_pause_status_indefinite">การแจ้งเตือนหยุดชั่วคราว</string>
+    <string name="settings_pause_1h">หยุด 1 ชั่วโมง</string>
+    <string name="settings_pause_today">หยุดถึงสิ้นวันนี้</string>
+    <string name="settings_pause_resume">กลับมาแจ้งเตือน</string>
+    <string name="settings_section_language">ภาษา</string>
+    <string name="settings_language_system">ตามระบบ</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_zh">简体中文</string>
+    <string name="settings_language_es">Español</string>
+    <string name="settings_language_pt">Português (Brasil)</string>
+    <string name="settings_language_ja">日本語</string>
+    <string name="settings_language_it">Italiano</string>
+    <string name="settings_language_de">Deutsch</string>
+    <string name="settings_language_zh_tw">繁體中文</string>
+    <string name="settings_language_id">Bahasa Indonesia</string>
+    <string name="settings_language_ko">한국어</string>
+    <string name="settings_language_ar">العربية</string>
+    <string name="settings_language_hi">हिन्दी</string>
+    <string name="settings_language_th">ไทย</string>
+    <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="settings_section_data">ข้อมูล</string>
+    <string name="settings_export_report">ส่งออกรายงาน</string>
+    <string name="settings_section_about">เกี่ยวกับและข้อกำหนด</string>
+    <string name="settings_version">เวอร์ชัน %1$s</string>
+    <string name="settings_medical_disclaimer">แอปนี้ให้เฉพาะการแจ้งเตือนและบันทึก ไม่ใช่คำแนะนำทางการแพทย์</string>
+    <string name="settings_privacy_local_processing">รูปกล่องยาและการจดจำอยู่ในเครื่องนี้เท่านั้น ไม่มีการอัปโหลด</string>
+    <string name="settings_privacy_policy">นโยบายความเป็นส่วนตัว</string>
+    <string name="settings_invalid_minutes">กรอกจำนวนนาทีระหว่าง 0 ถึง 720</string>
+
+    <!-- 首次启动引导 -->
+    <string name="onboarding_title">ยินดีต้อนรับสู่ MedTimer</string>
+    <string name="onboarding_purpose_title">แอปนี้ทำอะไร</string>
+    <string name="onboarding_purpose_body">แจ้งเตือนตามเวลาที่ตั้งไว้และบันทึกทุกมื้อ</string>
+    <string name="onboarding_limits_body">ไม่มีคำแนะนำทางการแพทย์ ไม่เชื่อมต่อเครือข่าย และไม่เก็บข้อมูล</string>
+    <string name="onboarding_permissions_title">สิทธิ์การใช้งาน</string>
+    <string name="onboarding_permissions_body">สิทธิ์เหล่านี้ช่วยให้การแจ้งเตือนตรงเวลา ข้ามได้และยังใช้แอปได้</string>
+    <string name="onboarding_perm_exact_alarm">การตั้งเตือนแบบแม่นยำ: ดังตามเวลาที่กำหนด</string>
+    <string name="onboarding_perm_notifications">การแจ้งเตือน: แสดงการแจ้งเตือนบนหน้าจอ</string>
+    <string name="onboarding_perm_full_screen">แจ้งเตือนเต็มหน้าจอ: แสดงบนหน้าจอล็อก</string>
+    <string name="onboarding_perm_note">หากปฏิเสธ แอปยังใช้ได้ แต่การแจ้งเตือนอาจไม่ตรงเวลา</string>
+    <string name="onboarding_disclaimer_title">ข้อจำกัดความรับผิดทางการแพทย์</string>
+    <string name="onboarding_disclaimer_body">แอปนี้ให้เฉพาะการแจ้งเตือนและบันทึก ไม่ให้คำแนะนำทางการแพทย์ การวินิจฉัย การรักษา หรือคำแนะนำขนาดยา โปรดปฏิบัติตามคำแนะนำของแพทย์</string>
+    <string name="onboarding_grant_notifications">อนุญาตการแจ้งเตือน</string>
+    <string name="onboarding_open_exact_alarm">เปิดการตั้งเตือนแบบแม่นยำ</string>
+    <string name="onboarding_start">เริ่มใช้แอป</string>
+
+    <!-- 桌面小组件 -->
+    <string name="widget_label">วิดเจ็ต MedTimer</string>
+    <string name="widget_remaining">วันนี้เหลือ %1$d มื้อ</string>
+    <string name="widget_next_time">มื้อถัดไป %1$s</string>
+    <string name="widget_done_today">เสร็จครบวันนี้</string>
+    <string name="widget_no_schedule">วันนี้ไม่มีมื้อที่ตั้งไว้</string>
+    <string name="widget_paused">การแจ้งเตือนหยุดชั่วคราว</string>
+</resources>
