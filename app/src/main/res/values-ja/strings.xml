@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Machine-translated draft, needs human review before release. -->
 <resources>
-    <string name="app_name">MedTimer</string>
+    <string name="app_name">PillTime</string>
 
     <!-- 通知渠道 -->
     <string name="notification_channel_reminder_name">服薬リマインダー</string>
@@ -432,7 +432,7 @@
     <string name="settings_invalid_minutes">0〜720 の分数を入力してください。</string>
 
     <!-- 首次启动引导 -->
-    <string name="onboarding_title">MedTimer へようこそ</string>
+    <string name="onboarding_title">PillTime へようこそ</string>
     <string name="onboarding_purpose_title">このアプリの機能</string>
     <string name="onboarding_purpose_body">設定した時刻に服薬リマインダーを送り、各回の服薬を記録します。</string>
     <string name="onboarding_limits_body">医療上の助言は行わず、ネットワークにも接続せず、データも収集しません。</string>
@@ -449,7 +449,7 @@
     <string name="onboarding_start">アプリを使い始める</string>
 
     <!-- 桌面小组件 -->
-    <string name="widget_label">MedTimer ウィジェット</string>
+    <string name="widget_label">PillTime ウィジェット</string>
     <string name="widget_remaining">今日の残り %1$d 回</string>
     <string name="widget_next_time">次回 %1$s</string>
     <string name="widget_done_today">今日の分は完了</string>

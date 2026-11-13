@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.medtimer.app"
+    namespace = "com.alex.pilltime"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.medtimer.app"
+        applicationId = "com.alex.pilltime"
         minSdk = 26
         targetSdk = 35
         versionCode = 1

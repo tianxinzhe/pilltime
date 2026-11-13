@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MedTimer</string>
+    <string name="app_name">PillTime</string>
 
     <!-- 通知渠道 -->
     <string name="notification_channel_reminder_name">दवा की याद</string>
@@ -438,7 +438,7 @@
     <string name="settings_invalid_minutes">0 से 720 के बीच मिनट दर्ज करें।</string>
 
     <!-- 首次启动引导 -->
-    <string name="onboarding_title">MedTimer में आपका स्वागत है</string>
+    <string name="onboarding_title">PillTime में आपका स्वागत है</string>
     <string name="onboarding_purpose_title">यह ऐप क्या करता है</string>
     <string name="onboarding_purpose_body">आपके निर्धारित समय पर याद दिलाता है और हर खुराक का रिकॉर्ड रखता है।</string>
     <string name="onboarding_limits_body">कोई चिकित्सा सलाह नहीं, कोई नेटवर्क एक्सेस नहीं, और कोई डेटा संग्रह नहीं।</string>
@@ -455,7 +455,7 @@
     <string name="onboarding_start">ऐप उपयोग करना शुरू करें</string>
 
     <!-- 桌面小组件 -->
-    <string name="widget_label">MedTimer विजेट</string>
+    <string name="widget_label">PillTime विजेट</string>
     <string name="widget_remaining">आज %1$d खुराक शेष</string>
     <string name="widget_next_time">अगली खुराक %1$s</string>
     <string name="widget_done_today">आज का सब पूरा</string>

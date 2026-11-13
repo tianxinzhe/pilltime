@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MedTimer</string>
+    <string name="app_name">PillTime</string>
 
     <!-- 通知渠道 -->
     <string name="notification_channel_reminder_name">服药提醒</string>
@@ -431,7 +431,7 @@
     <string name="settings_invalid_minutes">请输入 0 到 720 之间的分钟数。</string>
 
     <!-- 首次启动引导 -->
-    <string name="onboarding_title">欢迎使用 MedTimer</string>
+    <string name="onboarding_title">欢迎使用 PillTime</string>
     <string name="onboarding_purpose_title">应用做什么</string>
     <string name="onboarding_purpose_body">在计划时间提醒服药，并记录每次服药情况。</string>
     <string name="onboarding_limits_body">不提供医疗建议，不联网，不收集任何数据。</string>

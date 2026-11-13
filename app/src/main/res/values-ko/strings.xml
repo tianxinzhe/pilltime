@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Machine-translated draft, needs human review before release. -->
 <resources>
-    <string name="app_name">MedTimer</string>
+    <string name="app_name">PillTime</string>
 
     <!-- 通知渠道 -->
     <string name="notification_channel_reminder_name">복약 알림</string>
@@ -439,7 +439,7 @@
     <string name="settings_invalid_minutes">0에서 720 사이의 분을 입력해 주세요.</string>
 
     <!-- 首次启动引导 -->
-    <string name="onboarding_title">MedTimer에 오신 것을 환영합니다</string>
+    <string name="onboarding_title">PillTime에 오신 것을 환영합니다</string>
     <string name="onboarding_purpose_title">이 앱의 기능</string>
     <string name="onboarding_purpose_body">예정된 시간에 알림을 보내고 각 복용 기록을 보관합니다.</string>
     <string name="onboarding_limits_body">의학적 조언, 네트워크 접근, 데이터 수집이 없습니다.</string>
@@ -456,7 +456,7 @@
     <string name="onboarding_start">앱 사용 시작</string>
 
     <!-- 桌面小组件 -->
-    <string name="widget_label">MedTimer 위젯</string>
+    <string name="widget_label">PillTime 위젯</string>
     <string name="widget_remaining">오늘 %1$d회 복용 남음</string>
     <string name="widget_next_time">다음 복용 %1$s</string>
     <string name="widget_done_today">오늘 모두 완료</string>

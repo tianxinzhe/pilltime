@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Machine-translated draft, needs human review before release. -->
 <resources>
-    <string name="app_name">MedTimer</string>
+    <string name="app_name">PillTime</string>
 
     <!-- 通知渠道 -->
     <string name="notification_channel_reminder_name">การแจ้งเตือนยา</string>
@@ -439,7 +439,7 @@
     <string name="settings_invalid_minutes">กรอกจำนวนนาทีระหว่าง 0 ถึง 720</string>
 
     <!-- 首次启动引导 -->
-    <string name="onboarding_title">ยินดีต้อนรับสู่ MedTimer</string>
+    <string name="onboarding_title">ยินดีต้อนรับสู่ PillTime</string>
     <string name="onboarding_purpose_title">แอปนี้ทำอะไร</string>
     <string name="onboarding_purpose_body">แจ้งเตือนตามเวลาที่ตั้งไว้และบันทึกทุกมื้อ</string>
     <string name="onboarding_limits_body">ไม่มีคำแนะนำทางการแพทย์ ไม่เชื่อมต่อเครือข่าย และไม่เก็บข้อมูล</string>
@@ -456,7 +456,7 @@
     <string name="onboarding_start">เริ่มใช้แอป</string>
 
     <!-- 桌面小组件 -->
-    <string name="widget_label">วิดเจ็ต MedTimer</string>
+    <string name="widget_label">วิดเจ็ต PillTime</string>
     <string name="widget_remaining">วันนี้เหลือ %1$d มื้อ</string>
     <string name="widget_next_time">มื้อถัดไป %1$s</string>
     <string name="widget_done_today">เสร็จครบวันนี้</string>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Machine-translated draft, needs human review before release. -->
 <resources>
-    <string name="app_name">MedTimer</string>
+    <string name="app_name">PillTime</string>
 
     <!-- 通知渠道 -->
     <string name="notification_channel_reminder_name">Recordatorios de medicación</string>
@@ -439,7 +439,7 @@
     <string name="settings_invalid_minutes">Introduce un número de minutos entre 0 y 720.</string>
 
     <!-- 首次启动引导 -->
-    <string name="onboarding_title">Bienvenido a MedTimer</string>
+    <string name="onboarding_title">Bienvenido a PillTime</string>
     <string name="onboarding_purpose_title">Qué hace esta aplicación</string>
     <string name="onboarding_purpose_body">Envía recordatorios a las horas programadas y guarda un registro de cada dosis.</string>
     <string name="onboarding_limits_body">No ofrece consejo médico, no accede a la red y no recopila datos.</string>
@@ -456,7 +456,7 @@
     <string name="onboarding_start">Empezar a usar la aplicación</string>
 
     <!-- 桌面小组件 -->
-    <string name="widget_label">Widget de MedTimer</string>
+    <string name="widget_label">Widget de PillTime</string>
     <string name="widget_remaining">%1$d dosis pendientes hoy</string>
     <string name="widget_next_time">Próxima dosis %1$s</string>
     <string name="widget_done_today">Todo hecho por hoy</string>

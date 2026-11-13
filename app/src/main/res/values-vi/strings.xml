@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Machine-translated draft, needs human review before release. -->
 <resources>
-    <string name="app_name">MedTimer</string>
+    <string name="app_name">PillTime</string>
 
     <!-- 通知渠道 -->
     <string name="notification_channel_reminder_name">Nhắc nhở dùng thuốc</string>
@@ -439,7 +439,7 @@
     <string name="settings_invalid_minutes">Nhập số phút từ 0 đến 720.</string>
 
     <!-- 首次启动引导 -->
-    <string name="onboarding_title">Chào mừng đến với MedTimer</string>
+    <string name="onboarding_title">Chào mừng đến với PillTime</string>
     <string name="onboarding_purpose_title">Ứng dụng này làm gì</string>
     <string name="onboarding_purpose_body">Gửi nhắc nhở vào giờ đã lên lịch và lưu bản ghi từng liều.</string>
     <string name="onboarding_limits_body">Không có lời khuyên y khoa, không truy cập mạng và không thu thập dữ liệu.</string>
@@ -456,7 +456,7 @@
     <string name="onboarding_start">Bắt đầu dùng ứng dụng</string>
 
     <!-- 桌面小组件 -->
-    <string name="widget_label">Tiện ích MedTimer</string>
+    <string name="widget_label">Tiện ích PillTime</string>
     <string name="widget_remaining">Còn %1$d liều hôm nay</string>
     <string name="widget_next_time">Liều tiếp theo %1$s</string>
     <string name="widget_done_today">Đã xong hôm nay</string>

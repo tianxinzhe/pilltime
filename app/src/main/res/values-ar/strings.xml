@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MedTimer</string>
+    <string name="app_name">PillTime</string>
 
     <!-- 通知渠道 -->
     <string name="notification_channel_reminder_name">تذكيرات الأدوية</string>
@@ -466,7 +466,7 @@
     <string name="settings_invalid_minutes">أدخل عددًا من الدقائق بين 0 و720.</string>
 
     <!-- 首次启动引导 -->
-    <string name="onboarding_title">مرحبًا بك في MedTimer</string>
+    <string name="onboarding_title">مرحبًا بك في PillTime</string>
     <string name="onboarding_purpose_title">وظيفة هذا التطبيق</string>
     <string name="onboarding_purpose_body">يرسل تذكيرات في أوقاتك المجدولة ويحتفظ بسجل لكل جرعة.</string>
     <string name="onboarding_limits_body">لا مشورة طبية، ولا وصول للشبكة، ولا جمع للبيانات.</string>
@@ -483,7 +483,7 @@
     <string name="onboarding_start">ابدأ استخدام التطبيق</string>
 
     <!-- 桌面小组件 -->
-    <string name="widget_label">أداة MedTimer</string>
+    <string name="widget_label">أداة PillTime</string>
     <string name="widget_remaining">%1$d جرعات متبقية اليوم</string>
     <string name="widget_next_time">الجرعة التالية %1$s</string>
     <string name="widget_done_today">اكتمل كل شيء اليوم</string>

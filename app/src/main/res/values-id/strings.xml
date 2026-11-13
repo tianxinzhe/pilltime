@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Machine-translated draft, needs human review before release. -->
 <resources>
-    <string name="app_name">MedTimer</string>
+    <string name="app_name">PillTime</string>
 
     <!-- 通知渠道 -->
     <string name="notification_channel_reminder_name">Pengingat obat</string>
@@ -439,7 +439,7 @@
     <string name="settings_invalid_minutes">Masukkan jumlah menit antara 0 dan 720.</string>
 
     <!-- 首次启动引导 -->
-    <string name="onboarding_title">Selamat datang di MedTimer</string>
+    <string name="onboarding_title">Selamat datang di PillTime</string>
     <string name="onboarding_purpose_title">Fungsi aplikasi ini</string>
     <string name="onboarding_purpose_body">Mengirim pengingat pada waktu terjadwal dan mencatat setiap dosis.</string>
     <string name="onboarding_limits_body">Tanpa saran medis, tanpa akses jaringan, dan tanpa pengumpulan data.</string>
@@ -456,7 +456,7 @@
     <string name="onboarding_start">Mulai gunakan aplikasi</string>
 
     <!-- 桌面小组件 -->
-    <string name="widget_label">Widget MedTimer</string>
+    <string name="widget_label">Widget PillTime</string>
     <string name="widget_remaining">%1$d dosis tersisa hari ini</string>
     <string name="widget_next_time">Dosis berikutnya %1$s</string>
     <string name="widget_done_today">Semua selesai untuk hari ini</string>
