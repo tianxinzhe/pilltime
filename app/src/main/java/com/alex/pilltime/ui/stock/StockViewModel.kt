@@ -10,7 +10,6 @@ import com.alex.pilltime.data.entity.StockChange
 import com.alex.pilltime.domain.isLowStock
 import com.alex.pilltime.domain.model.StockReason
 import com.alex.pilltime.ui.text.formatDoseText
-import java.time.LocalDate
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
@@ -39,12 +38,8 @@ data class StockUiState(
     val doseUnit: String = "",
     val stockText: String = "",
     val daysText: String = "",
-    val expireText: String? = null,
-    val shelfText: String? = null,
     val outOfStock: Boolean = false,
     val lowStock: Boolean = false,
-    val expiringBeforeRunOut: Boolean = false,
-    val expired: Boolean = false,
     val changes: List<StockChangeUi> = emptyList(),
     val notice: StockNotice = StockNotice.NONE
 )
@@ -74,7 +69,7 @@ fun parseQuantityX10(input: String): Int? {
 }
 
 /**
- * 库存页：当前库存、预计可用天数、有效期提示与最近流水。
+ * 库存页：当前库存、预计可用天数与最近流水。
  * 库存值始终来自流水求和，页面不单独保存库存字段。
  */
 class StockViewModel : ViewModel() {
@@ -85,8 +80,6 @@ class StockViewModel : ViewModel() {
     private val context = ServiceLocator.appContext
 
     private val locale = context.resources.configuration.locales[0]
-    private val dateFormatter: DateTimeFormatter =
-        DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM).withLocale(locale)
     private val dateTimeFormatter: DateTimeFormatter =
         DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT).withLocale(locale)
 
@@ -159,13 +152,10 @@ class StockViewModel : ViewModel() {
         val medicine = snapshot.medicine
             ?: return StockUiState(loading = false, missing = true)
 
-        val today = LocalDate.now()
-        val days = stockRepository.remainingDays(medicineId, today)
-        val expiring = stockRepository.expiringBeforeRunOut(medicineId, today)
+        val days = stockRepository.remainingDays(medicineId)
         val outOfStock = snapshot.stockQty <= 0
         val low = outOfStock ||
             isLowStock(days, snapshot.settings.lowStockDaysThreshold)
-        val expired = medicine.expireDate?.isBefore(today) == true
 
         return StockUiState(
             loading = false,
@@ -180,16 +170,8 @@ class StockViewModel : ViewModel() {
             } else {
                 context.getString(R.string.stock_days_long_term)
             },
-            expireText = medicine.expireDate?.let {
-                context.getString(R.string.stock_expire, dateFormatter.format(it))
-            },
-            shelfText = medicine.shelfDaysAfterOpen?.let {
-                context.getString(R.string.stock_shelf_days, it)
-            },
             outOfStock = outOfStock,
             lowStock = low,
-            expiringBeforeRunOut = expiring,
-            expired = expired,
             changes = snapshot.changes.map { it.toUi(medicine.doseUnit) }
         )
     }
@@ -216,7 +198,6 @@ class StockViewModel : ViewModel() {
         StockReason.TAKEN -> R.string.stock_reason_taken
         StockReason.ADJUST -> R.string.stock_reason_adjust
         StockReason.LOST -> R.string.stock_reason_lost
-        StockReason.EXPIRED -> R.string.stock_reason_expired
         StockReason.UNDO -> R.string.stock_reason_undo
     }
 

@@ -148,16 +148,11 @@
     <string name="medicine_edit_title">Edit medicine</string>
     <string name="medicine_name_label">Medicine name</string>
     <string name="medicine_name_required">Please enter the medicine name</string>
-    <!-- 药盒识别与条码：端侧模型，识别全程离线 -->
+    <!-- 药盒识别：端侧模型，识别全程离线 -->
     <string name="medicine_scan_name_cd">Scan medicine box to fill the name</string>
     <string name="medicine_scan_name_failed">No medicine name found. Please enter it manually.</string>
     <string name="medicine_scan_name_title">Choose a medicine name</string>
     <string name="medicine_scan_name_confirm">Use selected name</string>
-    <string name="medicine_scan_barcode_label">Barcode</string>
-    <string name="medicine_scan_barcode_action">Scan barcode</string>
-    <string name="medicine_scan_barcode_title">Confirm barcode</string>
-    <string name="medicine_scan_barcode_confirm">Use this barcode</string>
-    <string name="medicine_scan_barcode_failed">No barcode found. Please try another photo.</string>
     <string name="medicine_form_label">Form</string>
     <string name="medicine_form_tablet">Tablet</string>
     <string name="medicine_form_capsule">Capsule</string>
@@ -172,9 +167,6 @@
     <string name="medicine_splittable_label">Can be split</string>
     <string name="medicine_pack_size_label">Quantity per pack</string>
     <string name="medicine_pack_unit_label">Pack unit</string>
-    <string name="medicine_expire_label">Expiry date</string>
-    <string name="medicine_opened_label">Opened on</string>
-    <string name="medicine_shelf_days_label">Days usable after opening</string>
     <string name="medicine_auto_deduct_label">Deduct stock automatically</string>
     <string name="medicine_note_label">Notes</string>
     <string name="medicine_date_value">%1$s: %2$s</string>
@@ -299,12 +291,8 @@
     <string name="stock_title">Stock</string>
     <string name="stock_remaining">Remaining: %1$s</string>
     <string name="stock_days_long_term">Long term</string>
-    <string name="stock_expire">Expires %1$s</string>
-    <string name="stock_shelf_days">Usable %1$d days after opening</string>
     <string name="stock_banner_empty">Out of stock. Please restock.</string>
     <string name="stock_banner_low">Low stock. Please restock.</string>
-    <string name="stock_banner_expiring">At the current plan, the expected run-out date is later than the expiry date</string>
-    <string name="stock_banner_expired">Past the expiry date</string>
     <string name="stock_action_purchase">Stock in</string>
     <string name="stock_action_adjust">Stock count</string>
     <string name="stock_purchase_title">Stock in</string>
@@ -318,7 +306,6 @@
     <string name="stock_reason_taken">Dose taken</string>
     <string name="stock_reason_adjust">Stock count adjustment</string>
     <string name="stock_reason_lost">Loss</string>
-    <string name="stock_reason_expired">Expired</string>
     <string name="stock_reason_undo">Undo</string>
     <string name="stock_delta_plus">+%1$s</string>
     <string name="stock_delta_minus">-%1$s</string>

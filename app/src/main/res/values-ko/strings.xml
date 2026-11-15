@@ -149,16 +149,11 @@
     <string name="medicine_edit_title">약 편집</string>
     <string name="medicine_name_label">약 이름</string>
     <string name="medicine_name_required">약 이름을 입력해 주세요</string>
-    <!-- 药盒识别与条码：端侧模型，识别全程离线 -->
+    <!-- 药盒识别：端侧模型，识别全程离线 -->
     <string name="medicine_scan_name_cd">약 상자를 스캔하여 이름 채우기</string>
     <string name="medicine_scan_name_failed">약 이름을 찾지 못했습니다. 직접 입력해 주세요.</string>
     <string name="medicine_scan_name_title">약 이름 선택</string>
     <string name="medicine_scan_name_confirm">선택한 이름 사용</string>
-    <string name="medicine_scan_barcode_label">바코드</string>
-    <string name="medicine_scan_barcode_action">바코드 스캔</string>
-    <string name="medicine_scan_barcode_title">바코드 확인</string>
-    <string name="medicine_scan_barcode_confirm">이 바코드 사용</string>
-    <string name="medicine_scan_barcode_failed">바코드를 찾지 못했습니다. 다른 사진으로 시도해 주세요.</string>
     <string name="medicine_form_label">제형</string>
     <string name="medicine_form_tablet">정제</string>
     <string name="medicine_form_capsule">캡슐</string>
@@ -173,9 +168,6 @@
     <string name="medicine_splittable_label">분할 가능</string>
     <string name="medicine_pack_size_label">포장당 수량</string>
     <string name="medicine_pack_unit_label">포장 단위</string>
-    <string name="medicine_expire_label">유효기간</string>
-    <string name="medicine_opened_label">개봉일</string>
-    <string name="medicine_shelf_days_label">개봉 후 사용 가능 일수</string>
     <string name="medicine_auto_deduct_label">재고 자동 차감</string>
     <string name="medicine_note_label">메모</string>
     <string name="medicine_date_value">%1$s: %2$s</string>
@@ -300,12 +292,8 @@
     <string name="stock_title">재고</string>
     <string name="stock_remaining">남음: %1$s</string>
     <string name="stock_days_long_term">장기</string>
-    <string name="stock_expire">%1$s 만료</string>
-    <string name="stock_shelf_days">개봉 후 %1$d일 사용 가능</string>
     <string name="stock_banner_empty">재고가 없습니다. 보충해 주세요.</string>
     <string name="stock_banner_low">재고가 부족합니다. 보충해 주세요.</string>
-    <string name="stock_banner_expiring">현재 계획대로면 예상 소진일이 유효기간 이후입니다</string>
-    <string name="stock_banner_expired">유효기간이 지났습니다</string>
     <string name="stock_action_purchase">입고</string>
     <string name="stock_action_adjust">재고 수량</string>
     <string name="stock_purchase_title">입고</string>
@@ -319,7 +307,6 @@
     <string name="stock_reason_taken">복용</string>
     <string name="stock_reason_adjust">재고 수량 조정</string>
     <string name="stock_reason_lost">분실</string>
-    <string name="stock_reason_expired">만료</string>
     <string name="stock_reason_undo">실행 취소</string>
     <string name="stock_delta_plus">+%1$s</string>
     <string name="stock_delta_minus">-%1$s</string>

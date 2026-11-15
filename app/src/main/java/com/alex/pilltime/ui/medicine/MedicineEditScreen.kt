@@ -59,7 +59,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
@@ -105,8 +104,6 @@ fun MedicineEditScreen(
     onAddSchedule: () -> Unit,
     onEditSchedule: (Long) -> Unit
 ) {
-    val context = LocalContext.current
-    val formatter = remember { MedicineTextFormatter(context) }
     val photoPicker = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.PickVisualMedia()
     ) { uri: Uri? ->
@@ -118,13 +115,7 @@ fun MedicineEditScreen(
     ) { uri: Uri? ->
         if (uri != null) viewModel.scanMedicineName(uri)
     }
-    val barcodePicker = rememberLauncherForActivityResult(
-        contract = ActivityResultContracts.PickVisualMedia()
-    ) { uri: Uri? ->
-        if (uri != null) viewModel.scanBarcode(uri)
-    }
 
-    var dateTarget by remember { mutableStateOf(MedicineDateTarget.NONE) }
     var pendingScheduleDelete by remember { mutableStateOf<MedicineScheduleUi?>(null) }
     var confirmMedicineDelete by remember { mutableStateOf(false) }
 
@@ -221,48 +212,6 @@ fun MedicineEditScreen(
                 )
             }
 
-            LabeledTextField(
-                value = state.barcode,
-                onValueChange = {},
-                label = stringResource(R.string.medicine_scan_barcode_label),
-                readOnly = true
-            )
-            if (scanAvailable) {
-                OutlinedButton(
-                    onClick = {
-                        barcodePicker.launch(
-                            PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly)
-                        )
-                    },
-                    enabled = !state.barcodeScanRunning,
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .heightIn(min = 48.dp)
-                ) {
-                    if (state.barcodeScanRunning) {
-                        CircularProgressIndicator(
-                            modifier = Modifier.size(20.dp),
-                            strokeWidth = 2.dp
-                        )
-                    } else {
-                        Icon(
-                            imageVector = Icons.Default.Search,
-                            contentDescription = null,
-                            modifier = Modifier.size(18.dp)
-                        )
-                        Spacer(Modifier.size(8.dp))
-                        Text(text = stringResource(R.string.medicine_scan_barcode_action))
-                    }
-                }
-                if (state.barcodeScanFailed) {
-                    Text(
-                        text = stringResource(R.string.medicine_scan_barcode_failed),
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                }
-            }
-
             DropdownField(
                 label = stringResource(R.string.medicine_form_label),
                 selectedText = stringResource(formLabelRes(state.form)),
@@ -318,23 +267,6 @@ fun MedicineEditScreen(
                     modifier = Modifier.weight(1f)
                 )
             }
-
-            DateFieldButton(
-                label = stringResource(R.string.medicine_expire_label),
-                value = state.expireDate?.let { formatter.dateText(it) },
-                onClick = { dateTarget = MedicineDateTarget.EXPIRE }
-            )
-            DateFieldButton(
-                label = stringResource(R.string.medicine_opened_label),
-                value = state.openedAt?.let { formatter.dateText(it) },
-                onClick = { dateTarget = MedicineDateTarget.OPENED }
-            )
-            LabeledTextField(
-                value = state.shelfDaysAfterOpen,
-                onValueChange = viewModel::onShelfDaysChange,
-                label = stringResource(R.string.medicine_shelf_days_label),
-                keyboardType = KeyboardType.Number
-            )
 
             SwitchRow(
                 label = stringResource(R.string.medicine_auto_deduct_label),
@@ -397,26 +329,6 @@ fun MedicineEditScreen(
                 }
             }
         }
-    }
-
-    if (dateTarget != MedicineDateTarget.NONE) {
-        val initialDate = when (dateTarget) {
-            MedicineDateTarget.EXPIRE -> state.expireDate
-            MedicineDateTarget.OPENED -> state.openedAt
-            MedicineDateTarget.NONE -> null
-        }
-        MedicineDatePickerDialog(
-            initialDate = initialDate,
-            onConfirm = { date ->
-                when (dateTarget) {
-                    MedicineDateTarget.EXPIRE -> viewModel.onExpireDateChange(date)
-                    MedicineDateTarget.OPENED -> viewModel.onOpenedAtChange(date)
-                    MedicineDateTarget.NONE -> Unit
-                }
-                dateTarget = MedicineDateTarget.NONE
-            },
-            onDismiss = { dateTarget = MedicineDateTarget.NONE }
-        )
     }
 
     pendingScheduleDelete?.let { schedule ->
@@ -482,14 +394,6 @@ fun MedicineEditScreen(
             onDismiss = viewModel::dismissNameCandidates
         )
     }
-
-    state.pendingBarcode?.let { barcode ->
-        BarcodeConfirmDialog(
-            barcode = barcode,
-            onConfirm = viewModel::applyBarcode,
-            onDismiss = viewModel::dismissBarcode
-        )
-    }
 }
 
 /** 识别结果只做预填：用户选中并确认后才写入药名，仍需手动保存。 */
@@ -535,32 +439,6 @@ private fun NameCandidatesDialog(
         }
     )
 }
-
-/** 条码同样先确认再预填，保存动作仍由用户点击保存触发。 */
-@Composable
-private fun BarcodeConfirmDialog(
-    barcode: String,
-    onConfirm: () -> Unit,
-    onDismiss: () -> Unit
-) {
-    AlertDialog(
-        onDismissRequest = onDismiss,
-        title = { Text(text = stringResource(R.string.medicine_scan_barcode_title)) },
-        text = { Text(text = barcode) },
-        confirmButton = {
-            TextButton(onClick = onConfirm, modifier = Modifier.heightIn(min = 48.dp)) {
-                Text(text = stringResource(R.string.medicine_scan_barcode_confirm))
-            }
-        },
-        dismissButton = {
-            TextButton(onClick = onDismiss, modifier = Modifier.heightIn(min = 48.dp)) {
-                Text(text = stringResource(R.string.common_cancel))
-            }
-        }
-    )
-}
-
-private enum class MedicineDateTarget { NONE, EXPIRE, OPENED }
 
 private val DOSE_UNIT_OPTIONS = listOf("片", "粒", "ml", "滴", "喷", "U")
 

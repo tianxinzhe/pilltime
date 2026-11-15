@@ -71,11 +71,9 @@ class StockCalcTest {
     }
 
     @Test
-    fun `低库存与有效期提示的边界`() {
+    fun `低库存提示的边界`() {
         assertTrue(isLowStock(5.0, thresholdDays = 7))
         assertFalse(isLowStock(Double.POSITIVE_INFINITY, thresholdDays = 7))
-        assertFalse(isExpiringBeforeRunOut(null, today, 10.0))
-        assertFalse(isExpiringBeforeRunOut(today.plusDays(90), today, 30.0))
-        assertTrue(isExpiringBeforeRunOut(today.plusDays(10), today, 30.0))
+        assertFalse(isLowStock(7.0, thresholdDays = 7))
     }
 }

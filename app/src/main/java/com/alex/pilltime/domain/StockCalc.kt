@@ -3,7 +3,6 @@ package com.alex.pilltime.domain
 import com.alex.pilltime.data.entity.Schedule
 import com.alex.pilltime.data.entity.TaperStep
 import java.time.LocalDate
-import kotlin.math.ceil
 
 /**
  * 未来 [days] 天（含今天）按实际规则逐日求和的总消耗，单位 x10。
@@ -43,13 +42,6 @@ fun daysLeft(
     if (consumption <= 0) return Double.POSITIVE_INFINITY
     val perDay = consumption.toDouble() / horizonDays
     return stockQtyX10 / perDay
-}
-
-/** 预计吃完日期是否晚于有效期。 */
-fun isExpiringBeforeRunOut(expireDate: LocalDate?, today: LocalDate, daysLeft: Double): Boolean {
-    if (expireDate == null || !daysLeft.isFinite()) return false
-    val runOutDate = today.plusDays(ceil(daysLeft).toLong())
-    return runOutDate.isAfter(expireDate)
 }
 
 /** 剩余天数低于阈值即视为库存偏低；无消耗（无穷大）不算低库存。 */

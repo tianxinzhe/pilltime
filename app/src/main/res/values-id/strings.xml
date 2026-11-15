@@ -149,16 +149,11 @@
     <string name="medicine_edit_title">Edit obat</string>
     <string name="medicine_name_label">Nama obat</string>
     <string name="medicine_name_required">Silakan masukkan nama obat</string>
-    <!-- 药盒识别与条码：端侧模型，识别全程离线 -->
+    <!-- 药盒识别：端侧模型，识别全程离线 -->
     <string name="medicine_scan_name_cd">Pindai kotak obat untuk mengisi nama</string>
     <string name="medicine_scan_name_failed">Nama obat tidak ditemukan. Silakan masukkan secara manual.</string>
     <string name="medicine_scan_name_title">Pilih nama obat</string>
     <string name="medicine_scan_name_confirm">Gunakan nama terpilih</string>
-    <string name="medicine_scan_barcode_label">Barcode</string>
-    <string name="medicine_scan_barcode_action">Pindai barcode</string>
-    <string name="medicine_scan_barcode_title">Konfirmasi barcode</string>
-    <string name="medicine_scan_barcode_confirm">Gunakan barcode ini</string>
-    <string name="medicine_scan_barcode_failed">Barcode tidak ditemukan. Coba foto lain.</string>
     <string name="medicine_form_label">Bentuk</string>
     <string name="medicine_form_tablet">Tablet</string>
     <string name="medicine_form_capsule">Kapsul</string>
@@ -173,9 +168,6 @@
     <string name="medicine_splittable_label">Dapat dibagi</string>
     <string name="medicine_pack_size_label">Jumlah per kemasan</string>
     <string name="medicine_pack_unit_label">Satuan kemasan</string>
-    <string name="medicine_expire_label">Tanggal kedaluwarsa</string>
-    <string name="medicine_opened_label">Dibuka pada</string>
-    <string name="medicine_shelf_days_label">Hari pakai setelah dibuka</string>
     <string name="medicine_auto_deduct_label">Kurangi stok otomatis</string>
     <string name="medicine_note_label">Catatan</string>
     <string name="medicine_date_value">%1$s: %2$s</string>
@@ -300,12 +292,8 @@
     <string name="stock_title">Stok</string>
     <string name="stock_remaining">Sisa: %1$s</string>
     <string name="stock_days_long_term">Jangka panjang</string>
-    <string name="stock_expire">Kedaluwarsa %1$s</string>
-    <string name="stock_shelf_days">Dapat dipakai %1$d hari setelah dibuka</string>
     <string name="stock_banner_empty">Stok habis. Silakan isi ulang.</string>
     <string name="stock_banner_low">Stok menipis. Silakan isi ulang.</string>
-    <string name="stock_banner_expiring">Dengan rencana saat ini, perkiraan tanggal habis lebih lambat dari tanggal kedaluwarsa</string>
-    <string name="stock_banner_expired">Melewati tanggal kedaluwarsa</string>
     <string name="stock_action_purchase">Stok masuk</string>
     <string name="stock_action_adjust">Jumlah stok</string>
     <string name="stock_purchase_title">Stok masuk</string>
@@ -319,7 +307,6 @@
     <string name="stock_reason_taken">Dosis diminum</string>
     <string name="stock_reason_adjust">Penyesuaian jumlah stok</string>
     <string name="stock_reason_lost">Hilang</string>
-    <string name="stock_reason_expired">Kedaluwarsa</string>
     <string name="stock_reason_undo">Urungkan</string>
     <string name="stock_delta_plus">+%1$s</string>
     <string name="stock_delta_minus">-%1$s</string>

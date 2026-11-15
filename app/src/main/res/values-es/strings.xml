@@ -149,16 +149,11 @@
     <string name="medicine_edit_title">Editar medicamento</string>
     <string name="medicine_name_label">Nombre del medicamento</string>
     <string name="medicine_name_required">Introduce el nombre del medicamento</string>
-    <!-- 药盒识别与条码：端侧模型，识别全程离线 -->
+    <!-- 药盒识别：端侧模型，识别全程离线 -->
     <string name="medicine_scan_name_cd">Escanear la caja para rellenar el nombre</string>
     <string name="medicine_scan_name_failed">No se encontró ningún nombre de medicamento. Introdúcelo manualmente.</string>
     <string name="medicine_scan_name_title">Elige un nombre de medicamento</string>
     <string name="medicine_scan_name_confirm">Usar el nombre seleccionado</string>
-    <string name="medicine_scan_barcode_label">Código de barras</string>
-    <string name="medicine_scan_barcode_action">Escanear código de barras</string>
-    <string name="medicine_scan_barcode_title">Confirmar código de barras</string>
-    <string name="medicine_scan_barcode_confirm">Usar este código de barras</string>
-    <string name="medicine_scan_barcode_failed">No se encontró ningún código de barras. Prueba con otra foto.</string>
     <string name="medicine_form_label">Forma farmacéutica</string>
     <string name="medicine_form_tablet">Comprimido</string>
     <string name="medicine_form_capsule">Cápsula</string>
@@ -173,9 +168,6 @@
     <string name="medicine_splittable_label">Se puede dividir</string>
     <string name="medicine_pack_size_label">Cantidad por envase</string>
     <string name="medicine_pack_unit_label">Unidad del envase</string>
-    <string name="medicine_expire_label">Fecha de caducidad</string>
-    <string name="medicine_opened_label">Abierto el</string>
-    <string name="medicine_shelf_days_label">Días de uso tras abrir</string>
     <string name="medicine_auto_deduct_label">Descontar stock automáticamente</string>
     <string name="medicine_note_label">Notas</string>
     <string name="medicine_date_value">%1$s: %2$s</string>
@@ -300,12 +292,8 @@
     <string name="stock_title">Stock</string>
     <string name="stock_remaining">Restante: %1$s</string>
     <string name="stock_days_long_term">Largo plazo</string>
-    <string name="stock_expire">Caduca el %1$s</string>
-    <string name="stock_shelf_days">Útil %1$d días tras abrir</string>
     <string name="stock_banner_empty">Sin stock. Repón el medicamento.</string>
     <string name="stock_banner_low">Stock bajo. Repón el medicamento.</string>
-    <string name="stock_banner_expiring">Según la pauta actual, la fecha prevista de agotamiento es posterior a la caducidad</string>
-    <string name="stock_banner_expired">Ha superado la fecha de caducidad</string>
     <string name="stock_action_purchase">Añadir stock</string>
     <string name="stock_action_adjust">Recuento</string>
     <string name="stock_purchase_title">Añadir stock</string>
@@ -319,7 +307,6 @@
     <string name="stock_reason_taken">Dosis tomada</string>
     <string name="stock_reason_adjust">Ajuste de recuento</string>
     <string name="stock_reason_lost">Pérdida</string>
-    <string name="stock_reason_expired">Caducado</string>
     <string name="stock_reason_undo">Deshacer</string>
     <string name="stock_delta_plus">+%1$s</string>
     <string name="stock_delta_minus">-%1$s</string>

@@ -149,16 +149,11 @@
     <string name="medicine_edit_title">Modifica farmaco</string>
     <string name="medicine_name_label">Nome del farmaco</string>
     <string name="medicine_name_required">Inserisci il nome del farmaco</string>
-    <!-- 药盒识别与条码：端侧模型，识别全程离线 -->
+    <!-- 药盒识别：端侧模型，识别全程离线 -->
     <string name="medicine_scan_name_cd">Scansiona la confezione per compilare il nome</string>
     <string name="medicine_scan_name_failed">Nessun nome trovato. Inseriscilo manualmente.</string>
     <string name="medicine_scan_name_title">Scegli un nome</string>
     <string name="medicine_scan_name_confirm">Usa il nome selezionato</string>
-    <string name="medicine_scan_barcode_label">Codice a barre</string>
-    <string name="medicine_scan_barcode_action">Scansiona codice a barre</string>
-    <string name="medicine_scan_barcode_title">Conferma codice a barre</string>
-    <string name="medicine_scan_barcode_confirm">Usa questo codice</string>
-    <string name="medicine_scan_barcode_failed">Nessun codice trovato. Prova un\'altra foto.</string>
     <string name="medicine_form_label">Forma</string>
     <string name="medicine_form_tablet">Compressa</string>
     <string name="medicine_form_capsule">Capsula</string>
@@ -173,9 +168,6 @@
     <string name="medicine_splittable_label">Divisibile</string>
     <string name="medicine_pack_size_label">Quantità per confezione</string>
     <string name="medicine_pack_unit_label">Unità di confezione</string>
-    <string name="medicine_expire_label">Data di scadenza</string>
-    <string name="medicine_opened_label">Aperto il</string>
-    <string name="medicine_shelf_days_label">Giorni utilizzabili dopo l\'apertura</string>
     <string name="medicine_auto_deduct_label">Scala automaticamente le scorte</string>
     <string name="medicine_note_label">Note</string>
     <string name="medicine_date_value">%1$s: %2$s</string>
@@ -300,12 +292,8 @@
     <string name="stock_title">Scorte</string>
     <string name="stock_remaining">Rimanenti: %1$s</string>
     <string name="stock_days_long_term">A lungo termine</string>
-    <string name="stock_expire">Scade il %1$s</string>
-    <string name="stock_shelf_days">Utilizzabile %1$d giorni dopo l\'apertura</string>
     <string name="stock_banner_empty">Scorte esaurite. Rifornisci.</string>
     <string name="stock_banner_low">Scorte in esaurimento. Rifornisci.</string>
-    <string name="stock_banner_expiring">Con il piano attuale, la data di esaurimento prevista è successiva alla scadenza</string>
-    <string name="stock_banner_expired">Oltre la data di scadenza</string>
     <string name="stock_action_purchase">Carico</string>
     <string name="stock_action_adjust">Conteggio</string>
     <string name="stock_purchase_title">Carico</string>
@@ -319,7 +307,6 @@
     <string name="stock_reason_taken">Dose presa</string>
     <string name="stock_reason_adjust">Rettifica conteggio</string>
     <string name="stock_reason_lost">Perdita</string>
-    <string name="stock_reason_expired">Scaduto</string>
     <string name="stock_reason_undo">Annulla</string>
     <string name="stock_delta_plus">+%1$s</string>
     <string name="stock_delta_minus">-%1$s</string>

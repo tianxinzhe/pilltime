@@ -9,7 +9,6 @@ import com.alex.pilltime.domain.model.MedicineForm
 import com.alex.pilltime.scan.MedicineNameExtractor
 import com.alex.pilltime.scan.MlKitRecognizer
 import com.alex.pilltime.util.ImageStore
-import java.time.LocalDate
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -41,28 +40,19 @@ data class MedicineEditUiState(
     val splittable: Boolean = true,
     val packSize: String = "",
     val packUnit: String = "",
-    val expireDate: LocalDate? = null,
-    val openedAt: LocalDate? = null,
-    val shelfDaysAfterOpen: String = "",
     val autoDeductStock: Boolean = true,
     val note: String = "",
     val imagePath: String? = null,
     val thumbPath: String? = null,
-    val barcode: String = "",
     val schedules: List<MedicineScheduleUi> = emptyList(),
     val nameError: Boolean = false,
     val specError: Boolean = false,
     val photoError: Boolean = false,
     /** 药盒识别中：驱动输入框的加载状态。 */
     val nameScanRunning: Boolean = false,
-    /** 条码扫描中。 */
-    val barcodeScanRunning: Boolean = false,
     /** 待用户确认的药名候选，非空时弹出选择对话框。 */
     val nameCandidates: List<String> = emptyList(),
-    /** 待用户确认的条码值，非空时弹出确认对话框。 */
-    val pendingBarcode: String? = null,
-    val nameScanFailed: Boolean = false,
-    val barcodeScanFailed: Boolean = false
+    val nameScanFailed: Boolean = false
 )
 
 /**
@@ -152,12 +142,6 @@ class MedicineEditViewModel : ViewModel() {
 
     fun onPackUnitChange(value: String) = _uiState.update { it.copy(packUnit = value) }
 
-    fun onExpireDateChange(value: LocalDate?) = _uiState.update { it.copy(expireDate = value) }
-
-    fun onOpenedAtChange(value: LocalDate?) = _uiState.update { it.copy(openedAt = value) }
-
-    fun onShelfDaysChange(value: String) = _uiState.update { it.copy(shelfDaysAfterOpen = value) }
-
     fun onAutoDeductChange(value: Boolean) = _uiState.update { it.copy(autoDeductStock = value) }
 
     fun onNoteChange(value: String) = _uiState.update { it.copy(note = value) }
@@ -190,30 +174,6 @@ class MedicineEditViewModel : ViewModel() {
     }
 
     fun dismissNameCandidates() = _uiState.update { it.copy(nameCandidates = emptyList()) }
-
-    /** 识别条码，结果进入待确认状态。 */
-    fun scanBarcode(uri: Uri) {
-        if (_uiState.value.barcodeScanRunning) return
-        _uiState.update { it.copy(barcodeScanRunning = true, barcodeScanFailed = false) }
-        viewModelScope.launch {
-            val value = recognizer.recognizeBarcode(context, uri)
-            _uiState.update {
-                it.copy(
-                    barcodeScanRunning = false,
-                    pendingBarcode = value,
-                    barcodeScanFailed = value == null
-                )
-            }
-        }
-    }
-
-    /** 用户确认后才写入条码字段，保存动作仍由用户显式触发。 */
-    fun applyBarcode() {
-        val value = _uiState.value.pendingBarcode ?: return
-        _uiState.update { it.copy(barcode = value, pendingBarcode = null, barcodeScanFailed = false) }
-    }
-
-    fun dismissBarcode() = _uiState.update { it.copy(pendingBarcode = null) }
 
     /** 选图后立即压缩落盘并更新预览，真正写库在保存时进行。 */
     fun attachPhoto(uri: Uri) {
@@ -294,12 +254,8 @@ class MedicineEditViewModel : ViewModel() {
                     packUnit = state.packUnit.trim(),
                     imagePath = state.imagePath,
                     thumbPath = state.thumbPath,
-                    expireDate = state.expireDate,
-                    openedAt = state.openedAt,
-                    shelfDaysAfterOpen = state.shelfDaysAfterOpen.trim().toIntOrNull(),
                     autoDeductStock = state.autoDeductStock,
-                    note = state.note.trim().ifEmpty { null },
-                    barcode = state.barcode.trim().ifEmpty { null }
+                    note = state.note.trim().ifEmpty { null }
                 )
             )
             alarmScheduler.rescheduleAll()
@@ -350,14 +306,10 @@ class MedicineEditViewModel : ViewModel() {
         splittable = splittable,
         packSize = if (packSize > 0) packSize.toString() else "",
         packUnit = packUnit,
-        expireDate = expireDate,
-        openedAt = openedAt,
-        shelfDaysAfterOpen = shelfDaysAfterOpen?.toString().orEmpty(),
         autoDeductStock = autoDeductStock,
         note = note.orEmpty(),
         imagePath = imagePath,
-        thumbPath = thumbPath,
-        barcode = barcode.orEmpty()
+        thumbPath = thumbPath
     )
 
     /** 规格含量按整数优先展示，避免 500.0 这类多余小数。 */

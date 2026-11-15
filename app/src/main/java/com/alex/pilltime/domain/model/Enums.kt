@@ -13,4 +13,4 @@ enum class MealType { BREAKFAST, LUNCH, DINNER, BEDTIME }
 enum class DoseStatus { PENDING, DUE, TAKEN, LATE, SKIPPED, MISSED, UNCERTAIN }
 
 /** 库存流水原因。 */
-enum class StockReason { PURCHASE, TAKEN, ADJUST, LOST, EXPIRED, UNDO }
+enum class StockReason { PURCHASE, TAKEN, ADJUST, LOST, UNDO }

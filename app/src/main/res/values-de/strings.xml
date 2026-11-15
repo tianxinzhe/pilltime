@@ -149,16 +149,11 @@
     <string name="medicine_edit_title">Medikament bearbeiten</string>
     <string name="medicine_name_label">Medikamentenname</string>
     <string name="medicine_name_required">Bitte den Medikamentennamen eingeben</string>
-    <!-- 药盒识别与条码：端侧模型，识别全程离线 -->
+    <!-- 药盒识别：端侧模型，识别全程离线 -->
     <string name="medicine_scan_name_cd">Medikamentenpackung scannen, um den Namen zu füllen</string>
     <string name="medicine_scan_name_failed">Kein Medikamentenname gefunden. Bitte manuell eingeben.</string>
     <string name="medicine_scan_name_title">Medikamentennamen auswählen</string>
     <string name="medicine_scan_name_confirm">Ausgewählten Namen verwenden</string>
-    <string name="medicine_scan_barcode_label">Barcode</string>
-    <string name="medicine_scan_barcode_action">Barcode scannen</string>
-    <string name="medicine_scan_barcode_title">Barcode bestätigen</string>
-    <string name="medicine_scan_barcode_confirm">Diesen Barcode verwenden</string>
-    <string name="medicine_scan_barcode_failed">Kein Barcode gefunden. Bitte ein anderes Foto versuchen.</string>
     <string name="medicine_form_label">Darreichungsform</string>
     <string name="medicine_form_tablet">Tablette</string>
     <string name="medicine_form_capsule">Kapsel</string>
@@ -173,9 +168,6 @@
     <string name="medicine_splittable_label">Teilbar</string>
     <string name="medicine_pack_size_label">Menge pro Packung</string>
     <string name="medicine_pack_unit_label">Packungseinheit</string>
-    <string name="medicine_expire_label">Haltbarkeitsdatum</string>
-    <string name="medicine_opened_label">Geöffnet am</string>
-    <string name="medicine_shelf_days_label">Tage nach dem Öffnen verwendbar</string>
     <string name="medicine_auto_deduct_label">Vorrat automatisch abziehen</string>
     <string name="medicine_note_label">Notizen</string>
     <string name="medicine_date_value">%1$s: %2$s</string>
@@ -300,12 +292,8 @@
     <string name="stock_title">Vorrat</string>
     <string name="stock_remaining">Verbleibend: %1$s</string>
     <string name="stock_days_long_term">Langfristig</string>
-    <string name="stock_expire">Läuft ab am %1$s</string>
-    <string name="stock_shelf_days">Nach dem Öffnen %1$d Tage verwendbar</string>
     <string name="stock_banner_empty">Vorrat aufgebraucht. Bitte nachfüllen.</string>
     <string name="stock_banner_low">Wenig Vorrat. Bitte nachfüllen.</string>
-    <string name="stock_banner_expiring">Beim aktuellen Plan liegt das voraussichtliche Aufbrauchsdatum nach dem Haltbarkeitsdatum</string>
-    <string name="stock_banner_expired">Haltbarkeitsdatum überschritten</string>
     <string name="stock_action_purchase">Einlagern</string>
     <string name="stock_action_adjust">Bestand zählen</string>
     <string name="stock_purchase_title">Einlagern</string>
@@ -319,7 +307,6 @@
     <string name="stock_reason_taken">Dosis eingenommen</string>
     <string name="stock_reason_adjust">Bestandskorrektur</string>
     <string name="stock_reason_lost">Verlust</string>
-    <string name="stock_reason_expired">Abgelaufen</string>
     <string name="stock_reason_undo">Rückgängig</string>
     <string name="stock_delta_plus">+%1$s</string>
     <string name="stock_delta_minus">-%1$s</string>

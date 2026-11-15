@@ -149,16 +149,11 @@
     <string name="medicine_edit_title">Sửa thuốc</string>
     <string name="medicine_name_label">Tên thuốc</string>
     <string name="medicine_name_required">Vui lòng nhập tên thuốc</string>
-    <!-- 药盒识别与条码：端侧模型，识别全程离线 -->
+    <!-- 药盒识别：端侧模型，识别全程离线 -->
     <string name="medicine_scan_name_cd">Quét hộp thuốc để điền tên</string>
     <string name="medicine_scan_name_failed">Không tìm thấy tên thuốc. Vui lòng nhập thủ công.</string>
     <string name="medicine_scan_name_title">Chọn tên thuốc</string>
     <string name="medicine_scan_name_confirm">Dùng tên đã chọn</string>
-    <string name="medicine_scan_barcode_label">Mã vạch</string>
-    <string name="medicine_scan_barcode_action">Quét mã vạch</string>
-    <string name="medicine_scan_barcode_title">Xác nhận mã vạch</string>
-    <string name="medicine_scan_barcode_confirm">Dùng mã vạch này</string>
-    <string name="medicine_scan_barcode_failed">Không tìm thấy mã vạch. Vui lòng thử ảnh khác.</string>
     <string name="medicine_form_label">Dạng thuốc</string>
     <string name="medicine_form_tablet">Viên nén</string>
     <string name="medicine_form_capsule">Viên nang</string>
@@ -173,9 +168,6 @@
     <string name="medicine_splittable_label">Có thể chia nhỏ</string>
     <string name="medicine_pack_size_label">Số lượng mỗi hộp</string>
     <string name="medicine_pack_unit_label">Đơn vị đóng gói</string>
-    <string name="medicine_expire_label">Hạn sử dụng</string>
-    <string name="medicine_opened_label">Ngày mở</string>
-    <string name="medicine_shelf_days_label">Số ngày dùng sau khi mở</string>
     <string name="medicine_auto_deduct_label">Tự động trừ tồn kho</string>
     <string name="medicine_note_label">Ghi chú</string>
     <string name="medicine_date_value">%1$s: %2$s</string>
@@ -300,12 +292,8 @@
     <string name="stock_title">Tồn kho</string>
     <string name="stock_remaining">Còn lại: %1$s</string>
     <string name="stock_days_long_term">Dài hạn</string>
-    <string name="stock_expire">Hết hạn %1$s</string>
-    <string name="stock_shelf_days">Dùng được %1$d ngày sau khi mở</string>
     <string name="stock_banner_empty">Hết thuốc. Vui lòng nhập thêm.</string>
     <string name="stock_banner_low">Sắp hết thuốc. Vui lòng nhập thêm.</string>
-    <string name="stock_banner_expiring">Với kế hoạch hiện tại, ngày hết dự kiến muộn hơn hạn sử dụng</string>
-    <string name="stock_banner_expired">Đã quá hạn sử dụng</string>
     <string name="stock_action_purchase">Nhập kho</string>
     <string name="stock_action_adjust">Số lượng tồn</string>
     <string name="stock_purchase_title">Nhập kho</string>
@@ -319,7 +307,6 @@
     <string name="stock_reason_taken">Đã uống liều</string>
     <string name="stock_reason_adjust">Điều chỉnh số lượng tồn</string>
     <string name="stock_reason_lost">Mất</string>
-    <string name="stock_reason_expired">Hết hạn</string>
     <string name="stock_reason_undo">Hoàn tác</string>
     <string name="stock_delta_plus">+%1$s</string>
     <string name="stock_delta_minus">-%1$s</string>

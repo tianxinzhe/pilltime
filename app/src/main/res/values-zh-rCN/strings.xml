@@ -141,16 +141,11 @@
     <string name="medicine_edit_title">编辑药品</string>
     <string name="medicine_name_label">药名</string>
     <string name="medicine_name_required">请填写药名</string>
-    <!-- 药盒识别与条码：端侧模型，识别全程离线 -->
+    <!-- 药盒识别：端侧模型，识别全程离线 -->
     <string name="medicine_scan_name_cd">扫描药盒以填充药名</string>
     <string name="medicine_scan_name_failed">未识别到药名，请手动输入</string>
     <string name="medicine_scan_name_title">选择药名</string>
     <string name="medicine_scan_name_confirm">使用选中药名</string>
-    <string name="medicine_scan_barcode_label">条码</string>
-    <string name="medicine_scan_barcode_action">扫描条码</string>
-    <string name="medicine_scan_barcode_title">确认条码</string>
-    <string name="medicine_scan_barcode_confirm">使用该条码</string>
-    <string name="medicine_scan_barcode_failed">未识别到条码，请换一张照片重试</string>
     <string name="medicine_form_label">剂型</string>
     <string name="medicine_form_tablet">片</string>
     <string name="medicine_form_capsule">胶囊</string>
@@ -165,9 +160,6 @@
     <string name="medicine_splittable_label">可以掰开</string>
     <string name="medicine_pack_size_label">每盒数量</string>
     <string name="medicine_pack_unit_label">包装单位</string>
-    <string name="medicine_expire_label">有效期</string>
-    <string name="medicine_opened_label">开封日</string>
-    <string name="medicine_shelf_days_label">开封后可用天数</string>
     <string name="medicine_auto_deduct_label">自动扣减库存</string>
     <string name="medicine_note_label">备注</string>
     <string name="medicine_date_value">%1$s：%2$s</string>
@@ -292,12 +284,8 @@
     <string name="stock_title">库存</string>
     <string name="stock_remaining">剩余 %1$s</string>
     <string name="stock_days_long_term">长期</string>
-    <string name="stock_expire">有效期 %1$s</string>
-    <string name="stock_shelf_days">开封后可用 %1$d 天</string>
     <string name="stock_banner_empty">库存不足，请及时补药</string>
     <string name="stock_banner_low">库存偏低，请及时补药</string>
-    <string name="stock_banner_expiring">按当前计划，预计吃完日期晚于有效期</string>
-    <string name="stock_banner_expired">已超过有效期</string>
     <string name="stock_action_purchase">入库</string>
     <string name="stock_action_adjust">盘点</string>
     <string name="stock_purchase_title">入库</string>
@@ -311,7 +299,6 @@
     <string name="stock_reason_taken">服药扣减</string>
     <string name="stock_reason_adjust">盘点调整</string>
     <string name="stock_reason_lost">报损</string>
-    <string name="stock_reason_expired">过期</string>
     <string name="stock_reason_undo">撤销回补</string>
     <string name="stock_delta_plus">+%1$s</string>
     <string name="stock_delta_minus">-%1$s</string>

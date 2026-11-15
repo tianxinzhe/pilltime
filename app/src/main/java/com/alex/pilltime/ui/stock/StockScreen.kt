@@ -159,16 +159,6 @@ fun StockScreen(
                             StockBanner(text = stringResource(R.string.stock_banner_low))
                         }
                     }
-                    if (state.expired) {
-                        item(key = "banner_expired") {
-                            StockBanner(text = stringResource(R.string.stock_banner_expired))
-                        }
-                    }
-                    if (state.expiringBeforeRunOut) {
-                        item(key = "banner_expiring") {
-                            StockBanner(text = stringResource(R.string.stock_banner_expiring))
-                        }
-                    }
 
                     item(key = "actions") {
                         Row(
@@ -207,27 +197,6 @@ fun StockScreen(
                                 style = MaterialTheme.typography.bodyMedium,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant
                             )
-                        }
-                    }
-
-                    if (state.expireText != null || state.shelfText != null) {
-                        item(key = "facts") {
-                            Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                                state.expireText?.let {
-                                    Text(
-                                        text = it,
-                                        style = MaterialTheme.typography.bodyMedium,
-                                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                                    )
-                                }
-                                state.shelfText?.let {
-                                    Text(
-                                        text = it,
-                                        style = MaterialTheme.typography.bodyMedium,
-                                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                                    )
-                                }
-                            }
                         }
                     }
 
@@ -294,7 +263,7 @@ private fun StockHeader(state: StockUiState) {
     }
 }
 
-/** 事实性提示条，只陈述库存与有效期状态。 */
+/** 事实性提示条，只陈述库存状态。 */
 @Composable
 private fun StockBanner(
     text: String,

@@ -148,16 +148,11 @@
     <string name="medicine_edit_title">दवा संपादित करें</string>
     <string name="medicine_name_label">दवा का नाम</string>
     <string name="medicine_name_required">कृपया दवा का नाम दर्ज करें</string>
-    <!-- 药盒识别与条码：端侧模型，识别全程离线 -->
+    <!-- 药盒识别：端侧模型，识别全程离线 -->
     <string name="medicine_scan_name_cd">नाम भरने के लिए दवा का डिब्बा स्कैन करें</string>
     <string name="medicine_scan_name_failed">दवा का नाम नहीं मिला। कृपया मैन्युअल रूप से दर्ज करें।</string>
     <string name="medicine_scan_name_title">दवा का नाम चुनें</string>
     <string name="medicine_scan_name_confirm">चुना गया नाम उपयोग करें</string>
-    <string name="medicine_scan_barcode_label">बारकोड</string>
-    <string name="medicine_scan_barcode_action">बारकोड स्कैन करें</string>
-    <string name="medicine_scan_barcode_title">बारकोड की पुष्टि करें</string>
-    <string name="medicine_scan_barcode_confirm">यह बारकोड उपयोग करें</string>
-    <string name="medicine_scan_barcode_failed">कोई बारकोड नहीं मिला। कृपया दूसरी फ़ोटो आज़माएँ।</string>
     <string name="medicine_form_label">रूप</string>
     <string name="medicine_form_tablet">गोली</string>
     <string name="medicine_form_capsule">कैप्सूल</string>
@@ -172,9 +167,6 @@
     <string name="medicine_splittable_label">विभाजित की जा सकती है</string>
     <string name="medicine_pack_size_label">प्रति पैक मात्रा</string>
     <string name="medicine_pack_unit_label">पैक इकाई</string>
-    <string name="medicine_expire_label">समाप्ति तिथि</string>
-    <string name="medicine_opened_label">खोलने की तिथि</string>
-    <string name="medicine_shelf_days_label">खोलने के बाद उपयोग के दिन</string>
     <string name="medicine_auto_deduct_label">स्टॉक स्वतः घटाएँ</string>
     <string name="medicine_note_label">नोट्स</string>
     <string name="medicine_date_value">%1$s: %2$s</string>
@@ -299,12 +291,8 @@
     <string name="stock_title">स्टॉक</string>
     <string name="stock_remaining">शेष: %1$s</string>
     <string name="stock_days_long_term">दीर्घकालिक</string>
-    <string name="stock_expire">%1$s को समाप्त</string>
-    <string name="stock_shelf_days">खोलने के बाद %1$d दिन उपयोग योग्य</string>
     <string name="stock_banner_empty">स्टॉक खत्म। कृपया भरें।</string>
     <string name="stock_banner_low">स्टॉक कम। कृपया भरें।</string>
-    <string name="stock_banner_expiring">मौजूदा योजना पर, अनुमानित खत्म होने की तिथि समाप्ति तिथि के बाद है</string>
-    <string name="stock_banner_expired">समाप्ति तिथि बीत गई</string>
     <string name="stock_action_purchase">स्टॉक इन</string>
     <string name="stock_action_adjust">स्टॉक गणना</string>
     <string name="stock_purchase_title">स्टॉक इन</string>
@@ -318,7 +306,6 @@
     <string name="stock_reason_taken">खुराक ली गई</string>
     <string name="stock_reason_adjust">स्टॉक गणना समायोजन</string>
     <string name="stock_reason_lost">नुकसान</string>
-    <string name="stock_reason_expired">समाप्त</string>
     <string name="stock_reason_undo">पूर्ववत करें</string>
     <string name="stock_delta_plus">+%1$s</string>
     <string name="stock_delta_minus">-%1$s</string>

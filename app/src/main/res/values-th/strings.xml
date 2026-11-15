@@ -149,16 +149,11 @@
     <string name="medicine_edit_title">แก้ไขยา</string>
     <string name="medicine_name_label">ชื่อยา</string>
     <string name="medicine_name_required">กรุณากรอกชื่อยา</string>
-    <!-- 药盒识别与条码：端侧模型，识别全程离线 -->
+    <!-- 药盒识别：端侧模型，识别全程离线 -->
     <string name="medicine_scan_name_cd">สแกนกล่องยาเพื่อกรอกชื่อ</string>
     <string name="medicine_scan_name_failed">ไม่พบชื่อยา กรุณากรอกเอง</string>
     <string name="medicine_scan_name_title">เลือกชื่อยา</string>
     <string name="medicine_scan_name_confirm">ใช้ชื่อที่เลือก</string>
-    <string name="medicine_scan_barcode_label">บาร์โค้ด</string>
-    <string name="medicine_scan_barcode_action">สแกนบาร์โค้ด</string>
-    <string name="medicine_scan_barcode_title">ยืนยันบาร์โค้ด</string>
-    <string name="medicine_scan_barcode_confirm">ใช้บาร์โค้ดนี้</string>
-    <string name="medicine_scan_barcode_failed">ไม่พบบาร์โค้ด กรุณาลองรูปอื่น</string>
     <string name="medicine_form_label">รูปแบบยา</string>
     <string name="medicine_form_tablet">ยาเม็ด</string>
     <string name="medicine_form_capsule">แคปซูล</string>
@@ -173,9 +168,6 @@
     <string name="medicine_splittable_label">แบ่งได้</string>
     <string name="medicine_pack_size_label">จำนวนต่อแพ็ค</string>
     <string name="medicine_pack_unit_label">หน่วยบรรจุ</string>
-    <string name="medicine_expire_label">วันหมดอายุ</string>
-    <string name="medicine_opened_label">เปิดเมื่อ</string>
-    <string name="medicine_shelf_days_label">จำนวนวันใช้หลังเปิด</string>
     <string name="medicine_auto_deduct_label">หักคลังยาอัตโนมัติ</string>
     <string name="medicine_note_label">หมายเหตุ</string>
     <string name="medicine_date_value">%1$s: %2$s</string>
@@ -300,12 +292,8 @@
     <string name="stock_title">คลังยา</string>
     <string name="stock_remaining">คงเหลือ: %1$s</string>
     <string name="stock_days_long_term">ระยะยาว</string>
-    <string name="stock_expire">หมดอายุ %1$s</string>
-    <string name="stock_shelf_days">ใช้ได้ %1$d วันหลังเปิด</string>
     <string name="stock_banner_empty">ยาหมด กรุณาเติมยา</string>
     <string name="stock_banner_low">ยาใกล้หมด กรุณาเติมยา</string>
-    <string name="stock_banner_expiring">ตามแผนปัจจุบัน วันหมดจะช้ากว่าวันหมดอายุ</string>
-    <string name="stock_banner_expired">เกินวันหมดอายุแล้ว</string>
     <string name="stock_action_purchase">รับเข้า</string>
     <string name="stock_action_adjust">นับจำนวน</string>
     <string name="stock_purchase_title">รับเข้า</string>
@@ -319,7 +307,6 @@
     <string name="stock_reason_taken">รับประทานยา</string>
     <string name="stock_reason_adjust">ปรับจำนวนคลัง</string>
     <string name="stock_reason_lost">สูญหาย</string>
-    <string name="stock_reason_expired">หมดอายุ</string>
     <string name="stock_reason_undo">เลิกทำ</string>
     <string name="stock_delta_plus">+%1$s</string>
     <string name="stock_delta_minus">-%1$s</string>

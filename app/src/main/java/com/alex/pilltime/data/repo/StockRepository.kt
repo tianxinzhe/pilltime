@@ -3,7 +3,6 @@ package com.alex.pilltime.data.repo
 import com.alex.pilltime.data.db.AppDatabase
 import com.alex.pilltime.data.entity.StockChange
 import com.alex.pilltime.domain.daysLeft
-import com.alex.pilltime.domain.isExpiringBeforeRunOut
 import com.alex.pilltime.domain.model.StockReason
 import java.time.Instant
 import java.time.LocalDate
@@ -73,12 +72,4 @@ class StockRepository(private val db: AppDatabase) {
         return daysLeft(stockChangeDao.sumByMedicine(medicineId), schedules, today, 30, steps)
     }
 
-    /** 预计吃完日期是否晚于有效期。 */
-    suspend fun expiringBeforeRunOut(
-        medicineId: Long,
-        today: LocalDate = LocalDate.now()
-    ): Boolean {
-        val medicine = medicineDao.getById(medicineId) ?: return false
-        return isExpiringBeforeRunOut(medicine.expireDate, today, remainingDays(medicineId, today))
-    }
 }

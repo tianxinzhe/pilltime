@@ -31,7 +31,7 @@ import kotlinx.coroutines.flow.first
         Profile::class,
         TaperStep::class
     ],
-    version = 1,
+    version = 2,
     exportSchema = false
 )
 @TypeConverters(Converters::class)
@@ -55,9 +55,11 @@ abstract class AppDatabase : RoomDatabase() {
                     context.applicationContext,
                     AppDatabase::class.java,
                     "pilltime.db"
-                ).build().also { INSTANCE = it }
+                )
+                    // 开发期未发布：字段删减直接重建，正式发布后必须改为增量迁移
+                    .fallbackToDestructiveMigration(dropAllTables = true)
+                    .build().also { INSTANCE = it }
             }
-        // version 1 无迁移，暂不需要 fallbackToDestructiveMigration
     }
 }
 

@@ -4,7 +4,6 @@ import androidx.room.Entity
 import androidx.room.Index
 import androidx.room.PrimaryKey
 import com.alex.pilltime.domain.model.MedicineForm
-import java.time.LocalDate
 
 /**
  * 药品。
@@ -24,10 +23,6 @@ data class Medicine(
     val packUnit: String,
     val imagePath: String? = null,
     val thumbPath: String? = null,
-    val expireDate: LocalDate? = null,
-    val openedAt: LocalDate? = null,
-    val shelfDaysAfterOpen: Int? = null,
     val autoDeductStock: Boolean = true,
-    val note: String? = null,
-    val barcode: String? = null
+    val note: String? = null
 )
