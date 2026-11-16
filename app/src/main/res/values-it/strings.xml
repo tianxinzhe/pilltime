@@ -23,6 +23,7 @@
     <!-- 底部导航 -->
     <string name="tab_today">Oggi</string>
     <string name="tab_medicines">Farmaci</string>
+    <string name="tab_schedules">Programmi</string>
     <string name="tab_history">Cronologia</string>
     <string name="tab_settings">Impostazioni</string>
     <string name="coming_soon">Prossimamente</string>
@@ -167,7 +168,7 @@
     <string name="medicine_spec_required">Inserisci dosaggio e unità di dose</string>
     <string name="medicine_splittable_label">Divisibile</string>
     <string name="medicine_pack_size_label">Quantità per confezione</string>
-    <string name="medicine_pack_unit_label">Unità di confezione</string>
+    <string name="medicine_pack_size_with_unit_label">Quantità per confezione (%1$s)</string>
     <string name="medicine_auto_deduct_label">Scala automaticamente le scorte</string>
     <string name="medicine_note_label">Note</string>
     <string name="medicine_date_value">%1$s: %2$s</string>

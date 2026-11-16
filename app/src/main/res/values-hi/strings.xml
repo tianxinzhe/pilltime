@@ -22,6 +22,7 @@
     <!-- 底部导航 -->
     <string name="tab_today">आज</string>
     <string name="tab_medicines">दवाइयाँ</string>
+    <string name="tab_schedules">योजनाएँ</string>
     <string name="tab_history">इतिहास</string>
     <string name="tab_settings">सेटिंग्स</string>
     <string name="coming_soon">जल्द आ रहा है</string>
@@ -166,7 +167,7 @@
     <string name="medicine_spec_required">कृपया शक्ति और खुराक इकाई दर्ज करें</string>
     <string name="medicine_splittable_label">विभाजित की जा सकती है</string>
     <string name="medicine_pack_size_label">प्रति पैक मात्रा</string>
-    <string name="medicine_pack_unit_label">पैक इकाई</string>
+    <string name="medicine_pack_size_with_unit_label">प्रति पैक मात्रा (%1$s)</string>
     <string name="medicine_auto_deduct_label">स्टॉक स्वतः घटाएँ</string>
     <string name="medicine_note_label">नोट्स</string>
     <string name="medicine_date_value">%1$s: %2$s</string>

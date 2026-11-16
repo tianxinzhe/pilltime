@@ -22,6 +22,7 @@
     <!-- 底部导航 -->
     <string name="tab_today">اليوم</string>
     <string name="tab_medicines">الأدوية</string>
+    <string name="tab_schedules">الخطط</string>
     <string name="tab_history">السجل</string>
     <string name="tab_settings">الإعدادات</string>
     <string name="coming_soon">قريبًا</string>
@@ -194,7 +195,7 @@
     <string name="medicine_spec_required">يرجى إدخال التركيز ووحدة الجرعة</string>
     <string name="medicine_splittable_label">قابل للتقسيم</string>
     <string name="medicine_pack_size_label">الكمية في العلبة</string>
-    <string name="medicine_pack_unit_label">وحدة العلبة</string>
+    <string name="medicine_pack_size_with_unit_label">الكمية في العلبة (%1$s)</string>
     <string name="medicine_auto_deduct_label">خصم المخزون تلقائيًا</string>
     <string name="medicine_note_label">ملاحظات</string>
     <string name="medicine_date_value">%1$s: %2$s</string>

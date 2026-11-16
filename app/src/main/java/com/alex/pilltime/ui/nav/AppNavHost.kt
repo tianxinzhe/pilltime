@@ -13,6 +13,7 @@ import com.alex.pilltime.ui.history.HistoryRoute
 import com.alex.pilltime.ui.medicine.MedicineEditRoute
 import com.alex.pilltime.ui.medicine.MedicineListRoute
 import com.alex.pilltime.ui.medicine.ScheduleEditRoute
+import com.alex.pilltime.ui.medicine.ScheduleListRoute
 import com.alex.pilltime.ui.profile.ProfileRoute
 import com.alex.pilltime.ui.settings.SettingsRoute
 import com.alex.pilltime.ui.stock.StockRoute
@@ -24,6 +25,7 @@ import com.alex.pilltime.ui.today.TodayRoute
 object AppRoutes {
     const val TODAY = "today"
     const val MEDICINES = "medicines"
+    const val SCHEDULES = "schedules"
     const val HISTORY = "history"
     const val SETTINGS = "settings"
     const val MEDICINE_EDIT = "medicine_edit/{medicineId}"
@@ -75,6 +77,22 @@ fun AppNavHost(navController: NavHostController, modifier: Modifier = Modifier) 
                 }
             )
         }
+        composable(AppRoutes.SCHEDULES) {
+            ScheduleListRoute(
+                onEditSchedule = { medicineId, scheduleId ->
+                    navController.navigate(AppRoutes.scheduleEdit(medicineId, scheduleId))
+                },
+                onNavigateToMedicines = {
+                    navController.navigate(AppRoutes.MEDICINES) {
+                        popUpTo(navController.graph.findStartDestination().id) {
+                            saveState = true
+                        }
+                        launchSingleTop = true
+                        restoreState = true
+                    }
+                }
+            )
+        }
         composable(AppRoutes.HISTORY) {
             HistoryRoute(onExport = { navController.navigate(AppRoutes.EXPORT) })
         }
@@ -96,13 +114,7 @@ fun AppNavHost(navController: NavHostController, modifier: Modifier = Modifier) 
             val medicineId = entry.arguments?.getLong(AppRoutes.ARG_MEDICINE_ID) ?: 0L
             MedicineEditRoute(
                 medicineId = medicineId,
-                onBack = { navController.popBackStack() },
-                onAddSchedule = {
-                    navController.navigate(AppRoutes.scheduleEdit(medicineId, 0L))
-                },
-                onEditSchedule = { scheduleId ->
-                    navController.navigate(AppRoutes.scheduleEdit(medicineId, scheduleId))
-                }
+                onBack = { navController.popBackStack() }
             )
         }
         composable(

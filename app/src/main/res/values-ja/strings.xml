@@ -23,6 +23,7 @@
     <!-- 底部导航 -->
     <string name="tab_today">今日</string>
     <string name="tab_medicines">薬</string>
+    <string name="tab_schedules">服用計画</string>
     <string name="tab_history">履歴</string>
     <string name="tab_settings">設定</string>
     <string name="coming_soon">準備中</string>
@@ -160,7 +161,7 @@
     <string name="medicine_spec_required">含量と投与単位を入力してください</string>
     <string name="medicine_splittable_label">分割可能</string>
     <string name="medicine_pack_size_label">1箱の数量</string>
-    <string name="medicine_pack_unit_label">包装単位</string>
+    <string name="medicine_pack_size_with_unit_label">1箱の数量（%1$s）</string>
     <string name="medicine_auto_deduct_label">在庫を自動で減らす</string>
     <string name="medicine_note_label">メモ</string>
     <string name="medicine_date_value">%1$s：%2$s</string>

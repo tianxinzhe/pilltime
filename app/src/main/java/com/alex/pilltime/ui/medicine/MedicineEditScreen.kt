@@ -77,8 +77,6 @@ import java.time.ZoneOffset
 fun MedicineEditRoute(
     medicineId: Long,
     onBack: () -> Unit,
-    onAddSchedule: () -> Unit,
-    onEditSchedule: (Long) -> Unit,
     viewModel: MedicineEditViewModel = viewModel()
 ) {
     val state by viewModel.uiState.collectAsState()
@@ -89,9 +87,7 @@ fun MedicineEditRoute(
     MedicineEditScreen(
         state = state,
         viewModel = viewModel,
-        onBack = onBack,
-        onAddSchedule = onAddSchedule,
-        onEditSchedule = onEditSchedule
+        onBack = onBack
     )
 }
 
@@ -100,9 +96,7 @@ fun MedicineEditRoute(
 fun MedicineEditScreen(
     state: MedicineEditUiState,
     viewModel: MedicineEditViewModel,
-    onBack: () -> Unit,
-    onAddSchedule: () -> Unit,
-    onEditSchedule: (Long) -> Unit
+    onBack: () -> Unit
 ) {
     val photoPicker = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.PickVisualMedia()
@@ -116,7 +110,6 @@ fun MedicineEditScreen(
         if (uri != null) viewModel.scanMedicineName(uri)
     }
 
-    var pendingScheduleDelete by remember { mutableStateOf<MedicineScheduleUi?>(null) }
     var confirmMedicineDelete by remember { mutableStateOf(false) }
 
     Scaffold(
@@ -252,21 +245,15 @@ fun MedicineEditScreen(
                 onCheckedChange = viewModel::onSplittableChange
             )
 
-            Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                LabeledTextField(
-                    value = state.packSize,
-                    onValueChange = viewModel::onPackSizeChange,
-                    label = stringResource(R.string.medicine_pack_size_label),
-                    keyboardType = KeyboardType.Number,
-                    modifier = Modifier.weight(1f)
-                )
-                LabeledTextField(
-                    value = state.packUnit,
-                    onValueChange = viewModel::onPackUnitChange,
-                    label = stringResource(R.string.medicine_pack_unit_label),
-                    modifier = Modifier.weight(1f)
-                )
-            }
+            LabeledTextField(
+                value = state.packSize,
+                onValueChange = viewModel::onPackSizeChange,
+                label = stringResource(
+                    R.string.medicine_pack_size_with_unit_label,
+                    stringResource(doseUnitLabelRes(state.doseUnit))
+                ),
+                keyboardType = KeyboardType.Number
+            )
 
             SwitchRow(
                 label = stringResource(R.string.medicine_auto_deduct_label),
@@ -290,14 +277,6 @@ fun MedicineEditScreen(
                     )
                 },
                 onRemove = viewModel::removePhoto
-            )
-
-            RulesSection(
-                state = state,
-                onAdd = onAddSchedule,
-                onEdit = onEditSchedule,
-                onToggle = viewModel::setScheduleEnabled,
-                onDelete = { pendingScheduleDelete = it }
             )
 
             Button(
@@ -329,33 +308,6 @@ fun MedicineEditScreen(
                 }
             }
         }
-    }
-
-    pendingScheduleDelete?.let { schedule ->
-        AlertDialog(
-            onDismissRequest = { pendingScheduleDelete = null },
-            title = { Text(text = stringResource(R.string.schedule_delete_title)) },
-            text = { Text(text = stringResource(R.string.schedule_delete_message)) },
-            confirmButton = {
-                TextButton(
-                    onClick = {
-                        viewModel.deleteSchedule(schedule.id)
-                        pendingScheduleDelete = null
-                    },
-                    modifier = Modifier.heightIn(min = 48.dp)
-                ) {
-                    Text(text = stringResource(R.string.common_delete))
-                }
-            },
-            dismissButton = {
-                TextButton(
-                    onClick = { pendingScheduleDelete = null },
-                    modifier = Modifier.heightIn(min = 48.dp)
-                ) {
-                    Text(text = stringResource(R.string.common_cancel))
-                }
-            }
-        )
     }
 
     if (confirmMedicineDelete) {
@@ -532,92 +484,6 @@ private fun PhotoSection(
             text = stringResource(R.string.medicine_photo_error),
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.error
-        )
-    }
-}
-
-@Composable
-private fun RulesSection(
-    state: MedicineEditUiState,
-    onAdd: () -> Unit,
-    onEdit: (Long) -> Unit,
-    onToggle: (Long, Boolean) -> Unit,
-    onDelete: (MedicineScheduleUi) -> Unit
-) {
-    Text(
-        text = stringResource(R.string.medicine_rules_title),
-        style = MaterialTheme.typography.titleMedium,
-        fontWeight = FontWeight.SemiBold
-    )
-    if (state.isNew) {
-        Text(
-            text = stringResource(R.string.medicine_rules_need_save),
-            style = MaterialTheme.typography.bodyMedium,
-            color = MaterialTheme.colorScheme.onSurfaceVariant
-        )
-        return
-    }
-    if (state.schedules.isEmpty()) {
-        Text(
-            text = stringResource(R.string.medicine_rules_empty),
-            style = MaterialTheme.typography.bodyMedium,
-            color = MaterialTheme.colorScheme.onSurfaceVariant
-        )
-    }
-    for (schedule in state.schedules) {
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .heightIn(min = 48.dp),
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            Column(modifier = Modifier.weight(1f)) {
-                Text(
-                    text = schedule.ruleText,
-                    style = MaterialTheme.typography.bodyMedium
-                )
-                schedule.taperText?.let { taper ->
-                    Text(
-                        text = taper,
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                }
-            }
-            Switch(
-                checked = schedule.enabled,
-                onCheckedChange = { onToggle(schedule.id, it) }
-            )
-        }
-        Row(
-            modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.End
-        ) {
-            TextButton(
-                onClick = { onEdit(schedule.id) },
-                modifier = Modifier.heightIn(min = 48.dp)
-            ) {
-                Text(text = stringResource(R.string.medicine_rule_edit))
-            }
-            TextButton(
-                onClick = { onDelete(schedule) },
-                modifier = Modifier.heightIn(min = 48.dp)
-            ) {
-                Text(text = stringResource(R.string.common_delete))
-            }
-        }
-        HorizontalDivider()
-    }
-    Spacer(Modifier.height(4.dp))
-    OutlinedButton(
-        onClick = onAdd,
-        modifier = Modifier
-            .fillMaxWidth()
-            .heightIn(min = 56.dp)
-    ) {
-        Text(
-            text = stringResource(R.string.medicine_rule_add),
-            textAlign = TextAlign.Center
         )
     }
 }

@@ -19,8 +19,8 @@ data class Medicine(
     val specUnit: String,           // mg
     val doseUnit: String,           // 片 / 粒 / ml / 滴 / U
     val splittable: Boolean,
+    /** 每盒/每瓶数量，计数单位即剂量单位。 */
     val packSize: Int,
-    val packUnit: String,
     val imagePath: String? = null,
     val thumbPath: String? = null,
     val autoDeductStock: Boolean = true,

@@ -22,6 +22,7 @@
     <!-- 底部导航 -->
     <string name="tab_today">今日</string>
     <string name="tab_medicines">药品</string>
+    <string name="tab_schedules">计划</string>
     <string name="tab_history">历史</string>
     <string name="tab_settings">设置</string>
     <string name="coming_soon">开发中</string>
@@ -159,7 +160,7 @@
     <string name="medicine_spec_required">请填写规格含量与剂量单位</string>
     <string name="medicine_splittable_label">可以掰开</string>
     <string name="medicine_pack_size_label">每盒数量</string>
-    <string name="medicine_pack_unit_label">包装单位</string>
+    <string name="medicine_pack_size_with_unit_label">每盒数量（%1$s）</string>
     <string name="medicine_auto_deduct_label">自动扣减库存</string>
     <string name="medicine_note_label">备注</string>
     <string name="medicine_date_value">%1$s：%2$s</string>

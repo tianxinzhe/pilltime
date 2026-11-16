@@ -39,7 +39,6 @@ data class MedicineEditUiState(
     val doseUnit: String = "片",
     val splittable: Boolean = true,
     val packSize: String = "",
-    val packUnit: String = "",
     val autoDeductStock: Boolean = true,
     val note: String = "",
     val imagePath: String? = null,
@@ -140,8 +139,6 @@ class MedicineEditViewModel : ViewModel() {
 
     fun onPackSizeChange(value: String) = _uiState.update { it.copy(packSize = value) }
 
-    fun onPackUnitChange(value: String) = _uiState.update { it.copy(packUnit = value) }
-
     fun onAutoDeductChange(value: Boolean) = _uiState.update { it.copy(autoDeductStock = value) }
 
     fun onNoteChange(value: String) = _uiState.update { it.copy(note = value) }
@@ -239,8 +236,7 @@ class MedicineEditViewModel : ViewModel() {
                 specUnit = specUnit,
                 doseUnit = doseUnit,
                 splittable = state.splittable,
-                packSize = 0,
-                packUnit = ""
+                packSize = 0
             )
             medicineRepository.save(
                 base.copy(
@@ -251,7 +247,6 @@ class MedicineEditViewModel : ViewModel() {
                     doseUnit = doseUnit,
                     splittable = state.splittable,
                     packSize = state.packSize.trim().toIntOrNull() ?: 0,
-                    packUnit = state.packUnit.trim(),
                     imagePath = state.imagePath,
                     thumbPath = state.thumbPath,
                     autoDeductStock = state.autoDeductStock,
@@ -305,7 +300,6 @@ class MedicineEditViewModel : ViewModel() {
         doseUnit = doseUnit,
         splittable = splittable,
         packSize = if (packSize > 0) packSize.toString() else "",
-        packUnit = packUnit,
         autoDeductStock = autoDeductStock,
         note = note.orEmpty(),
         imagePath = imagePath,

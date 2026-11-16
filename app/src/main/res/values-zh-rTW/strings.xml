@@ -23,6 +23,7 @@
     <!-- 底部导航 -->
     <string name="tab_today">今日</string>
     <string name="tab_medicines">藥品</string>
+    <string name="tab_schedules">計畫</string>
     <string name="tab_history">歷史</string>
     <string name="tab_settings">設定</string>
     <string name="coming_soon">開發中</string>
@@ -160,7 +161,7 @@
     <string name="medicine_spec_required">請填寫規格含量與劑量單位</string>
     <string name="medicine_splittable_label">可剝半</string>
     <string name="medicine_pack_size_label">每盒數量</string>
-    <string name="medicine_pack_unit_label">包裝單位</string>
+    <string name="medicine_pack_size_with_unit_label">每盒數量（%1$s）</string>
     <string name="medicine_auto_deduct_label">自動扣減庫存</string>
     <string name="medicine_note_label">備註</string>
     <string name="medicine_date_value">%1$s：%2$s</string>

@@ -23,6 +23,7 @@
     <!-- 底部导航 -->
     <string name="tab_today">วันนี้</string>
     <string name="tab_medicines">ยา</string>
+    <string name="tab_schedules">แผนการใช้ยา</string>
     <string name="tab_history">ประวัติ</string>
     <string name="tab_settings">การตั้งค่า</string>
     <string name="coming_soon">เร็ว ๆ นี้</string>
@@ -167,7 +168,7 @@
     <string name="medicine_spec_required">กรุณากรอกความแรงและหน่วยยา</string>
     <string name="medicine_splittable_label">แบ่งได้</string>
     <string name="medicine_pack_size_label">จำนวนต่อแพ็ค</string>
-    <string name="medicine_pack_unit_label">หน่วยบรรจุ</string>
+    <string name="medicine_pack_size_with_unit_label">จำนวนต่อแพ็ค (%1$s)</string>
     <string name="medicine_auto_deduct_label">หักคลังยาอัตโนมัติ</string>
     <string name="medicine_note_label">หมายเหตุ</string>
     <string name="medicine_date_value">%1$s: %2$s</string>

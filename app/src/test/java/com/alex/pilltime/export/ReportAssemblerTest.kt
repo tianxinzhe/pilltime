@@ -30,8 +30,7 @@ class ReportAssemblerTest {
         specUnit = "mg",
         doseUnit = "片",
         splittable = false,
-        packSize = 30,
-        packUnit = "盒"
+        packSize = 30
     )
 
     private val settings = AppSettings()

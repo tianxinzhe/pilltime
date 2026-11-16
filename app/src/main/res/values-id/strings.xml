@@ -23,6 +23,7 @@
     <!-- 底部导航 -->
     <string name="tab_today">Hari ini</string>
     <string name="tab_medicines">Obat</string>
+    <string name="tab_schedules">Rencana</string>
     <string name="tab_history">Riwayat</string>
     <string name="tab_settings">Pengaturan</string>
     <string name="coming_soon">Segera hadir</string>
@@ -167,7 +168,7 @@
     <string name="medicine_spec_required">Silakan masukkan kekuatan dan satuan dosis</string>
     <string name="medicine_splittable_label">Dapat dibagi</string>
     <string name="medicine_pack_size_label">Jumlah per kemasan</string>
-    <string name="medicine_pack_unit_label">Satuan kemasan</string>
+    <string name="medicine_pack_size_with_unit_label">Jumlah per kemasan (%1$s)</string>
     <string name="medicine_auto_deduct_label">Kurangi stok otomatis</string>
     <string name="medicine_note_label">Catatan</string>
     <string name="medicine_date_value">%1$s: %2$s</string>

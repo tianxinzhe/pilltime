@@ -23,6 +23,7 @@
     <!-- 底部导航 -->
     <string name="tab_today">Hôm nay</string>
     <string name="tab_medicines">Thuốc</string>
+    <string name="tab_schedules">Kế hoạch</string>
     <string name="tab_history">Lịch sử</string>
     <string name="tab_settings">Cài đặt</string>
     <string name="coming_soon">Sắp ra mắt</string>
@@ -167,7 +168,7 @@
     <string name="medicine_spec_required">Vui lòng nhập hàm lượng và đơn vị liều</string>
     <string name="medicine_splittable_label">Có thể chia nhỏ</string>
     <string name="medicine_pack_size_label">Số lượng mỗi hộp</string>
-    <string name="medicine_pack_unit_label">Đơn vị đóng gói</string>
+    <string name="medicine_pack_size_with_unit_label">Số lượng mỗi hộp (%1$s)</string>
     <string name="medicine_auto_deduct_label">Tự động trừ tồn kho</string>
     <string name="medicine_note_label">Ghi chú</string>
     <string name="medicine_date_value">%1$s: %2$s</string>

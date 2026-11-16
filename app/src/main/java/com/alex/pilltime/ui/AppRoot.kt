@@ -38,6 +38,7 @@ private data class BottomTab(val route: String, val labelRes: Int, val icon: Ima
 private val BOTTOM_TABS = listOf(
     BottomTab(AppRoutes.TODAY, R.string.tab_today, Icons.Filled.Home),
     BottomTab(AppRoutes.MEDICINES, R.string.tab_medicines, Icons.AutoMirrored.Filled.List),
+    BottomTab(AppRoutes.SCHEDULES, R.string.tab_schedules, Icons.Filled.DateRange),
     BottomTab(AppRoutes.HISTORY, R.string.tab_history, Icons.Filled.DateRange),
     BottomTab(AppRoutes.SETTINGS, R.string.tab_settings, Icons.Filled.Settings)
 )

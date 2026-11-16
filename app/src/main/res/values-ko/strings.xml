@@ -23,6 +23,7 @@
     <!-- 底部导航 -->
     <string name="tab_today">오늘</string>
     <string name="tab_medicines">약</string>
+    <string name="tab_schedules">복용 계획</string>
     <string name="tab_history">기록</string>
     <string name="tab_settings">설정</string>
     <string name="coming_soon">곧 제공 예정</string>
@@ -167,7 +168,7 @@
     <string name="medicine_spec_required">함량과 복용 단위를 입력해 주세요</string>
     <string name="medicine_splittable_label">분할 가능</string>
     <string name="medicine_pack_size_label">포장당 수량</string>
-    <string name="medicine_pack_unit_label">포장 단위</string>
+    <string name="medicine_pack_size_with_unit_label">포장당 수량(%1$s)</string>
     <string name="medicine_auto_deduct_label">재고 자동 차감</string>
     <string name="medicine_note_label">메모</string>
     <string name="medicine_date_value">%1$s: %2$s</string>

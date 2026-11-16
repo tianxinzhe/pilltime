@@ -74,8 +74,7 @@ class TodayStateTest {
         specUnit = "mg",
         doseUnit = "片",
         splittable = true,
-        packSize = 10,
-        packUnit = "片"
+        packSize = 10
     )
 
     private fun build(
