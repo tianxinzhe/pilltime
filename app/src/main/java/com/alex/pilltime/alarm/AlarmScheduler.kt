@@ -35,6 +35,8 @@ class AlarmScheduler(private val context: Context) {
         val now = Instant.now()
         val settings = ServiceLocator.settingsRepository.get()
         if (settings.allPaused && (settings.pausedUntil == null || settings.pausedUntil.isAfter(now))) {
+            // 暂停只是不排提醒，但仍要在暂停到期时自动恢复，避免用户必须重开 App
+            schedulePauseExpiry(settings.pausedUntil)
             WidgetUpdater.refreshAll(context)
             return
         }
@@ -99,7 +101,54 @@ class AlarmScheduler(private val context: Context) {
             cancelCode(code)
         }
         prefs.edit().remove(KEY_REQUEST_CODES).apply()
+        cancelPauseExpiry()
     }
+
+    /**
+     * 暂停到期闹钟：到点触发一次全量重排，使提醒自动恢复。
+     * [pausedUntil] 为空表示无限期暂停，不排恢复闹钟。
+     */
+    private fun schedulePauseExpiry(pausedUntil: Instant?) {
+        cancelPauseExpiry()
+        if (pausedUntil == null) return
+
+        val pending = pauseExpiryPendingIntent()
+        val triggerAtMillis = pausedUntil.toEpochMilli()
+        if (canScheduleExactAlarms()) {
+            alarmManager.setExactAndAllowWhileIdle(
+                AlarmManager.RTC_WAKEUP,
+                triggerAtMillis,
+                pending
+            )
+        } else {
+            prefs.edit().putBoolean(KEY_EXACT_DEGRADED, true).apply()
+            alarmManager.setAndAllowWhileIdle(
+                AlarmManager.RTC_WAKEUP,
+                triggerAtMillis,
+                pending
+            )
+        }
+    }
+
+    private fun cancelPauseExpiry() {
+        PendingIntent.getBroadcast(
+            context,
+            PAUSE_EXPIRY_REQUEST_CODE,
+            pauseExpiryIntent(),
+            PI_FLAGS or PendingIntent.FLAG_NO_CREATE
+        )?.cancel()
+    }
+
+    private fun pauseExpiryIntent(): Intent =
+        Intent(context, RescheduleReceiver::class.java).setAction(ACTION_PAUSE_EXPIRED)
+
+    private fun pauseExpiryPendingIntent(): PendingIntent =
+        PendingIntent.getBroadcast(
+            context,
+            PAUSE_EXPIRY_REQUEST_CODE,
+            pauseExpiryIntent(),
+            PI_FLAGS
+        )
 
     /** 测试提醒：延迟 [delayMillis] 后响一次，用于设置页自检。 */
     suspend fun scheduleTestReminder(delayMillis: Long = 60_000) {
@@ -280,6 +329,12 @@ class AlarmScheduler(private val context: Context) {
 
         /** 触发时刻已过但窗口未过时的立即触发延迟。 */
         private const val IMMEDIATE_DELAY_MILLIS = 1_000L
+
+        /** 暂停到期恢复的 requestCode，与提醒/判定/稍后均不共用。 */
+        private const val PAUSE_EXPIRY_REQUEST_CODE = 9_000
+
+        /** 暂停到期广播，由 [RescheduleReceiver] 处理成全量重排。 */
+        private const val ACTION_PAUSE_EXPIRED = "com.alex.pilltime.action.PAUSE_EXPIRED"
 
         private const val PI_FLAGS =
             PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT
