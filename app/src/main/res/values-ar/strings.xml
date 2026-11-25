@@ -164,6 +164,7 @@
     <string name="medicine_list_add">إضافة دواء</string>
     <string name="medicine_list_empty_title">لا توجد أدوية بعد</string>
     <string name="medicine_list_stock_button">المخزون</string>
+    <string name="medicine_stock_qty">يتبقى %1$s</string>
     <string name="medicine_list_more_rules">بالإضافة إلى %1$d خطة أخرى</string>
     <string name="medicine_no_rule">لا توجد خطة بعد</string>
     <string name="medicine_stock_days">يتبقى نحو %1$d يومًا</string>
@@ -192,6 +193,15 @@
     <string name="medicine_spec_value_label">التركيز</string>
     <string name="medicine_spec_unit_label">وحدة التركيز</string>
     <string name="medicine_dose_unit_label">وحدة الجرعة</string>
+
+    <!-- 剂型驱动的表单字段 -->
+    <string name="medicine_spec_tablet_label">التركيز لكل قرص</string>
+    <string name="medicine_spec_capsule_label">التركيز لكل كبسولة</string>
+    <string name="medicine_spec_liquid_label">التركيز (مثل 5 mg/ml)</string>
+    <string name="medicine_spec_spray_label">التركيز لكل بخة</string>
+    <string name="medicine_spec_pen_label">التركيز (مثل 100 U/ml)</string>
+    <string name="medicine_pack_bottle_label">حجم العبوة (%1$s)</string>
+    <string name="medicine_pack_pen_label">الكمية الكلية لكل قلم (%1$s)</string>
     <string name="medicine_spec_required">يرجى إدخال التركيز ووحدة الجرعة</string>
     <string name="medicine_splittable_label">قابل للتقسيم</string>
     <string name="medicine_pack_size_label">الكمية في العلبة</string>
@@ -263,6 +273,16 @@
     <string name="schedule_delete_title">حذف الخطة؟</string>
     <string name="schedule_delete_message">ستُحذف أيضًا سجلات جرعات هذه الخطة.</string>
     <string name="rule_prn">عند الحاجة · %1$s</string>
+
+    <!-- 计划页：日历与增加计划 -->
+    <string name="schedule_add_medicine_label">اختيار الدواء</string>
+    <string name="schedule_add_start_on">يبدأ في %1$s</string>
+    <string name="schedule_add_no_medicines">لا توجد أدوية بعد. يرجى إضافة دواء أولاً.</string>
+    <string name="schedule_all_plans_title">جميع الخطط</string>
+    <string name="schedule_day_doses">%1$s · %2$d جرعة مجدولة</string>
+    <string name="schedule_day_none">%1$s · لا توجد جرعات مجدولة</string>
+    <string name="cd_schedule_prev_month">الشهر السابق</string>
+    <string name="cd_schedule_next_month">الشهر التالي</string>
 
     <!-- 递减方案 -->
     <string name="schedule_taper_label">خطة التدرج</string>

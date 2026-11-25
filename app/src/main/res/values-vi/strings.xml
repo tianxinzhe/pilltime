@@ -137,6 +137,7 @@
     <string name="medicine_list_add">Thêm thuốc</string>
     <string name="medicine_list_empty_title">Chưa có thuốc</string>
     <string name="medicine_list_stock_button">Tồn kho</string>
+    <string name="medicine_stock_qty">Còn %1$s</string>
     <string name="medicine_list_more_rules">Thêm %1$d quy tắc</string>
     <string name="medicine_no_rule">Chưa có kế hoạch</string>
     <string name="medicine_stock_days">Còn khoảng %1$d ngày</string>
@@ -165,6 +166,15 @@
     <string name="medicine_spec_value_label">Hàm lượng</string>
     <string name="medicine_spec_unit_label">Đơn vị hàm lượng</string>
     <string name="medicine_dose_unit_label">Đơn vị liều</string>
+
+    <!-- 剂型驱动的表单字段 -->
+    <string name="medicine_spec_tablet_label">Hàm lượng mỗi viên</string>
+    <string name="medicine_spec_capsule_label">Hàm lượng mỗi viên nang</string>
+    <string name="medicine_spec_liquid_label">Nồng độ (vd. 5 mg/ml)</string>
+    <string name="medicine_spec_spray_label">Hàm lượng mỗi lần xịt</string>
+    <string name="medicine_spec_pen_label">Nồng độ (vd. 100 U/ml)</string>
+    <string name="medicine_pack_bottle_label">Dung tích chai (%1$s)</string>
+    <string name="medicine_pack_pen_label">Tổng lượng mỗi bút (%1$s)</string>
     <string name="medicine_spec_required">Vui lòng nhập hàm lượng và đơn vị liều</string>
     <string name="medicine_splittable_label">Có thể chia nhỏ</string>
     <string name="medicine_pack_size_label">Số lượng mỗi hộp</string>
@@ -236,6 +246,16 @@
     <string name="schedule_delete_title">Xóa kế hoạch?</string>
     <string name="schedule_delete_message">Bản ghi liều của kế hoạch này cũng sẽ bị xóa.</string>
     <string name="rule_prn">Khi cần · %1$s</string>
+
+    <!-- 计划页：日历与增加计划 -->
+    <string name="schedule_add_medicine_label">Chọn thuốc</string>
+    <string name="schedule_add_start_on">Bắt đầu từ %1$s</string>
+    <string name="schedule_add_no_medicines">Chưa có thuốc. Vui lòng thêm thuốc trước.</string>
+    <string name="schedule_all_plans_title">Tất cả kế hoạch</string>
+    <string name="schedule_day_doses">%1$s · %2$d liều đã lên lịch</string>
+    <string name="schedule_day_none">%1$s · chưa có liều nào lên lịch</string>
+    <string name="cd_schedule_prev_month">Tháng trước</string>
+    <string name="cd_schedule_next_month">Tháng sau</string>
 
     <!-- 递减方案 -->
     <string name="schedule_taper_label">Kế hoạch giảm liều</string>

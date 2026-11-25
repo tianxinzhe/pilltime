@@ -137,6 +137,7 @@
     <string name="medicine_list_add">Añadir medicamento</string>
     <string name="medicine_list_empty_title">Aún no hay medicamentos</string>
     <string name="medicine_list_stock_button">Stock</string>
+    <string name="medicine_stock_qty">Quedan %1$s</string>
     <string name="medicine_list_more_rules">Y %1$d reglas más</string>
     <string name="medicine_no_rule">Aún no hay pauta</string>
     <string name="medicine_stock_days">Quedan unos %1$d días</string>
@@ -165,6 +166,15 @@
     <string name="medicine_spec_value_label">Concentración</string>
     <string name="medicine_spec_unit_label">Unidad de concentración</string>
     <string name="medicine_dose_unit_label">Unidad de dosis</string>
+
+    <!-- 剂型驱动的表单字段 -->
+    <string name="medicine_spec_tablet_label">Concentración por comprimido</string>
+    <string name="medicine_spec_capsule_label">Concentración por cápsula</string>
+    <string name="medicine_spec_liquid_label">Concentración (p. ej., 5 mg/ml)</string>
+    <string name="medicine_spec_spray_label">Concentración por pulverización</string>
+    <string name="medicine_spec_pen_label">Concentración (p. ej., 100 U/ml)</string>
+    <string name="medicine_pack_bottle_label">Tamaño del frasco (%1$s)</string>
+    <string name="medicine_pack_pen_label">Total por pluma (%1$s)</string>
     <string name="medicine_spec_required">Introduce la concentración y la unidad de dosis</string>
     <string name="medicine_splittable_label">Se puede dividir</string>
     <string name="medicine_pack_size_label">Cantidad por envase</string>
@@ -236,6 +246,16 @@
     <string name="schedule_delete_title">¿Eliminar pauta?</string>
     <string name="schedule_delete_message">También se eliminarán los registros de dosis de la pauta.</string>
     <string name="rule_prn">Según necesidad · %1$s</string>
+
+    <!-- 计划页：日历与增加计划 -->
+    <string name="schedule_add_medicine_label">Seleccionar medicamento</string>
+    <string name="schedule_add_start_on">Empieza el %1$s</string>
+    <string name="schedule_add_no_medicines">Aún no hay medicamentos. Añade primero un medicamento.</string>
+    <string name="schedule_all_plans_title">Todas las pautas</string>
+    <string name="schedule_day_doses">%1$s · %2$d dosis pautada(s)</string>
+    <string name="schedule_day_none">%1$s · sin dosis pautadas</string>
+    <string name="cd_schedule_prev_month">Mes anterior</string>
+    <string name="cd_schedule_next_month">Mes siguiente</string>
 
     <!-- 递减方案 -->
     <string name="schedule_taper_label">Pauta de reducción</string>

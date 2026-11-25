@@ -54,19 +54,23 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.alex.pilltime.R
 import com.alex.pilltime.domain.model.AnchorType
 import com.alex.pilltime.domain.model.MealType
+import java.time.LocalDate
 import java.time.temporal.WeekFields
 
-/** 计划编辑入口。 */
+/** 计划编辑入口。新建计划可带默认开始日期（来自计划页日历）。 */
 @Composable
 fun ScheduleEditRoute(
     medicineId: Long,
     scheduleId: Long,
     onBack: () -> Unit,
+    defaultStartDate: LocalDate? = null,
     viewModel: ScheduleEditViewModel = viewModel()
 ) {
     val state by viewModel.uiState.collectAsState()
 
-    LaunchedEffect(medicineId, scheduleId) { viewModel.load(medicineId, scheduleId) }
+    LaunchedEffect(medicineId, scheduleId, defaultStartDate) {
+        viewModel.load(medicineId, scheduleId, defaultStartDate)
+    }
     LaunchedEffect(viewModel) { viewModel.close.collect { onBack() } }
 
     ScheduleEditScreen(state = state, viewModel = viewModel, onBack = onBack)

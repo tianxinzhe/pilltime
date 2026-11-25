@@ -136,6 +136,7 @@
     <string name="medicine_list_add">दवा जोड़ें</string>
     <string name="medicine_list_empty_title">अभी कोई दवा नहीं</string>
     <string name="medicine_list_stock_button">स्टॉक</string>
+    <string name="medicine_stock_qty">%1$s शेष</string>
     <string name="medicine_list_more_rules">और %1$d नियम</string>
     <string name="medicine_no_rule">अभी कोई योजना नहीं</string>
     <string name="medicine_stock_days">लगभग %1$d दिन शेष</string>
@@ -164,6 +165,15 @@
     <string name="medicine_spec_value_label">शक्ति</string>
     <string name="medicine_spec_unit_label">शक्ति इकाई</string>
     <string name="medicine_dose_unit_label">खुराक इकाई</string>
+
+    <!-- 剂型驱动的表单字段 -->
+    <string name="medicine_spec_tablet_label">प्रति गोली की शक्ति</string>
+    <string name="medicine_spec_capsule_label">प्रति कैप्सूल की शक्ति</string>
+    <string name="medicine_spec_liquid_label">सांद्रता (जैसे 5 mg/ml)</string>
+    <string name="medicine_spec_spray_label">प्रति स्प्रे की शक्ति</string>
+    <string name="medicine_spec_pen_label">सांद्रता (जैसे 100 U/ml)</string>
+    <string name="medicine_pack_bottle_label">बोतल का आकार (%1$s)</string>
+    <string name="medicine_pack_pen_label">प्रति पेन कुल मात्रा (%1$s)</string>
     <string name="medicine_spec_required">कृपया शक्ति और खुराक इकाई दर्ज करें</string>
     <string name="medicine_splittable_label">विभाजित की जा सकती है</string>
     <string name="medicine_pack_size_label">प्रति पैक मात्रा</string>
@@ -235,6 +245,16 @@
     <string name="schedule_delete_title">योजना हटाएँ?</string>
     <string name="schedule_delete_message">इस योजना के खुराक रिकॉर्ड भी हट जाएंगे।</string>
     <string name="rule_prn">आवश्यकतानुसार · %1$s</string>
+
+    <!-- 计划页：日历与增加计划 -->
+    <string name="schedule_add_medicine_label">दवा चुनें</string>
+    <string name="schedule_add_start_on">%1$s से शुरू</string>
+    <string name="schedule_add_no_medicines">अभी कोई दवा नहीं है। कृपया पहले दवा जोड़ें।</string>
+    <string name="schedule_all_plans_title">सभी योजनाएँ</string>
+    <string name="schedule_day_doses">%1$s · %2$d निर्धारित खुराक</string>
+    <string name="schedule_day_none">%1$s · कोई निर्धारित खुराक नहीं</string>
+    <string name="cd_schedule_prev_month">पिछला महीना</string>
+    <string name="cd_schedule_next_month">अगला महीना</string>
 
     <!-- 递减方案 -->
     <string name="schedule_taper_label">घटती खुराक योजना</string>

@@ -137,6 +137,7 @@
     <string name="medicine_list_add">Tambah obat</string>
     <string name="medicine_list_empty_title">Belum ada obat</string>
     <string name="medicine_list_stock_button">Stok</string>
+    <string name="medicine_stock_qty">Sisa %1$s</string>
     <string name="medicine_list_more_rules">Plus %1$d aturan lagi</string>
     <string name="medicine_no_rule">Belum ada rencana</string>
     <string name="medicine_stock_days">Tersisa sekitar %1$d hari</string>
@@ -165,6 +166,15 @@
     <string name="medicine_spec_value_label">Kekuatan</string>
     <string name="medicine_spec_unit_label">Satuan kekuatan</string>
     <string name="medicine_dose_unit_label">Satuan dosis</string>
+
+    <!-- 剂型驱动的表单字段 -->
+    <string name="medicine_spec_tablet_label">Kandungan per tablet</string>
+    <string name="medicine_spec_capsule_label">Kandungan per kapsul</string>
+    <string name="medicine_spec_liquid_label">Konsentrasi (mis. 5 mg/ml)</string>
+    <string name="medicine_spec_spray_label">Kandungan per semprotan</string>
+    <string name="medicine_spec_pen_label">Konsentrasi (mis. 100 U/ml)</string>
+    <string name="medicine_pack_bottle_label">Ukuran botol (%1$s)</string>
+    <string name="medicine_pack_pen_label">Total per pena (%1$s)</string>
     <string name="medicine_spec_required">Silakan masukkan kekuatan dan satuan dosis</string>
     <string name="medicine_splittable_label">Dapat dibagi</string>
     <string name="medicine_pack_size_label">Jumlah per kemasan</string>
@@ -236,6 +246,16 @@
     <string name="schedule_delete_title">Hapus rencana?</string>
     <string name="schedule_delete_message">Catatan dosis untuk rencana ini juga akan dihapus.</string>
     <string name="rule_prn">Sesuai kebutuhan · %1$s</string>
+
+    <!-- 计划页：日历与增加计划 -->
+    <string name="schedule_add_medicine_label">Pilih obat</string>
+    <string name="schedule_add_start_on">Mulai %1$s</string>
+    <string name="schedule_add_no_medicines">Belum ada obat. Tambahkan obat terlebih dahulu.</string>
+    <string name="schedule_all_plans_title">Semua rencana</string>
+    <string name="schedule_day_doses">%1$s · %2$d dosis terjadwal</string>
+    <string name="schedule_day_none">%1$s · tidak ada dosis terjadwal</string>
+    <string name="cd_schedule_prev_month">Bulan sebelumnya</string>
+    <string name="cd_schedule_next_month">Bulan berikutnya</string>
 
     <!-- 递减方案 -->
     <string name="schedule_taper_label">Rencana penurunan dosis</string>

@@ -52,7 +52,7 @@ class ScheduleEditViewModel : ViewModel() {
     private var loadedMedicineId: Long = -1L
     private var loadedScheduleId: Long = -1L
 
-    fun load(medicineId: Long, scheduleId: Long) {
+    fun load(medicineId: Long, scheduleId: Long, defaultStartDate: LocalDate? = null) {
         if (loadedMedicineId == medicineId && loadedScheduleId == scheduleId) return
         loadedMedicineId = medicineId
         loadedScheduleId = scheduleId
@@ -67,7 +67,7 @@ class ScheduleEditViewModel : ViewModel() {
                 emptyList()
             }
             val form = existing?.let { scheduleToDraft(it) } ?: ScheduleForm(
-                startDate = LocalDate.now(),
+                startDate = defaultStartDate ?: LocalDate.now(),
                 earlyText = settings.defaultEarlyMinutes.toString(),
                 lateText = settings.defaultLateMinutes.toString()
             )

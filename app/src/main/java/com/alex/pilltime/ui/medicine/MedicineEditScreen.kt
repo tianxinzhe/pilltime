@@ -216,7 +216,7 @@ fun MedicineEditScreen(
                 LabeledTextField(
                     value = state.specValue,
                     onValueChange = viewModel::onSpecValueChange,
-                    label = stringResource(R.string.medicine_spec_value_label),
+                    label = stringResource(specValueLabelRes(state.form)),
                     keyboardType = KeyboardType.Decimal,
                     isError = state.specError,
                     modifier = Modifier.weight(1f)
@@ -229,27 +229,39 @@ fun MedicineEditScreen(
                     modifier = Modifier.weight(1f)
                 )
             }
-            DropdownField(
-                label = stringResource(R.string.medicine_dose_unit_label),
-                selectedText = stringResource(doseUnitLabelRes(state.doseUnit)),
-                options = DOSE_UNIT_OPTIONS.map { it to stringResource(doseUnitLabelRes(it)) },
-                onSelect = viewModel::onDoseUnitChange
-            )
+            // 剂量单位由剂型决定：只有液体/滴剂需要二选一；旧数据里的单位也保留可选
+            val unitChoices = formDoseUnitOptions(state.form)
+            val unitOptions = if (state.doseUnit in unitChoices) {
+                unitChoices
+            } else {
+                unitChoices + state.doseUnit
+            }
+            if (unitOptions.size > 1) {
+                DropdownField(
+                    label = stringResource(R.string.medicine_dose_unit_label),
+                    selectedText = stringResource(doseUnitLabelRes(state.doseUnit)),
+                    options = unitOptions.map { it to stringResource(doseUnitLabelRes(it)) },
+                    onSelect = viewModel::onDoseUnitChange
+                )
+            }
             if (state.specError) {
                 FieldError(text = stringResource(R.string.medicine_spec_required))
             }
 
-            SwitchRow(
-                label = stringResource(R.string.medicine_splittable_label),
-                checked = state.splittable,
-                onCheckedChange = viewModel::onSplittableChange
-            )
+            // "可以掰开"只对片剂有意义：胶囊/滴/喷/U 无法取半，液体 ml 天然支持小数
+            if (isSplittableByUser(state.form)) {
+                SwitchRow(
+                    label = stringResource(R.string.medicine_splittable_label),
+                    checked = state.splittable,
+                    onCheckedChange = viewModel::onSplittableChange
+                )
+            }
 
             LabeledTextField(
                 value = state.packSize,
                 onValueChange = viewModel::onPackSizeChange,
                 label = stringResource(
-                    R.string.medicine_pack_size_with_unit_label,
+                    packSizeLabelRes(state.form),
                     stringResource(doseUnitLabelRes(state.doseUnit))
                 ),
                 keyboardType = KeyboardType.Number
@@ -392,18 +404,7 @@ private fun NameCandidatesDialog(
     )
 }
 
-private val DOSE_UNIT_OPTIONS = listOf("片", "粒", "ml", "滴", "喷", "U")
-
 /** 剂型与剂量单位的显示文案都由 strings.xml 提供，数据里保存稳定值。 */
-private fun formLabelRes(form: MedicineForm): Int = when (form) {
-    MedicineForm.TABLET -> R.string.medicine_form_tablet
-    MedicineForm.CAPSULE -> R.string.medicine_form_capsule
-    MedicineForm.LIQUID -> R.string.medicine_form_liquid
-    MedicineForm.DROPS -> R.string.medicine_form_drops
-    MedicineForm.SPRAY -> R.string.medicine_form_spray
-    MedicineForm.PEN -> R.string.medicine_form_pen
-}
-
 private fun doseUnitLabelRes(unit: String): Int = when (unit.trim().lowercase()) {
     "片", "tablet", "tablets" -> R.string.dose_unit_tablet
     "粒", "capsule", "capsules" -> R.string.dose_unit_capsule
@@ -412,6 +413,22 @@ private fun doseUnitLabelRes(unit: String): Int = when (unit.trim().lowercase())
     "喷", "spray", "sprays" -> R.string.dose_unit_spray
     "u", "unit", "units" -> R.string.dose_unit_unit
     else -> R.string.dose_unit_other
+}
+
+/** 规格含量标签：片/粒/喷按单个单位，液体/滴剂/笔按浓度。 */
+private fun specValueLabelRes(form: MedicineForm): Int = when (form) {
+    MedicineForm.TABLET -> R.string.medicine_spec_tablet_label
+    MedicineForm.CAPSULE -> R.string.medicine_spec_capsule_label
+    MedicineForm.LIQUID, MedicineForm.DROPS -> R.string.medicine_spec_liquid_label
+    MedicineForm.SPRAY -> R.string.medicine_spec_spray_label
+    MedicineForm.PEN -> R.string.medicine_spec_pen_label
+}
+
+/** 包装数量标签：片/胶囊按盒，液体/滴剂/喷剂按瓶，笔按支。 */
+private fun packSizeLabelRes(form: MedicineForm): Int = when (form) {
+    MedicineForm.TABLET, MedicineForm.CAPSULE -> R.string.medicine_pack_size_with_unit_label
+    MedicineForm.LIQUID, MedicineForm.DROPS, MedicineForm.SPRAY -> R.string.medicine_pack_bottle_label
+    MedicineForm.PEN -> R.string.medicine_pack_pen_label
 }
 
 @Composable

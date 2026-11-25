@@ -130,6 +130,7 @@
     <string name="medicine_list_add">新增藥品</string>
     <string name="medicine_list_empty_title">尚未新增藥品</string>
     <string name="medicine_list_stock_button">庫存</string>
+    <string name="medicine_stock_qty">剩餘 %1$s</string>
     <string name="medicine_list_more_rules">另有 %1$d 條規則</string>
     <string name="medicine_no_rule">尚無用藥計畫</string>
     <string name="medicine_stock_days">約剩 %1$d 天</string>
@@ -158,6 +159,15 @@
     <string name="medicine_spec_value_label">規格含量</string>
     <string name="medicine_spec_unit_label">規格單位</string>
     <string name="medicine_dose_unit_label">劑量單位</string>
+
+    <!-- 剂型驱动的表单字段 -->
+    <string name="medicine_spec_tablet_label">每錠含量</string>
+    <string name="medicine_spec_capsule_label">每粒含量</string>
+    <string name="medicine_spec_liquid_label">濃度（如 5 mg/ml）</string>
+    <string name="medicine_spec_spray_label">每噴含量</string>
+    <string name="medicine_spec_pen_label">濃度（如 100 U/ml）</string>
+    <string name="medicine_pack_bottle_label">每瓶容量（%1$s）</string>
+    <string name="medicine_pack_pen_label">每支總量（%1$s）</string>
     <string name="medicine_spec_required">請填寫規格含量與劑量單位</string>
     <string name="medicine_splittable_label">可剝半</string>
     <string name="medicine_pack_size_label">每盒數量</string>
@@ -229,6 +239,16 @@
     <string name="schedule_delete_title">刪除計畫？</string>
     <string name="schedule_delete_message">刪除後該計畫的服藥紀錄也會一併刪除。</string>
     <string name="rule_prn">需要時使用 · %1$s</string>
+
+    <!-- 计划页：日历与增加计划 -->
+    <string name="schedule_add_medicine_label">選擇藥品</string>
+    <string name="schedule_add_start_on">自 %1$s 開始</string>
+    <string name="schedule_add_no_medicines">還沒有藥品，先新增藥品吧</string>
+    <string name="schedule_all_plans_title">全部計畫</string>
+    <string name="schedule_day_doses">%1$s · 當天 %2$d 次定時用藥</string>
+    <string name="schedule_day_none">%1$s · 當天沒有定時用藥</string>
+    <string name="cd_schedule_prev_month">上個月</string>
+    <string name="cd_schedule_next_month">下個月</string>
 
     <!-- 递减方案 -->
     <string name="schedule_taper_label">遞減方案</string>

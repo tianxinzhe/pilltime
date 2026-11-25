@@ -130,6 +130,7 @@
     <string name="medicine_list_add">薬を追加</string>
     <string name="medicine_list_empty_title">まだ薬が登録されていません</string>
     <string name="medicine_list_stock_button">在庫</string>
+    <string name="medicine_stock_qty">残り %1$s</string>
     <string name="medicine_list_more_rules">他 %1$d 件のルール</string>
     <string name="medicine_no_rule">計画はまだありません</string>
     <string name="medicine_stock_days">残り約 %1$d 日</string>
@@ -158,6 +159,15 @@
     <string name="medicine_spec_value_label">含量</string>
     <string name="medicine_spec_unit_label">含量の単位</string>
     <string name="medicine_dose_unit_label">投与単位</string>
+
+    <!-- 剂型驱动的表单字段 -->
+    <string name="medicine_spec_tablet_label">1錠あたりの含量</string>
+    <string name="medicine_spec_capsule_label">1カプセルあたりの含量</string>
+    <string name="medicine_spec_liquid_label">濃度（例: 5 mg/ml）</string>
+    <string name="medicine_spec_spray_label">1噴霧あたりの含量</string>
+    <string name="medicine_spec_pen_label">濃度（例: 100 U/ml）</string>
+    <string name="medicine_pack_bottle_label">ボトル容量（%1$s）</string>
+    <string name="medicine_pack_pen_label">1ペンあたり総量（%1$s）</string>
     <string name="medicine_spec_required">含量と投与単位を入力してください</string>
     <string name="medicine_splittable_label">分割可能</string>
     <string name="medicine_pack_size_label">1箱の数量</string>
@@ -229,6 +239,16 @@
     <string name="schedule_delete_title">計画を削除しますか？</string>
     <string name="schedule_delete_message">この計画の服薬記録も削除されます。</string>
     <string name="rule_prn">頓服 · %1$s</string>
+
+    <!-- 计划页：日历与增加计划 -->
+    <string name="schedule_add_medicine_label">薬を選択</string>
+    <string name="schedule_add_start_on">%1$s から開始</string>
+    <string name="schedule_add_no_medicines">まだ薬がありません。先に薬を追加してください。</string>
+    <string name="schedule_all_plans_title">すべての計画</string>
+    <string name="schedule_day_doses">%1$s · 予定 %2$d 回</string>
+    <string name="schedule_day_none">%1$s · 予定なし</string>
+    <string name="cd_schedule_prev_month">前の月</string>
+    <string name="cd_schedule_next_month">次の月</string>
 
     <!-- 递减方案 -->
     <string name="schedule_taper_label">漸減計画</string>

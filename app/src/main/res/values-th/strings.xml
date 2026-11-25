@@ -137,6 +137,7 @@
     <string name="medicine_list_add">เพิ่มยา</string>
     <string name="medicine_list_empty_title">ยังไม่มีรายการยา</string>
     <string name="medicine_list_stock_button">คลังยา</string>
+    <string name="medicine_stock_qty">เหลือ %1$s</string>
     <string name="medicine_list_more_rules">เพิ่มอีก %1$d กฎ</string>
     <string name="medicine_no_rule">ยังไม่มีแผน</string>
     <string name="medicine_stock_days">เหลือประมาณ %1$d วัน</string>
@@ -165,6 +166,15 @@
     <string name="medicine_spec_value_label">ความแรง</string>
     <string name="medicine_spec_unit_label">หน่วยความแรง</string>
     <string name="medicine_dose_unit_label">หน่วยยา</string>
+
+    <!-- 剂型驱动的表单字段 -->
+    <string name="medicine_spec_tablet_label">ปริมาณต่อเม็ด</string>
+    <string name="medicine_spec_capsule_label">ปริมาณต่อแคปซูล</string>
+    <string name="medicine_spec_liquid_label">ความเข้มข้น (เช่น 5 mg/ml)</string>
+    <string name="medicine_spec_spray_label">ปริมาณต่อการพ่น 1 ครั้ง</string>
+    <string name="medicine_spec_pen_label">ความเข้มข้น (เช่น 100 U/ml)</string>
+    <string name="medicine_pack_bottle_label">ปริมาตรต่อขวด (%1$s)</string>
+    <string name="medicine_pack_pen_label">ปริมาณรวมต่อปากกา (%1$s)</string>
     <string name="medicine_spec_required">กรุณากรอกความแรงและหน่วยยา</string>
     <string name="medicine_splittable_label">แบ่งได้</string>
     <string name="medicine_pack_size_label">จำนวนต่อแพ็ค</string>
@@ -236,6 +246,16 @@
     <string name="schedule_delete_title">ลบแผนหรือไม่</string>
     <string name="schedule_delete_message">บันทึกมื้อของแผนนี้จะถูกลบด้วย</string>
     <string name="rule_prn">ใช้เมื่อจำเป็น · %1$s</string>
+
+    <!-- 计划页：日历与增加计划 -->
+    <string name="schedule_add_medicine_label">เลือกยา</string>
+    <string name="schedule_add_start_on">เริ่ม %1$s</string>
+    <string name="schedule_add_no_medicines">ยังไม่มียา กรุณาเพิ่มยาก่อน</string>
+    <string name="schedule_all_plans_title">แผนทั้งหมด</string>
+    <string name="schedule_day_doses">%1$s · %2$d มื้อตามกำหนด</string>
+    <string name="schedule_day_none">%1$s · ไม่มีมื้อตามกำหนด</string>
+    <string name="cd_schedule_prev_month">เดือนก่อนหน้า</string>
+    <string name="cd_schedule_next_month">เดือนถัดไป</string>
 
     <!-- 递减方案 -->
     <string name="schedule_taper_label">แผนลดขนาดยา</string>

@@ -137,6 +137,7 @@
     <string name="medicine_list_add">Medikament hinzufügen</string>
     <string name="medicine_list_empty_title">Noch keine Medikamente</string>
     <string name="medicine_list_stock_button">Vorrat</string>
+    <string name="medicine_stock_qty">%1$s übrig</string>
     <string name="medicine_list_more_rules">Plus %1$d weitere Regeln</string>
     <string name="medicine_no_rule">Noch kein Plan</string>
     <string name="medicine_stock_days">Noch etwa %1$d Tage</string>
@@ -165,6 +166,15 @@
     <string name="medicine_spec_value_label">Wirkstärke</string>
     <string name="medicine_spec_unit_label">Einheit der Wirkstärke</string>
     <string name="medicine_dose_unit_label">Dosiseinheit</string>
+
+    <!-- 剂型驱动的表单字段 -->
+    <string name="medicine_spec_tablet_label">Wirkstärke pro Tablette</string>
+    <string name="medicine_spec_capsule_label">Wirkstärke pro Kapsel</string>
+    <string name="medicine_spec_liquid_label">Konzentration (z. B. 5 mg/ml)</string>
+    <string name="medicine_spec_spray_label">Wirkstärke pro Sprühstoß</string>
+    <string name="medicine_spec_pen_label">Konzentration (z. B. 100 U/ml)</string>
+    <string name="medicine_pack_bottle_label">Flaschengröße (%1$s)</string>
+    <string name="medicine_pack_pen_label">Gesamtmenge pro Pen (%1$s)</string>
     <string name="medicine_spec_required">Bitte Wirkstärke und Dosiseinheit eingeben</string>
     <string name="medicine_splittable_label">Teilbar</string>
     <string name="medicine_pack_size_label">Menge pro Packung</string>
@@ -236,6 +246,16 @@
     <string name="schedule_delete_title">Plan löschen?</string>
     <string name="schedule_delete_message">Die Dosierungsaufzeichnungen des Plans werden ebenfalls gelöscht.</string>
     <string name="rule_prn">Bei Bedarf · %1$s</string>
+
+    <!-- 计划页：日历与增加计划 -->
+    <string name="schedule_add_medicine_label">Medikament auswählen</string>
+    <string name="schedule_add_start_on">Beginnt am %1$s</string>
+    <string name="schedule_add_no_medicines">Noch keine Medikamente. Bitte zuerst ein Medikament hinzufügen.</string>
+    <string name="schedule_all_plans_title">Alle Pläne</string>
+    <string name="schedule_day_doses">%1$s · %2$d geplante Dosis(en)</string>
+    <string name="schedule_day_none">%1$s · keine geplanten Dosen</string>
+    <string name="cd_schedule_prev_month">Vorheriger Monat</string>
+    <string name="cd_schedule_next_month">Nächster Monat</string>
 
     <!-- 递减方案 -->
     <string name="schedule_taper_label">Ausschleichplan</string>

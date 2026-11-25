@@ -18,6 +18,7 @@ import com.alex.pilltime.ui.profile.ProfileRoute
 import com.alex.pilltime.ui.settings.SettingsRoute
 import com.alex.pilltime.ui.stock.StockRoute
 import com.alex.pilltime.ui.today.TodayRoute
+import java.time.LocalDate
 
 /**
  * 路由名固定下来，后续任务直接往对应 Composable 里填内容。
@@ -30,19 +31,21 @@ object AppRoutes {
     const val SETTINGS = "settings"
     const val MEDICINE_EDIT = "medicine_edit/{medicineId}"
     const val STOCK = "stock/{medicineId}"
-    const val SCHEDULE_EDIT = "schedule_edit/{medicineId}/{scheduleId}"
+    const val SCHEDULE_EDIT = "schedule_edit/{medicineId}/{scheduleId}?startDate={startDate}"
     const val EXPORT = "export"
     const val PROFILES = "profiles"
 
     const val ARG_MEDICINE_ID = "medicineId"
     const val ARG_SCHEDULE_ID = "scheduleId"
+    const val ARG_START_DATE = "startDate"
 
     fun medicineEdit(medicineId: Long): String = "medicine_edit/$medicineId"
 
     fun stock(medicineId: Long): String = "stock/$medicineId"
 
-    fun scheduleEdit(medicineId: Long, scheduleId: Long): String =
-        "schedule_edit/$medicineId/$scheduleId"
+    fun scheduleEdit(medicineId: Long, scheduleId: Long, startDate: LocalDate? = null): String =
+        "schedule_edit/$medicineId/$scheduleId" +
+            (startDate?.let { "?startDate=${it.toEpochDay()}" } ?: "")
 }
 
 /**
@@ -81,6 +84,9 @@ fun AppNavHost(navController: NavHostController, modifier: Modifier = Modifier) 
             ScheduleListRoute(
                 onEditSchedule = { medicineId, scheduleId ->
                     navController.navigate(AppRoutes.scheduleEdit(medicineId, scheduleId))
+                },
+                onAddPlan = { medicineId, startDate ->
+                    navController.navigate(AppRoutes.scheduleEdit(medicineId, 0L, startDate))
                 },
                 onNavigateToMedicines = {
                     navController.navigate(AppRoutes.MEDICINES) {
@@ -133,14 +139,24 @@ fun AppNavHost(navController: NavHostController, modifier: Modifier = Modifier) 
             route = AppRoutes.SCHEDULE_EDIT,
             arguments = listOf(
                 navArgument(AppRoutes.ARG_MEDICINE_ID) { type = NavType.LongType },
-                navArgument(AppRoutes.ARG_SCHEDULE_ID) { type = NavType.LongType }
+                navArgument(AppRoutes.ARG_SCHEDULE_ID) { type = NavType.LongType },
+                navArgument(AppRoutes.ARG_START_DATE) {
+                    type = NavType.LongType
+                    defaultValue = 0L
+                }
             )
         ) { entry ->
             val medicineId = entry.arguments?.getLong(AppRoutes.ARG_MEDICINE_ID) ?: 0L
             val scheduleId = entry.arguments?.getLong(AppRoutes.ARG_SCHEDULE_ID) ?: 0L
+            val startEpochDay = entry.arguments?.getLong(AppRoutes.ARG_START_DATE) ?: 0L
             ScheduleEditRoute(
                 medicineId = medicineId,
                 scheduleId = scheduleId,
+                defaultStartDate = if (startEpochDay > 0L) {
+                    LocalDate.ofEpochDay(startEpochDay)
+                } else {
+                    null
+                },
                 onBack = { navController.popBackStack() }
             )
         }

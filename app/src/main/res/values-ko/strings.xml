@@ -137,6 +137,7 @@
     <string name="medicine_list_add">약 추가</string>
     <string name="medicine_list_empty_title">아직 등록된 약이 없습니다</string>
     <string name="medicine_list_stock_button">재고</string>
+    <string name="medicine_stock_qty">%1$s 남음</string>
     <string name="medicine_list_more_rules">규칙 %1$d개 더</string>
     <string name="medicine_no_rule">계획 없음</string>
     <string name="medicine_stock_days">약 %1$d일분 남음</string>
@@ -165,6 +166,15 @@
     <string name="medicine_spec_value_label">함량</string>
     <string name="medicine_spec_unit_label">함량 단위</string>
     <string name="medicine_dose_unit_label">복용 단위</string>
+
+    <!-- 剂型驱动的表单字段 -->
+    <string name="medicine_spec_tablet_label">정당 함량</string>
+    <string name="medicine_spec_capsule_label">캡슐당 함량</string>
+    <string name="medicine_spec_liquid_label">농도(예: 5 mg/ml)</string>
+    <string name="medicine_spec_spray_label">1회 분무당 함량</string>
+    <string name="medicine_spec_pen_label">농도(예: 100 U/ml)</string>
+    <string name="medicine_pack_bottle_label">병 용량(%1$s)</string>
+    <string name="medicine_pack_pen_label">1펜당 총량(%1$s)</string>
     <string name="medicine_spec_required">함량과 복용 단위를 입력해 주세요</string>
     <string name="medicine_splittable_label">분할 가능</string>
     <string name="medicine_pack_size_label">포장당 수량</string>
@@ -236,6 +246,16 @@
     <string name="schedule_delete_title">계획을 삭제할까요?</string>
     <string name="schedule_delete_message">계획의 복용 기록도 함께 삭제됩니다.</string>
     <string name="rule_prn">필요 시 · %1$s</string>
+
+    <!-- 计划页：日历与增加计划 -->
+    <string name="schedule_add_medicine_label">약 선택</string>
+    <string name="schedule_add_start_on">%1$s부터 시작</string>
+    <string name="schedule_add_no_medicines">아직 약이 없습니다. 먼저 약을 추가해 주세요.</string>
+    <string name="schedule_all_plans_title">전체 계획</string>
+    <string name="schedule_day_doses">%1$s · %2$d회 예정</string>
+    <string name="schedule_day_none">%1$s · 예정 없음</string>
+    <string name="cd_schedule_prev_month">이전 달</string>
+    <string name="cd_schedule_next_month">다음 달</string>
 
     <!-- 递减方案 -->
     <string name="schedule_taper_label">감량 계획</string>

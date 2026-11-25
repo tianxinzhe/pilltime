@@ -124,7 +124,24 @@ class MedicineEditViewModel : ViewModel() {
     fun onNameChange(value: String) =
         _uiState.update { it.copy(name = value, nameError = false) }
 
-    fun onFormChange(value: MedicineForm) = _uiState.update { it.copy(form = value) }
+    /** 切换剂型时联动：剂量单位切到该剂型的默认值，掰开设置只在片剂下保留用户选择。 */
+    fun onFormChange(value: MedicineForm) = _uiState.update { state ->
+        val unitOptions = formDoseUnitOptions(value)
+        state.copy(
+            form = value,
+            doseUnit = if (state.doseUnit in unitOptions) {
+                state.doseUnit
+            } else {
+                formDefaultDoseUnit(value)
+            },
+            splittable = if (isSplittableByUser(value)) {
+                state.splittable
+            } else {
+                formFixedSplittable(value)
+            },
+            specError = false
+        )
+    }
 
     fun onSpecValueChange(value: String) =
         _uiState.update { it.copy(specValue = value, specError = false) }
@@ -228,6 +245,12 @@ class MedicineEditViewModel : ViewModel() {
             val existing = if (state.medicineId != 0L) medicineRepository.get(state.medicineId) else null
             // 新药品必须归属当前档案，避免落到默认档案造成串档
             val activeProfileId = settingsRepository.get().activeProfileId
+            // 非片剂剂型没有掰开开关，按剂型固定，避免旧数据里残留 true
+            val splittable = if (isSplittableByUser(state.form)) {
+                state.splittable
+            } else {
+                formFixedSplittable(state.form)
+            }
             val base = existing ?: Medicine(
                 name = name,
                 profileId = activeProfileId,
@@ -235,7 +258,7 @@ class MedicineEditViewModel : ViewModel() {
                 specValue = specValue ?: 0.0,
                 specUnit = specUnit,
                 doseUnit = doseUnit,
-                splittable = state.splittable,
+                splittable = splittable,
                 packSize = 0
             )
             medicineRepository.save(
@@ -245,7 +268,7 @@ class MedicineEditViewModel : ViewModel() {
                     specValue = specValue ?: base.specValue,
                     specUnit = specUnit,
                     doseUnit = doseUnit,
-                    splittable = state.splittable,
+                    splittable = splittable,
                     packSize = state.packSize.trim().toIntOrNull() ?: 0,
                     imagePath = state.imagePath,
                     thumbPath = state.thumbPath,
@@ -305,8 +328,4 @@ class MedicineEditViewModel : ViewModel() {
         imagePath = imagePath,
         thumbPath = thumbPath
     )
-
-    /** 规格含量按整数优先展示，避免 500.0 这类多余小数。 */
-    private fun specToText(value: Double): String =
-        if (value % 1.0 == 0.0) value.toLong().toString() else value.toString()
 }

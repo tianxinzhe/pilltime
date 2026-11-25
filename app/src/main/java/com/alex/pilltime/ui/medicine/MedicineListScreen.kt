@@ -213,6 +213,11 @@ private fun MedicineRow(
                     fontWeight = FontWeight.SemiBold
                 )
                 Text(
+                    text = row.paramsText,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+                Text(
                     text = row.ruleText,
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant

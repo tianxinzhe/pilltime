@@ -23,6 +23,8 @@ data class MedicineRowUi(
     val id: Long,
     val name: String,
     val thumbPath: String?,
+    /** 基本参数：剂型 + 规格，如"片剂 · 500 mg"。 */
+    val paramsText: String,
     val ruleText: String,
     val taperText: String?,
     val extraRuleCount: Int,
@@ -91,6 +93,8 @@ class MedicineListViewModel : ViewModel() {
                 id = medicine.id,
                 name = medicine.name,
                 thumbPath = medicine.thumbPath ?: medicine.imagePath,
+                paramsText = context.getString(formLabelRes(medicine.form)) +
+                    " · " + specToText(medicine.specValue) + " " + medicine.specUnit,
                 ruleText = first?.let { formatter.ruleText(it, medicine.doseUnit) }
                     ?: context.getString(R.string.medicine_no_rule),
                 taperText = first?.let { schedule ->
@@ -102,9 +106,18 @@ class MedicineListViewModel : ViewModel() {
                 },
                 extraRuleCount = (enabledSchedules.size - 1).coerceAtLeast(0),
                 stockText = when {
+                    // 没库存时提示补药；有库存时展示剩余量，能估算时附剩余天数
                     stockQty <= 0 -> context.getString(R.string.medicine_stock_low)
-                    days.isFinite() -> context.getString(R.string.medicine_stock_days, days.toInt())
-                    else -> null
+                    days.isFinite() -> context.getString(
+                        R.string.medicine_stock_qty,
+                        formatter.doseText(stockQty, medicine.doseUnit)
+                    ) + " · " + context.getString(
+                        R.string.medicine_stock_days, days.toInt()
+                    )
+                    else -> context.getString(
+                        R.string.medicine_stock_qty,
+                        formatter.doseText(stockQty, medicine.doseUnit)
+                    )
                 },
                 lowStock = lowStock
             )

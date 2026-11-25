@@ -137,6 +137,7 @@
     <string name="medicine_list_add">Aggiungi farmaco</string>
     <string name="medicine_list_empty_title">Nessun farmaco ancora</string>
     <string name="medicine_list_stock_button">Scorte</string>
+    <string name="medicine_stock_qty">%1$s rimanenti</string>
     <string name="medicine_list_more_rules">Altre %1$d regole</string>
     <string name="medicine_no_rule">Nessun piano ancora</string>
     <string name="medicine_stock_days">Circa %1$d giorni rimanenti</string>
@@ -165,6 +166,15 @@
     <string name="medicine_spec_value_label">Dosaggio</string>
     <string name="medicine_spec_unit_label">Unità di dosaggio</string>
     <string name="medicine_dose_unit_label">Unità di dose</string>
+
+    <!-- 剂型驱动的表单字段 -->
+    <string name="medicine_spec_tablet_label">Dosaggio per compressa</string>
+    <string name="medicine_spec_capsule_label">Dosaggio per capsula</string>
+    <string name="medicine_spec_liquid_label">Concentrazione (es. 5 mg/ml)</string>
+    <string name="medicine_spec_spray_label">Dosaggio per spruzzo</string>
+    <string name="medicine_spec_pen_label">Concentrazione (es. 100 U/ml)</string>
+    <string name="medicine_pack_bottle_label">Dimensione del flacone (%1$s)</string>
+    <string name="medicine_pack_pen_label">Totale per penna (%1$s)</string>
     <string name="medicine_spec_required">Inserisci dosaggio e unità di dose</string>
     <string name="medicine_splittable_label">Divisibile</string>
     <string name="medicine_pack_size_label">Quantità per confezione</string>
@@ -236,6 +246,16 @@
     <string name="schedule_delete_title">Eliminare il piano?</string>
     <string name="schedule_delete_message">Verranno eliminate anche le registrazioni delle dosi del piano.</string>
     <string name="rule_prn">Al bisogno · %1$s</string>
+
+    <!-- 计划页：日历与增加计划 -->
+    <string name="schedule_add_medicine_label">Seleziona farmaco</string>
+    <string name="schedule_add_start_on">Inizia il %1$s</string>
+    <string name="schedule_add_no_medicines">Nessun farmaco ancora. Aggiungi prima un farmaco.</string>
+    <string name="schedule_all_plans_title">Tutti i piani</string>
+    <string name="schedule_day_doses">%1$s · dosi pianificate: %2$d</string>
+    <string name="schedule_day_none">%1$s · nessuna dose pianificata</string>
+    <string name="cd_schedule_prev_month">Mese precedente</string>
+    <string name="cd_schedule_next_month">Mese successivo</string>
 
     <!-- 递减方案 -->
     <string name="schedule_taper_label">Piano di riduzione</string>
